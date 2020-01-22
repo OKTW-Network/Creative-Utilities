@@ -8,4 +8,6 @@ scoreboard objectives add useItemCount minecraft.used:minecraft.carrot_on_a_stic
 
 scoreboard objectives add tickCounter dummy "Tick counter"
 
-scoreboard objectives add useItemPerSec dummy "Use item per second"
+scoreboard objectives add UIPS dummy "Use item per second"
+
+scoreboard objectives add UIPSCount dummy "Use item per second counter"
