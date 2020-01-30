@@ -1,0 +1,7 @@
+{
+    "condition": "minecraft:entity_properties",
+    "predicate": {
+        "nbt": "{SleepTimer:100s}"
+    },
+    "entity":"this"
+}

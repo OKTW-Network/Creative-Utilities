@@ -1,4 +1,4 @@
-scoreboard players set #cu_version Meta 1000
+scoreboard players set #cu_version Meta 1010
 
 execute unless score #cu_version Meta = #cu_currently_version Meta if score #cu_version Meta > #cu_currently_version Meta if score #cu_print_version Config matches 1..2 run tellraw @a ["",{"text":"[Creative Utilities]: ","color":"yellow","bold":true},{"text":"Version: "},{"score":{"name":"#cu_currently_version","objective":"Meta"}},{"text":" -> ","color":"green"},{"score":{"name":"#cu_version","objective":"Meta"}}]
 execute unless score #cu_version Meta = #cu_currently_version Meta if score #cu_version Meta < #cu_currently_version Meta if score #cu_print_version Config matches 1..2 run tellraw @a ["",{"text":"[Creative Utilities]: ","color":"yellow","bold":true},{"text":"Version: "},{"score":{"name":"#cu_currently_version","objective":"Meta"}},{"text":" -> ","color":"red"},{"score":{"name":"#cu_version","objective":"Meta"}}]
