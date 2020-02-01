@@ -31,12 +31,12 @@ See `..\cu\functions\version_check` for more infomation.
 
 ### Predicate
 
-`minecraft:sneaking`
-`minecraft:on_ground`
-`minecraft:sleeping` true when the entity completely asleep.
-`minecraft:awake` true when the entity completely awake.
-`minecraft:hand_main-empty`
-`minecraft:hand_off-empty`
+`minecraft:sneaking`  
+`minecraft:on_ground`  
+`minecraft:sleeping` true when the entity completely asleep.  
+`minecraft:awake` true when the entity completely awake.  
+`minecraft:hand_main-empty`  
+`minecraft:hand_off-empty`  
 `minecraft:head-empty`
 
 ## Required dependency
