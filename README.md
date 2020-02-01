@@ -6,7 +6,7 @@ Useful utility things.
 ### Use item detection
 
 A carrot on a stick based use item(right click) detecter.  
-Trigger the functions by adding it in the `minecraft\tags\functions\use_item.json` for your datapacks.
+Trigger the functions by adding it in the `..\data\minecraft\tags\functions\use_item.json` for your datapacks.
 
 ### Use item per second
 
@@ -27,7 +27,7 @@ Check out the storages `cu:resources miniUUID.Most` & `cu:resources miniUUID.Lea
 ### Version
 
 Compare and build version into a string.  
-See `..\cu\functions\version_check` for more infomation.
+See `..\data\cu\functions\version_check` for more infomation.
 
 ### Predicate
 
@@ -45,23 +45,23 @@ See `..\cu\functions\version_check` for more infomation.
 
 ## Compatibility information
 
-### Namespace
+### Namespace ID
 
-* cu
+* `cu`
 
 ### Scoreboard objective
 
-* versionCU
-* Version
-* Meta
-* Config
-* CreativeUtility
-* useItemCount
-* tickCounter
-* UIPS
-* UIPSCount
+* `versionCU`
+* `Version`
+* `Meta`
+* `Config`
+* `CreativeUtility`
+* `useItemCount`
+* `tickCounter`
+* `UIPS`
+* `UIPSCount`
 
-### Tags
+### Tag
 
-* InitializedCUScore
-* InitializedCUBossBar
+* `InitializedCUScore`
+* `InitializedCUBossBar`
