@@ -1,6 +1,5 @@
 scoreboard objectives add Meta dummy
 scoreboard objectives add Config dummy
-scoreboard objectives add versionCU dummy
 
 scoreboard objectives add Version dummy
 
