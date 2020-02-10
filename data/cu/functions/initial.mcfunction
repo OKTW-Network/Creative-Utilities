@@ -2,7 +2,7 @@ function cu:debug/stop_function
 
 function cu:meta/scoreboard/register
 function cu:config
-function cu:version_check
+function cu:check-version
 
 execute as @a[tag=!InitializedCUScore] run function cu:meta/scoreboard/set_player_score
 

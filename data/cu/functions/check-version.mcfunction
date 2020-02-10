@@ -1,8 +1,4 @@
-scoreboard players set #cu_version_x.*.*-* Meta 1
-scoreboard players set #cu_version_*.x.*-* Meta 0
-scoreboard players set #cu_version_*.*.x-* Meta 2
-scoreboard players set #cu_version_*.*.*-x Meta 0
-
+function cu:version
 
 scoreboard players operation #new_x.*.*-* Version = #cu_version_x.*.*-* Meta
 scoreboard players operation #new_*.x.*-* Version = #cu_version_*.x.*-* Meta
