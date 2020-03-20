@@ -1,3 +1,3 @@
 bossbar set cu:uips players @s
 
-tag @s add InitializedCUBossBar
+tag @s add InitializedCUBossbar

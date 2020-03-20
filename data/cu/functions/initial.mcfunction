@@ -10,7 +10,7 @@ function cu:mini_uuid/meta/storage/register
 function cu:version/meta/storage/register
 
 function cu:meta/bossbar/register
-execute as @a[tag=!InitializedCUBossBar] run function cu:meta/bossbar/set_player_visible
+execute as @a[tag=!InitializedCUBossbar] run function cu:meta/bossbar/set_player_visible
 function cu:debug/unvisible_bossbar
 
 execute if score #cu_print_init Config matches 1 run tellraw @a ["",{"text":"[Creative Utilities]: ","color":"yellow","bold":true},{"text":"Initialize complete!"}]
