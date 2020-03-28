@@ -2,10 +2,10 @@ scoreboard objectives add Meta dummy
 scoreboard objectives add Config dummy
 
 scoreboard objectives add Version dummy
-scoreboard objectives add VersionX dummy
-scoreboard objectives add VersionY dummy
-scoreboard objectives add VersionZ dummy
-scoreboard objectives add VersionA dummy
+scoreboard objectives add VersionCUX dummy
+scoreboard objectives add VersionCUY dummy
+scoreboard objectives add VersionCUZ dummy
+scoreboard objectives add VersionCUA dummy
 
 scoreboard objectives add CreativeUtility dummy "Creative Utilities feature status"
 
