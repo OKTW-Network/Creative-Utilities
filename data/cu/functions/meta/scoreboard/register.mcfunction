@@ -21,6 +21,9 @@ scoreboard objectives add UIPSCount dummy "Use item per second counter"
 
 scoreboard objectives add leaveGameCount minecraft.custom:minecraft.leave_game "num-Leave game counter"
 
+scoreboard objectives add miniUUIDMost dummy "num-Mini UUID most"
+scoreboard objectives add miniUUIDLeast dummy "num-Mini UUID least"
+
 scoreboard objectives add hitboxX1 dummy "num-Hitbox X1"
 scoreboard objectives add hitboxX2 dummy "num-Hitbox X2"
 scoreboard objectives add hitboxY1 dummy "num-Hitbox Y1"
