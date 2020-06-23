@@ -1,4 +1,4 @@
-## 1.15.2
+## 1.16
 
 execute store result score @s hitboxX1 run data get entity @s Pos[0] 10
 execute store result score @s hitboxX2 run data get entity @s Pos[0] 10
@@ -13,7 +13,7 @@ execute if entity @s[type=minecraft:blaze] run function cu:library/hitbox/data/b
 # Creeper
 execute if entity @s[type=minecraft:creeper] run function cu:library/hitbox/data/creeper
 
-# Skeleton/Stray/Villager/Witch/Vindicator/Pillager/Evoker/Illusioner/Zombie Villager/Zombie/Drowned/Husk/Zombie Pigman
+# Skeleton/Stray/Villager/Witch/Vindicator/Pillager/Evoker/Illusioner/Zombie Villager/Zombie/Drowned/Husk/Piglin/Zombified Piglin
 execute if entity @s[type=#minecraft:hitbox-humanlike] run function cu:library/hitbox/data/humanlike
 
 # baby Zombie Villager/Zombie/Drowned/Husk/Zombie Pigman
@@ -132,3 +132,9 @@ execute if entity @s[type=minecraft:squid] run function cu:library/hitbox/data/s
 
 # Horse/Skeleton Horse/Zombie Horse/Donkey/Mule
 execute if entity @s[type=#minecraft:hitbox-horse] run function cu:library/hitbox/data/horse
+
+# Hoglin/Zoglin
+execute if entity @s[type=#minecraft:hitbox-hoglin] run function cu:library/hitbox/data/hoglin
+
+# Strider
+execute if entity @s[type=minecraft:strider] run function cu:library/hitbox/data/strider

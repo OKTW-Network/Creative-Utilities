@@ -13,6 +13,7 @@
     "minecraft:zombie",
     "minecraft:drowned",
     "minecraft:husk",
-    "minecraft:zombie_pigman"
+    "minecraft:piglin",
+    "minecraft:zombified_piglin"
   ]
 }

@@ -1,4 +1,4 @@
-## 1.15.2
+## 1.16
 
 scoreboard players set @s expMin 0
 scoreboard players set @s expMax 0
@@ -111,8 +111,10 @@ execute if entity @s[type=minecraft:drowned,nbt=!{IsBaby:1b}] run scoreboard pla
 execute if entity @s[type=minecraft:drowned,nbt=!{IsBaby:1b}] run scoreboard players operation @s expMax = #calculation_temp2 numeric
 execute if entity @s[type=minecraft:husk,nbt=!{IsBaby:1b}] run scoreboard players operation @s expMin = #calculation_temp1 numeric
 execute if entity @s[type=minecraft:husk,nbt=!{IsBaby:1b}] run scoreboard players operation @s expMax = #calculation_temp2 numeric
-execute if entity @s[type=minecraft:zombie_pigman,nbt=!{IsBaby:1b}] run scoreboard players operation @s expMin = #calculation_temp1 numeric
-execute if entity @s[type=minecraft:zombie_pigman,nbt=!{IsBaby:1b}] run scoreboard players operation @s expMax = #calculation_temp2 numeric
+execute if entity @s[type=minecraft:piglin,nbt=!{IsBaby:1b}] run scoreboard players operation @s expMin = #calculation_temp1 numeric
+execute if entity @s[type=minecraft:piglin,nbt=!{IsBaby:1b}] run scoreboard players operation @s expMax = #calculation_temp2 numeric
+execute if entity @s[type=minecraft:zombified_piglin,nbt=!{IsBaby:1b}] run scoreboard players operation @s expMin = #calculation_temp1 numeric
+execute if entity @s[type=minecraft:zombified_piglin,nbt=!{IsBaby:1b}] run scoreboard players operation @s expMax = #calculation_temp2 numeric
 
 # Baby Zombie Villager, Baby Zombie, Baby Drowned, Baby Husk, Baby Zombie Pigman
 scoreboard players set #calculation_temp1 numeric 12
@@ -129,8 +131,8 @@ execute if entity @s[type=minecraft:drowned,nbt={IsBaby:1b}] run scoreboard play
 execute if entity @s[type=minecraft:drowned,nbt={IsBaby:1b}] run scoreboard players operation @s expMax = #calculation_temp2 numeric
 execute if entity @s[type=minecraft:husk,nbt={IsBaby:1b}] run scoreboard players operation @s expMin = #calculation_temp1 numeric
 execute if entity @s[type=minecraft:husk,nbt={IsBaby:1b}] run scoreboard players operation @s expMax = #calculation_temp2 numeric
-execute if entity @s[type=minecraft:zombie_pigman,nbt={IsBaby:1b}] run scoreboard players operation @s expMin = #calculation_temp1 numeric
-execute if entity @s[type=minecraft:zombie_pigman,nbt={IsBaby:1b}] run scoreboard players operation @s expMax = #calculation_temp2 numeric
+execute if entity @s[type=minecraft:zombified_piglin,nbt={IsBaby:1b}] run scoreboard players operation @s expMin = #calculation_temp1 numeric
+execute if entity @s[type=minecraft:zombified_piglin,nbt={IsBaby:1b}] run scoreboard players operation @s expMax = #calculation_temp2 numeric
 
 # Blaze, Evoker, Guardian, Elder Guardian
 scoreboard players set #calculation_temp1 numeric 10
@@ -148,7 +150,7 @@ execute if entity @s[type=minecraft:elder_guardian] run scoreboard players opera
 execute if entity @s[type=minecraft:endermite] run scoreboard players set @s expMin 3
 execute if entity @s[type=minecraft:endermite] run scoreboard players set @s expMax 3
 
-# Slime/Magma Cube
+# Slime/Magma Cube/Baby piglin
 scoreboard players set #calculation_temp1 numeric 1
 scoreboard players set #calculation_temp2 numeric 1
 execute store result score #calculation_temp3 numeric run data get entity @s Size
@@ -158,6 +160,8 @@ execute if entity @s[type=minecraft:slime] run scoreboard players operation @s e
 execute if entity @s[type=minecraft:slime] run scoreboard players operation @s expMax = #calculation_temp2 numeric
 execute if entity @s[type=minecraft:magma_cube] run scoreboard players operation @s expMin = #calculation_temp1 numeric
 execute if entity @s[type=minecraft:magma_cube] run scoreboard players operation @s expMax = #calculation_temp2 numeric
+execute if entity @s[type=minecraft:piglin,nbt={IsBaby:1b}] run scoreboard players operation @s expMin = #calculation_temp1 numeric
+execute if entity @s[type=minecraft:piglin,nbt={IsBaby:1b}] run scoreboard players operation @s expMax = #calculation_temp2 numeric
 
 # Ravager
 execute if entity @s[type=minecraft:ravager] run scoreboard players set @s expMin 20

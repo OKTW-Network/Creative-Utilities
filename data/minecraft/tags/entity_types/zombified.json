@@ -2,7 +2,7 @@
   "values": [
     "minecraft:zombie",
     "minecraft:zombie_villager",
-    "minecraft:zombie_pigman",
+    "minecraft:zombified_piglin",
     "minecraft:husk",
     "minecraft:drowned",
     "minecraft:zombie_horse"

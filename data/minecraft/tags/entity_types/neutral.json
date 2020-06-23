@@ -11,6 +11,7 @@
     "minecraft:cave_spider",
     "minecraft:enderman",
     "minecraft:spider",
-    "minecraft:zombie_pigman"
+    "minecraft:piglin",
+    "minecraft:zombified_piglin"
   ]
 }
