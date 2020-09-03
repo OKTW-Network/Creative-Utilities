@@ -1,3 +1,3 @@
-scoreboard players set #calculation_temp1 numeric 20
-scoreboard players set #calculation_temp2 numeric 40
+scoreboard players set #1 calcu_temp 20
+scoreboard players set #2 calcu_temp 40
 function cu:library/hitbox/write
