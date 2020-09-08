@@ -1,5 +1,6 @@
 {
     "values":[
-		"cu:check-version_player"
+    "cu:check-version_player",
+    "cu:initial-player"
     ]
 }
