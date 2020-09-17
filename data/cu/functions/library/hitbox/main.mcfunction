@@ -7,6 +7,10 @@ execute store result score @s hitboxY2 run data get entity @s Pos[1] 10
 execute store result score @s hitboxZ1 run data get entity @s Pos[2] 10
 execute store result score @s hitboxZ2 run data get entity @s Pos[2] 10
 
+# Player
+execute if entity @s[type=minecraft:player,predicate=!minecraft:sneaking] run function cu:library/hitbox/data/player
+execute if entity @s[type=minecraft:player,predicate=minecraft:sneaking] run function cu:library/hitbox/data/player-sneaking
+
 # Blaze
 execute if entity @s[type=minecraft:blaze] run function cu:library/hitbox/data/blaze
 

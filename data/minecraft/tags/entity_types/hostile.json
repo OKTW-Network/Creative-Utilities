@@ -29,6 +29,7 @@
     "minecraft:blaze",
     "minecraft:magma_cube",
     "minecraft:ghast",
-    "minecraft:vex"
+    "minecraft:vex",
+    "minecraft:piglin_brute"
   ]
 }
