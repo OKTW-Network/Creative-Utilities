@@ -6,8 +6,11 @@ function cu:check-dependency
 function cu:check-version
 
 function cu:get/meta/storage/register
+function cu:list/meta/scoreboard/register
 function cu:uuid/meta/storage/register
 function cu:version/meta/storage/register
+
+function cu:list/meta/storage/register
 
 function cu:meta/bossbar/register
 function cu:debug/hide_bossbar

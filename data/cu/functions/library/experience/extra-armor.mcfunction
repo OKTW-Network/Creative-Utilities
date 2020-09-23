@@ -1,4 +1,5 @@
 scoreboard players set #max random 3
+scoreboard players set #allowNegative random 0
 function math:random
 execute store result score #2 calcu_temp1 run data get storage math:resources random.result
 scoreboard players add #2 calcu_temp1 1
