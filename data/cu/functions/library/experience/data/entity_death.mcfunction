@@ -61,7 +61,7 @@ execute if entity @s[type=minecraft:chicken,nbt={IsChickenJockey:1b}] run scoreb
 
 # Creeper/Enderman/Ghast/Phantom/Shulker/Silverfish/Spider/Cave Spider/Skeleton/Stray/Wither Skeleton/Vindicator/Pillager/Vex/Witch/Illusioner/Zombie Villager/Zombie/Drowned/Husk/Zombie Pigman
 function cu:get/armor_quantity
-execute store result score #1 calcu_temp1 run data get storage cu:resources armor.quantity
+execute store result score #1 calcu_temp1 run data get storage cu:get itemQuantity
 execute if score #1 calcu_temp1 matches 1.. run function cu:library/experience/extra-armor
 scoreboard players set #1 calcu_temp 5
 scoreboard players set #2 calcu_temp 5
@@ -114,7 +114,7 @@ execute if entity @s[type=minecraft:zombified_piglin,nbt=!{IsBaby:1b}] run score
 
 # Baby Zombie Villager, Baby Zombie, Baby Drowned, Baby Husk, Baby Zombie Pigman
 function cu:get/armor_quantity
-execute store result score #1 calcu_temp1 run data get storage cu:resources armor.quantity
+execute store result score #1 calcu_temp1 run data get storage cu:get itemQuantity
 execute if score #1 calcu_temp1 matches 1.. run function cu:library/experience/extra-armor
 scoreboard players set #1 calcu_temp 12
 scoreboard players set #2 calcu_temp 12
