@@ -6,6 +6,7 @@ function cu:check-dependency
 function cu:check-version
 
 function cu:list/meta/scoreboard/register
+function cu:uuid/meta/scoreboard/register
 
 function cu:get/meta/storage/register
 function cu:give/meta/storage/register
