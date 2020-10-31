@@ -11,6 +11,7 @@ function cu:uuid/meta/scoreboard/register
 function cu:get/meta/storage/register
 function cu:give/meta/storage/register
 function cu:replaceitem/meta/storage/register
+function cu:compare/meta/storage/register
 function cu:list/meta/storage/register
 function cu:string/meta/storage/register
 function cu:uuid/meta/storage/register
