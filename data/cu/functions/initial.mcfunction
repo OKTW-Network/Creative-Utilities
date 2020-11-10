@@ -24,4 +24,6 @@ function cu:debug/hide_bossbar
 
 execute in cu:data_temp run function cu:dimension/data_temp
 
+gamerule maxCommandChainLength 2147483647
+
 execute if score #cu_print_init Config matches 1 run tellraw @a ["",{"text":"[Creative Utilities]: ","color":"yellow","bold":true},{"text":"Initialize complete!"}]
