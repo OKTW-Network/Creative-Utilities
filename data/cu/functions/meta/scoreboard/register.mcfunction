@@ -12,6 +12,10 @@ scoreboard objectives add UUID1 dummy
 scoreboard objectives add UUID2 dummy
 scoreboard objectives add UUID3 dummy
 
+scoreboard objectives add posX dummy
+scoreboard objectives add posY dummy
+scoreboard objectives add posZ dummy
+
 scoreboard objectives add CreativeUtility dummy "Creative Utilities feature status"
 
 scoreboard objectives add jumpCount minecraft.custom:minecraft.jump "num-Jump counter"
