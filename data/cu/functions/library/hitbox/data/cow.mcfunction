@@ -1,5 +1,6 @@
-execute if entity @s[nbt={Age:0}] run scoreboard players set #1 calcu_temp 5
-execute if entity @s[nbt={Age:0}] run scoreboard players set #2 calcu_temp 14
-execute if entity @s[nbt=!{Age:0}] run scoreboard players set #1 calcu_temp 2
-execute if entity @s[nbt=!{Age:0}] run scoreboard players set #2 calcu_temp 7
+execute store result score #3 calcu_temp run data get entity @s Age
+execute if score #3 calcu_temp matches 0.. run scoreboard players set #1 calcu_temp 5
+execute if score #3 calcu_temp matches 0.. run scoreboard players set #2 calcu_temp 14
+execute if score #3 calcu_temp matches ..-1 run scoreboard players set #1 calcu_temp 2
+execute if score #3 calcu_temp matches ..-1 run scoreboard players set #2 calcu_temp 7
 function cu:library/hitbox/write
