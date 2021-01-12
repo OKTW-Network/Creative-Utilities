@@ -1,6 +1,8 @@
 {
     "values": [
         "minecraft:air",
+        "minecraft:cave_air",
+        "minecraft:void_air",
         "#minecraft:fire",
         "#minecraft:torches",
         "minecraft:lever",
