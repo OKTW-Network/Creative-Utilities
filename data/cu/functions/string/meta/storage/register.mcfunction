@@ -1,2 +1,2 @@
-data modify storage cu:string rawToText.input set value ''
-data modify storage cu:string rawToText.result set value ''
+data modify storage cu:string toStatic.input set value ''
+data modify storage cu:string toStatic.result set value ''
