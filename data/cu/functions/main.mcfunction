@@ -1,3 +1,5 @@
+execute as @a run function cu:trigger/untag/use_item
+
 execute as @a run function cu:trigger/awake
 execute as @a run function cu:trigger/sleeping
 execute as @a run function cu:trigger/sneak

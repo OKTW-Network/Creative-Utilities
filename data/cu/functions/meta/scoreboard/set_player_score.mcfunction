@@ -5,6 +5,8 @@ scoreboard players remove @s leaveGameCount 0
 scoreboard players remove @s UIPS 0
 scoreboard players remove @s UIPSCount 0
 
+scoreboard players remove @s useItemTimer 0
+
 scoreboard players remove @s hitboxX1 0
 scoreboard players remove @s hitboxX2 0
 scoreboard players remove @s hitboxY1 0

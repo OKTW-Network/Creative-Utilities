@@ -31,6 +31,8 @@ scoreboard objectives add tickCounter dummy "Tick counter"
 scoreboard objectives add UIPS dummy "Use item per second"
 scoreboard objectives add UIPSCount dummy "Use item per second counter"
 
+scoreboard objectives add useItemTimer dummy "num-Use Item timer"
+
 scoreboard objectives add hitboxX1 dummy "num-Hitbox X1"
 scoreboard objectives add hitboxX2 dummy "num-Hitbox X2"
 scoreboard objectives add hitboxY1 dummy "num-Hitbox Y1"
