@@ -1,2 +1,3 @@
-scoreboard players remove @s[scores={useItemTimer=1..}] useItemTimer 1
-tag @s[scores={useItemTimer=0}] remove usedItem
+scoreboard players remove @s useItemTimer 1
+tag @s[scores={useItemTimer=0}] remove cu.usedItem
+tag @s[scores={useItemTimer=0}] add cu.useItemBreak
