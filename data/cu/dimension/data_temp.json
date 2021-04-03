@@ -1,6 +1,7 @@
 {
   "type": "cu:data",
   "generator": {
+    "seed": 0,
     "settings": {
       "lakes": false,
       "features": false,
