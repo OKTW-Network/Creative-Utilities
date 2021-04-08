@@ -1,32 +1,14 @@
-function cu:debug/stop_function
+function #cu:scoreboard-register
+function #cu:storage-register
+function #cu:bossbar-register
 
-function cu:meta/scoreboard/register
-function cu:config
-function cu:check-dependency
+function #cu:config
+
 function cu:check-version
 
-function cu:item/meta/scoreboard/register
-function cu:list/meta/scoreboard/register
-function cu:uuid/meta/scoreboard/register
-function cu:length/meta/scoreboard/register
-
-function cu:get/meta/storage/register
-function cu:item/meta/storage/register
-function cu:replaceitem/meta/storage/register
-function cu:summon/meta/storage/register
-function cu:compare/meta/storage/register
-function cu:list/meta/storage/register
-function cu:string/meta/storage/register
-function cu:uuid/meta/storage/register
-function cu:version/meta/storage/register
-
-function cu:meta/bossbar/register
+function cu:debug/stop_function
 function cu:debug/hide_bossbar
 
 execute in cu:data_temp run function cu:dimension/data_temp
 
-execute as @a run function cu:initial-player
-
-gamerule maxCommandChainLength 2147483647
-
-execute if score #cu_print_init Config matches 1 run tellraw @a ["",{"text":"[Creative Utilities]: ","color":"yellow","bold":true},{"text":"Initialize complete!"}]
+execute if score #cu$print_init Config matches 1 run tellraw @a ["",{"text":"[Creative Utilities]: ","color":"yellow","bold":true},{"text":"Initialize complete!"}]

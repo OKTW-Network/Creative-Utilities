@@ -1,0 +1,12 @@
+{
+  "values": [
+    "cu:meta/scoreboard/register",
+    "cu:uuid/meta/scoreboard/register",
+    "cu:length/meta/scoreboard/register",
+    "cu:list/meta/scoreboard/register",
+    "cu:trigger/meta/scoreboard/register",
+    "cu:library/meta/scoreboard/register",
+    "cu:item/meta/scoreboard/register",
+    "cu:use_item_per_sec/meta/scoreboard/register"
+  ]
+}
