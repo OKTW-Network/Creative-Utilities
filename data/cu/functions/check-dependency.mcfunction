@@ -1,5 +1,3 @@
-scoreboard objectives add Meta dummy
-
 scoreboard players set #cu$dependency_missing Meta 0
 
 execute store success score #cu$dependency-math Meta run function math:version
