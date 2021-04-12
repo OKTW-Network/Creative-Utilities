@@ -2,7 +2,6 @@
   "values": [
     "cu:get/meta/storage/register",
     "cu:item/meta/storage/register",
-    "cu:summon/meta/storage/register",
     "cu:compare/meta/storage/register",
     "cu:list/meta/storage/register",
     "cu:string/meta/storage/register",
