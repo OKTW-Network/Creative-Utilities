@@ -9,4 +9,4 @@ data remove storage cu:list index.input[-1]
 scoreboard players remove #index listIndex 1
 scoreboard players remove #length listIndex 2
 
-execute unless data storage cu:list index.result run function cu:list/index
+execute unless data storage cu:list index.result if data storage cu:list index.input[0] run function cu:list/index/_loop
