@@ -1,6 +1,5 @@
-execute store result score #3 calcu_temp run data get entity @s Age
-execute if score #3 calcu_temp matches 0.. run scoreboard players set #1 calcu_temp 7
-execute if score #3 calcu_temp matches 0.. run scoreboard players set #2 calcu_temp 14
-execute if score #3 calcu_temp matches ..-1 run scoreboard players set #1 calcu_temp 3
-execute if score #3 calcu_temp matches ..-1 run scoreboard players set #2 calcu_temp 6
-function cu:library/hitbox/write
+execute store result score #age hitboxSpecial run data get entity @s Age
+execute if score #age hitboxSpecial matches 0.. run scoreboard players set @s hitboxXZ 7
+execute if score #age hitboxSpecial matches 0.. run scoreboard players set @s hitboxY 14
+execute if score #age hitboxSpecial matches ..-1 run scoreboard players set @s hitboxXZ 3
+execute if score #age hitboxSpecial matches ..-1 run scoreboard players set @s hitboxY 6
