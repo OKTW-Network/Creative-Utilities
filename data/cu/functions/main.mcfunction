@@ -2,6 +2,7 @@ execute as @e[tag=cu.haveOwner,scores={giveOwnerTimer=1..}] run function cu:item
 
 execute as @a[scores={useItemTimer=1..}] run function cu:trigger/untag/use_item
 
+execute as @a run function cu:trigger/health
 execute as @a run function cu:trigger/awake
 execute as @a run function cu:trigger/sleeping
 # execute as @a run function cu:trigger/moving
