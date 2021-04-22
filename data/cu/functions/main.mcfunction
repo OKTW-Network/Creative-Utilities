@@ -4,6 +4,8 @@ execute as @a[scores={useItemTimer=1..}] run function cu:trigger/untag/use_item
 
 execute as @a run function cu:trigger/awake
 execute as @a run function cu:trigger/sleeping
+# execute as @a run function cu:trigger/moving
+execute as @a run function cu:trigger/move_to_block
 execute as @a run function cu:trigger/sneak
 execute as @a[scores={jumpCount=1..}] run function cu:trigger/jump
 execute as @a[scores={useItemCount=1..}] run function cu:trigger/use_item
