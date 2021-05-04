@@ -5,7 +5,7 @@ scoreboard objectives add VersionCUA dummy
 
 scoreboard objectives add Version dummy
 
-scoreboard objectives add CreativeUtility dummy "Creative Utilities feature status"
+scoreboard objectives add +CreativeUtility dummy "Creative Utilities feature status"
 
 scoreboard objectives add health dummy
 
