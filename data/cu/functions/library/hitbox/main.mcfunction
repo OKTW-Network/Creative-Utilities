@@ -76,7 +76,7 @@ execute if entity @s[type=minecraft:polar_bear] run function cu:library/hitbox/d
 execute if entity @s[type=minecraft:panda] run function cu:library/hitbox/data/panda
 
 # Llama/Trade Llama
-execute if entity @s[type=minecraft:llama] run function cu:library/hitbox/data/llama
+execute if entity @s[type=#minecraft:llama] run function cu:library/hitbox/data/llama
 
 # Pufferfish
 execute if entity @s[type=minecraft:pufferfish] run function cu:library/hitbox/data/pufferfish
