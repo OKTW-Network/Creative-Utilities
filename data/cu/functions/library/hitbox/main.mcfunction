@@ -1,4 +1,4 @@
-### 1.16.5
+### 1.17
 
 # Player
 execute if entity @s[type=minecraft:player,predicate=!minecraft:sneaking] run function cu:library/hitbox/data/player
@@ -85,6 +85,9 @@ execute if entity @s[type=minecraft:pufferfish] run function cu:library/hitbox/d
 execute if entity @s[type=minecraft:bee] run function cu:library/hitbox/data/bee
 
 
+# Axolotl
+execute if entity @s[type=minecraft:axolotl] run function cu:library/hitbox/data/axolotl
+
 # Ocelot/Cat
 execute if entity @s[type=#minecraft:hitbox-cat] run function cu:library/hitbox/data/cat
 
@@ -93,6 +96,9 @@ execute if entity @s[type=minecraft:cod] run function cu:library/hitbox/data/cod
 
 # Fox
 execute if entity @s[type=minecraft:fox] run function cu:library/hitbox/data/fox
+
+# Goat
+execute if entity @s[type=minecraft:goat] run function cu:library/hitbox/data/goat
 
 # Salmon
 execute if entity @s[type=minecraft:salmon] run function cu:library/hitbox/data/salmon
@@ -124,8 +130,8 @@ execute if entity @s[type=minecraft:rabbit] run function cu:library/hitbox/data/
 # Turtle
 execute if entity @s[type=minecraft:turtle] run function cu:library/hitbox/data/turtle
 
-# Squid
-execute if entity @s[type=minecraft:squid] run function cu:library/hitbox/data/squid
+# Squid/Glow Squid
+execute if entity @s[type=#minecraft:squids] run function cu:library/hitbox/data/squid
 
 # Horse/Skeleton Horse/Zombie Horse/Donkey/Mule
 execute if entity @s[type=#minecraft:hitbox-horse] run function cu:library/hitbox/data/horse

@@ -12,6 +12,7 @@
     "minecraft:enderman",
     "minecraft:spider",
     "minecraft:piglin",
-    "minecraft:zombified_piglin"
+    "minecraft:zombified_piglin",
+    "minecraft:goat"
   ]
 }

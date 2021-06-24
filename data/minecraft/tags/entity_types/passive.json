@@ -25,6 +25,8 @@
     "minecraft:turtle",
     "minecraft:villager",
     "minecraft:wandering_trader",
-    "minecraft:strider"
+    "minecraft:strider",
+    "minecraft:axolotl",
+    "minecraft:glow_squid"
   ]
 }

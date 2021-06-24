@@ -1,4 +1,4 @@
-## 1.16.2
+## 1.17
 
 scoreboard players set @s expMin 0
 scoreboard players set @s expMax 0
@@ -9,9 +9,11 @@ function math:calcu_temp/clear
 execute if entity @s[type=minecraft:fox] run scoreboard players set @s expMin 1
 execute if entity @s[type=minecraft:fox] run scoreboard players set @s expMax 2
 
-# Bee/Cat/Ocelot/Chicken/Cod/Salmon/Pufferfish/Tropical Fish/Cow/Horse/Llama/Trader Llama/Mooshroom/Panda/Parrot/Pig/Polar Bear/Rabbit/Sheep/Squid/Turtle/Wolf/baby Wolf
+# Axolotl/Bee/Cat/Ocelot/Chicken/Cod/Salmon/Pufferfish/Tropical Fish/Cow/Horse/Llama/Trader Llama/Mooshroom/Panda/Parrot/Pig/Polar Bear/Rabbit/Sheep/Goat/Squid/Glow Squid/Turtle/Wolf/baby Wolf
 scoreboard players set #1 calcu_temp 1
 scoreboard players set #2 calcu_temp 3
+execute if entity @s[type=minecraft:axolotl,nbt={Age:0}] run scoreboard players operation @s expMin = #1 calcu_temp
+execute if entity @s[type=minecraft:axolotl,nbt={Age:0}] run scoreboard players operation @s expMax = #2 calcu_temp
 execute if entity @s[type=minecraft:bee,nbt={Age:0}] run scoreboard players operation @s expMin = #1 calcu_temp
 execute if entity @s[type=minecraft:bee,nbt={Age:0}] run scoreboard players operation @s expMax = #2 calcu_temp
 execute if entity @s[type=minecraft:cat,nbt={Age:0}] run scoreboard players operation @s expMin = #1 calcu_temp
@@ -48,8 +50,12 @@ execute if entity @s[type=minecraft:rabbit,nbt={Age:0}] run scoreboard players o
 execute if entity @s[type=minecraft:rabbit,nbt={Age:0}] run scoreboard players operation @s expMax = #2 calcu_temp
 execute if entity @s[type=minecraft:sheep,nbt={Age:0}] run scoreboard players operation @s expMin = #1 calcu_temp
 execute if entity @s[type=minecraft:sheep,nbt={Age:0}] run scoreboard players operation @s expMax = #2 calcu_temp
+execute if entity @s[type=minecraft:goat,nbt={Age:0}] run scoreboard players operation @s expMin = #1 calcu_temp
+execute if entity @s[type=minecraft:goat,nbt={Age:0}] run scoreboard players operation @s expMax = #2 calcu_temp
 execute if entity @s[type=minecraft:squid] run scoreboard players operation @s expMin = #1 calcu_temp
 execute if entity @s[type=minecraft:squid] run scoreboard players operation @s expMax = #2 calcu_temp
+execute if entity @s[type=minecraft:glow_squid] run scoreboard players operation @s expMin = #1 calcu_temp
+execute if entity @s[type=minecraft:glow_squid] run scoreboard players operation @s expMax = #2 calcu_temp
 execute if entity @s[type=minecraft:turtle,nbt={Age:0}] run scoreboard players operation @s expMin = #1 calcu_temp
 execute if entity @s[type=minecraft:turtle,nbt={Age:0}] run scoreboard players operation @s expMax = #2 calcu_temp
 execute if entity @s[type=minecraft:wolf] run scoreboard players operation @s expMin = #1 calcu_temp
