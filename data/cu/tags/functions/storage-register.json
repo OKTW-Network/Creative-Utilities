@@ -1,5 +1,6 @@
 {
   "values": [
+    "cu:data_storage/meta/storage/register",
     "cu:get/meta/storage/register",
     "cu:item/meta/storage/register",
     "cu:compare/meta/storage/register",
