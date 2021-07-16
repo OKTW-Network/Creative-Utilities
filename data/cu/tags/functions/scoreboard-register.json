@@ -5,6 +5,7 @@
     "cu:uuid/meta/scoreboard/register",
     "cu:length/meta/scoreboard/register",
     "cu:list/meta/scoreboard/register",
+    "cu:string/meta/scoreboard/register",
     "cu:trigger/meta/scoreboard/register",
     "cu:library/meta/scoreboard/register",
     "cu:get/meta/scoreboard/register",
