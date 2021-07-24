@@ -9,7 +9,7 @@ function cu:check-version
 function cu:debug/stop_function
 function cu:debug/hide_bossbar
 
-execute in cu:data_temp run function cu:dimension/data_temp/initial
+# function cu:dimension/initial
 
 execute as @a run function cu:initial-player
 
