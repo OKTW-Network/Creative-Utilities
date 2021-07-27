@@ -20,6 +20,9 @@ summon minecraft:marker 0 1 1 {Tags:["cu.stringConverter"]}
 kill @e[tag=cu.dataStorage.base]
 summon minecraft:marker 0 1 2 {Tags:["cu.dataStorage.base"]}
 
-# clean up
+# Clean up
 kill @e[tag=cu.itemStorageTemp.block]
 kill @e[tag=cu.itemStorageTemp.entity]
+
+# Blank area
+fill 0 80 0 16 80 16 minecraft:bedrock replace
