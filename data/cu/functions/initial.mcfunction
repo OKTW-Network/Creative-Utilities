@@ -13,4 +13,6 @@ function cu:debug/hide_bossbar
 
 execute as @a run function cu:initial-player
 
+function #cu:tick_schedule
+
 execute if score #cu$print_init Config matches 1 run tellraw @a ["",{"text":"[Creative Utilities]: ","color":"yellow","bold":true},{"text":"Initialize complete!"}]

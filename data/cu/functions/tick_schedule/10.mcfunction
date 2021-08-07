@@ -1,0 +1,1 @@
+schedule function #minecraft:10_tick 10t replace

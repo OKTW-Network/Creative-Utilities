@@ -1,0 +1,1 @@
+schedule function #minecraft:600_tick 600t replace

@@ -1,0 +1,1 @@
+schedule function #minecraft:200_tick 200t replace

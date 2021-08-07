@@ -1,0 +1,11 @@
+{
+  "values": [
+    "cu:tick_schedule/2",
+    "cu:tick_schedule/5",
+    "cu:tick_schedule/10",
+    "cu:tick_schedule/20",
+    "cu:tick_schedule/200",
+    "cu:tick_schedule/600",
+    "cu:tick_schedule/1200"
+  ]
+}

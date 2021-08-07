@@ -1,0 +1,1 @@
+schedule function #minecraft:1200_tick 1200t replace

@@ -1,0 +1,1 @@
+schedule function #minecraft:2_tick 2t replace

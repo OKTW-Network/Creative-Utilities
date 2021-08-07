@@ -1,0 +1,1 @@
+schedule function #minecraft:5_tick 5t replace
