@@ -1,0 +1,7 @@
+{
+    "condition": "minecraft:entity_properties",
+    "predicate": {
+        "nbt": "{PickupDelay:32767s}"
+    },
+    "entity":"this"
+}
