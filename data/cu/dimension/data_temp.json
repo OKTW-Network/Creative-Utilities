@@ -3,6 +3,7 @@
   "generator": {
     "seed": 0,
     "settings": {
+      "structure_overrides": [],
       "lakes": false,
       "features": false,
       "biome": "minecraft:the_void",

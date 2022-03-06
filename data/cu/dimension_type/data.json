@@ -13,5 +13,5 @@
   "piglin_safe": false,
   "respawn_anchor_works": false,
   "ultrawarm": false,
-  "infiniburn": "minecraft:logs_that_burn"
+  "infiniburn": "#minecraft:logs_that_burn"
 }
