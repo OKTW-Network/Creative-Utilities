@@ -10,8 +10,6 @@ scoreboard players operation #currently_*.*.x-* Version = @s VersionCUZ
 scoreboard players operation #currently_*.*.*-x Version = @s VersionCUA
 function cu:version/check
 
-execute if score #change Version matches 1 run function cu:debug/remove-init_tag
-
 scoreboard players operation @s VersionCUX = #cu$currently_version_x.*.*-* Meta
 scoreboard players operation @s VersionCUY = #cu$currently_version_*.x.*-* Meta
 scoreboard players operation @s VersionCUZ = #cu$currently_version_*.*.x-* Meta
