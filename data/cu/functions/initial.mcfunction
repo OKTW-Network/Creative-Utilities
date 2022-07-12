@@ -1,13 +1,9 @@
 function #cu:scoreboard-register
 function #cu:storage-register
-function #cu:bossbar-register
 
 function #cu:config
 
 function cu:check-version
-
-function cu:debug/stop_function
-function cu:debug/hide_bossbar
 
 # function cu:dimension/initial
 

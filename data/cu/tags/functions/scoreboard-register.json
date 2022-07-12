@@ -10,7 +10,6 @@
     "cu:library/meta/scoreboard/register",
     "cu:get/meta/scoreboard/register",
     "cu:item/meta/scoreboard/register",
-    "cu:compare/meta/scoreboard/register",
-    "cu:use_item_per_sec/meta/scoreboard/register"
+    "cu:compare/meta/scoreboard/register"
   ]
 }
