@@ -1,0 +1,46 @@
+[
+    {
+        "condition": "entity_properties",
+        "predicate": {
+            "equipment": {
+                "head": {
+                    "items": ["minecraft:diamond_helmet"]
+                }
+            }
+        },
+        "entity": "this"
+    },
+    {
+        "condition": "entity_properties",
+        "predicate": {
+            "equipment": {
+                "chest": {
+                    "items": ["minecraft:diamond_chestplate"]
+                }
+            }
+        },
+        "entity": "this"
+    },
+    {
+        "condition": "entity_properties",
+        "predicate": {
+            "equipment": {
+                "legs": {
+                    "items": ["minecraft:diamond_leggings"]
+                }
+            }
+        },
+        "entity": "this"
+    },
+    {
+        "condition": "entity_properties",
+        "predicate": {
+            "equipment": {
+                "feet": {
+                    "items": ["minecraft:diamond_boots"]
+                }
+            }
+        },
+        "entity": "this"
+    }
+]

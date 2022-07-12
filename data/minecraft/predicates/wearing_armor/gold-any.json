@@ -1,0 +1,49 @@
+{
+    "condition": "minecraft:alternative",
+    "terms": [
+        {
+            "condition": "entity_properties",
+            "predicate": {
+                "equipment": {
+                    "head": {
+                        "items": ["minecraft:golden_helmet"]
+                    }
+                }
+            },
+            "entity": "this"
+        },
+        {
+            "condition": "entity_properties",
+            "predicate": {
+                "equipment": {
+                    "chest": {
+                        "items": ["minecraft:golden_chestplate"]
+                    }
+                }
+            },
+            "entity": "this"
+        },
+        {
+            "condition": "entity_properties",
+            "predicate": {
+                "equipment": {
+                    "legs": {
+                        "items": ["minecraft:golden_leggings"]
+                    }
+                }
+            },
+            "entity": "this"
+        },
+        {
+            "condition": "entity_properties",
+            "predicate": {
+                "equipment": {
+                    "feet": {
+                        "items": ["minecraft:golden_boots"]
+                    }
+                }
+            },
+            "entity": "this"
+        }
+    ]
+}

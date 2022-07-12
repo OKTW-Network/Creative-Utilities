@@ -1,0 +1,11 @@
+{
+    "condition": "entity_properties",
+    "predicate": {
+        "equipment": {
+            "head": {
+                "items": ["minecraft:turtle_helmet"]
+            }
+        }
+    },
+    "entity": "this"
+}
