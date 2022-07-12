@@ -1,1 +1,1 @@
-scoreboard objectives add giveOwnerTimer dummy
+scoreboard objectives add cu.item.giveOwnerTimer dummy

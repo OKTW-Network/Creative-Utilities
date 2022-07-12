@@ -1,3 +1,3 @@
 function #minecraft:join_game
 
-scoreboard players set @s leaveGameCount 0
+scoreboard players set @s cu.trigger.leaveGameCounter 0

@@ -1,5 +1,5 @@
 {
     "values":[
-	    "cu:use_item_per_sec/use_item_request_manager"
+	    "cu:use_item_per_sec/handler-use_item"
     ]
 }

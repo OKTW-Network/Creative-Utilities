@@ -1,3 +1,3 @@
 function #minecraft:jump
 
-scoreboard players set @s jumpCount 0
+scoreboard players set @s cu.trigger.jumpCounter 0

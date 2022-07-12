@@ -1,3 +1,3 @@
-scoreboard players set #result listInclude 0
+scoreboard players set #list.result cu 0
 
-execute if data storage cu:list include.inputSource[0] run function cu:list/include/_loop
+execute if data storage cu:list include.inputSource[0] run function cu:list/include/_recursive

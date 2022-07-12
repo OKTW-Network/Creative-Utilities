@@ -1,7 +1,7 @@
-scoreboard players remove @s useItemTimer 1
+scoreboard players remove @s cu.trigger.useItemTimer 1
 
-tag @s[scores={useItemTimer=0}] remove cu.useItemTimer
+tag @s[scores={cu.trigger.useItemTimer=0}] remove cu.cu.trigger.useItemTimer
 
-execute if entity @s[scores={useItemTimer=0}] run function #minecraft:use_item-break
+execute if entity @s[scores={cu.trigger.useItemTimer=0}] run function #minecraft:use_item-break
 
-tag @s[scores={useItemTimer=0}] remove cu.usingItemContinuously
+tag @s[scores={cu.trigger.useItemTimer=0}] remove cu.usingItemContinuously

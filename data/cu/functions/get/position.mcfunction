@@ -1,3 +1,3 @@
-execute at @s run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["cu.getPosition"],Particle:"block air",Radius:0.125f,WaitTime:2147483647}
-data modify storage cu:get position set from entity @e[tag=cu.getPosition,limit=1] Pos
-kill @e[tag=cu.getPosition]
+execute at @s run summon minecraft:marker ~ ~ ~ {Tags:["cu.dummy.getPosition"]}
+data modify storage cu:get position set from entity @e[tag=cu.dummy.getPosition,limit=1] Pos
+kill @e[tag=cu.dummy.getPosition]

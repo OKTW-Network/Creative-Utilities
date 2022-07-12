@@ -1,2 +1,2 @@
 function cu:uuid/match/get-object
-execute if score #object0 UUIDMatch = #subject0 UUIDMatch if score #object1 UUIDMatch = #subject1 UUIDMatch if score #object2 UUIDMatch = #subject2 UUIDMatch if score #object3 UUIDMatch = #subject3 UUIDMatch run tag @s add UUIDMatch
+execute if score #UUID.match.object0 cu = #UUID.match.subject0 cu if score #UUID.match.object1 cu = #UUID.match.subject1 cu if score #UUID.match.object2 cu = #UUID.match.subject2 cu if score #UUID.match.object3 cu = #UUID.match.subject3 cu run tag @s add UUIDMatch
