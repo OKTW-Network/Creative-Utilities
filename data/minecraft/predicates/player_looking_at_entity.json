@@ -1,7 +1,8 @@
 {
     "condition": "minecraft:entity_properties",
     "predicate": {
-        "player": {
+        "type_specific": {
+            "type": "player",
             "looking_at": {}
         }
     },
