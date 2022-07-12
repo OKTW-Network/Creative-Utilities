@@ -2,15 +2,15 @@ gamerule maxCommandChainLength 2147483647
 
 scoreboard objectives add Config dummy
 
-datapack disable "file/Creative-utilities"
-datapack disable "file/Creative-utilities.zip"
+datapack disable "file/Creative-Utilities"
+datapack disable "file/Creative-Utilities.zip"
 
 execute store result score #cu$fileIsZip Meta run scoreboard players set #cu$fileType Meta 0
 
-execute if score #math$fileType Meta matches 1 store success score #cu$fileType Meta run datapack enable "file/Creative-utilities" after "file/Math-integration"
-execute if score #math$fileType Meta matches 0 store success score #cu$fileType Meta run datapack enable "file/Creative-utilities" after "file/Math-integration.zip"
-execute unless score #cu$fileType Meta matches 1 if score #math$fileType Meta matches 1 store success score #cu$fileIsZip Meta run datapack enable "file/Creative-utilities.zip" after "file/Math-integration"
-execute unless score #cu$fileType Meta matches 1 if score #math$fileType Meta matches 0 store success score #cu$fileIsZip Meta run datapack enable "file/Creative-utilities.zip" after "file/Math-integration.zip"
+execute if score #math$fileType Meta matches 1 store success score #cu$fileType Meta run datapack enable "file/Creative-Utilities" after "file/Math-Integration"
+execute if score #math$fileType Meta matches 0 store success score #cu$fileType Meta run datapack enable "file/Creative-Utilities" after "file/Math-Integration.zip"
+execute unless score #cu$fileType Meta matches 1 if score #math$fileType Meta matches 1 store success score #cu$fileIsZip Meta run datapack enable "file/Creative-Utilities.zip" after "file/Math-Integration"
+execute unless score #cu$fileType Meta matches 1 if score #math$fileType Meta matches 0 store success score #cu$fileIsZip Meta run datapack enable "file/Creative-Utilities.zip" after "file/Math-Integration.zip"
 
 function cu:dimension/initial
 
