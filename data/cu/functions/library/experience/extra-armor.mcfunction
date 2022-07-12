@@ -1,7 +1,7 @@
-scoreboard players set #precision random 3
-scoreboard players set #allowNegative random 0
+scoreboard players set #random.precision math 3
+scoreboard players set #random.allowNegative math 0
 function math:random/generate
-execute store result score #2 calcu_temp run data get storage math:random result
+scoreboard players operation #2 calcu_temp = #random.result math
 scoreboard players set #1 calcu_temp 3
 scoreboard players operation #1 calcu_temp *= #2 calcu_temp
 scoreboard players operation #1 calcu_temp /= #1000 num
