@@ -1,2 +1,2 @@
-tag @s[tag=!cu._tag.sneaking] add cu._tag.sneaking
+tag @s[tag=!cu._status.sneaking] add cu._status.sneaking
 function #minecraft:sneak-start

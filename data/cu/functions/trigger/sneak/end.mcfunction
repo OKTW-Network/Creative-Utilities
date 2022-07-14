@@ -1,2 +1,2 @@
-tag @s[tag=cu._tag.sneaking] remove cu._tag.sneaking
+tag @s[tag=cu._status.sneaking] remove cu._status.sneaking
 function #minecraft:sneak-end
