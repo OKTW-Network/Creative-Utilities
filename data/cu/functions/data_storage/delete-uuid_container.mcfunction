@@ -3,7 +3,7 @@ execute unless score #dataStorage.useScore cu matches 1 store result score #data
 execute unless score #dataStorage.useScore cu matches 1 store result score #dataStorage.input.UUID2 cu run data get storage cu:data_storage input[2]
 execute unless score #dataStorage.useScore cu matches 1 store result score #dataStorage.input.UUID3 cu run data get storage cu:data_storage input[3]
 
-execute as @e[tag=cu.dataStorage.container] if score @s dataUUID0 = #dataStorage.input.UUID0 cu if score @s dataUUID1 = #dataStorage.input.UUID1 cu if score @s dataUUID2 = #dataStorage.input.UUID2 cu if score @s dataUUID3 = #dataStorage.input.UUID3 cu run tag @s add cu.dataStorage.delete
+execute as @e[tag=cu.dataStorage.container] if score @s cu.dataStorage.UUID.0 = #dataStorage.input.UUID0 cu if score @s cu.dataStorage.UUID.1 = #dataStorage.input.UUID1 cu if score @s cu.dataStorage.UUID.2 = #dataStorage.input.UUID2 cu if score @s cu.dataStorage.UUID.3 = #dataStorage.input.UUID3 cu run tag @s add cu.dataStorage.delete
 execute store result score #dataStorage.result cu run kill @e[tag=cu.dataStorage.delete]
 
 scoreboard players operation #string.input cu = #dataStorage.result cu

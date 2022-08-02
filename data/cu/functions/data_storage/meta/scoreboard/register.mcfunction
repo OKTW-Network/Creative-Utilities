@@ -1,4 +1,4 @@
-scoreboard objectives add dataUUID0 dummy
-scoreboard objectives add dataUUID1 dummy
-scoreboard objectives add dataUUID2 dummy
-scoreboard objectives add dataUUID3 dummy
+scoreboard objectives add cu.dataStorage.UUID.0 dummy
+scoreboard objectives add cu.dataStorage.UUID.1 dummy
+scoreboard objectives add cu.dataStorage.UUID.2 dummy
+scoreboard objectives add cu.dataStorage.UUID.3 dummy
