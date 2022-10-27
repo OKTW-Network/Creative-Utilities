@@ -1,6 +1,5 @@
 {
     "values":[
-        "cu:check_and_run-main",
-        "workaround:main"
+        "cu:workaround/main"
     ]
 }

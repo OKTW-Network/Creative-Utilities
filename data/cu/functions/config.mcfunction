@@ -16,6 +16,20 @@ scoreboard players set #cu$print_init Config 0
 scoreboard players set #cu$print_config Config 0
 
 ############################################
+# Workaround                               #
+############################################
+
+  ########################################
+  # Load                                 #
+  ########################################
+
+# Lets the "load" run before the "tick" function tag and blocks/entities can be found in those stages.
+
+# Let "load" & "tick" starts to run in the same tick.
+# boolean, default: 0
+scoreboard players set #cu$workaround.tick.starts_early Config 0
+
+############################################
 # Accessibility                            #
 ############################################
 

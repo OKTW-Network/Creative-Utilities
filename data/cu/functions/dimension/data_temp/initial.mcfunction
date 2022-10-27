@@ -9,20 +9,12 @@ setblock 0 1 0 minecraft:shulker_box keep
 kill @e[tag=cu.itemStorageTemp.1]
 summon minecraft:marker 0 1 0 {Tags:["cu.itemStorageTemp.1"]}
 
-setblock 1 1 0 minecraft:shulker_box keep
-kill @e[tag=cu.itemStorageTemp.2]
-summon minecraft:marker 1 1 0 {Tags:["cu.itemStorageTemp.2"]}
-
 setblock 0 1 1 minecraft:oak_sign keep
 kill @e[tag=cu.stringConverter]
 summon minecraft:marker 0 1 1 {Tags:["cu.stringConverter"]}
 
 kill @e[tag=cu.dataStorage.base]
 summon minecraft:marker 0 1 2 {Tags:["cu.dataStorage.base"]}
-
-# Clean up
-kill @e[tag=cu.itemStorageTemp.block]
-kill @e[tag=cu.itemStorageTemp.entity]
 
 # Blank area
 fill 0 80 0 16 80 16 minecraft:bedrock replace
