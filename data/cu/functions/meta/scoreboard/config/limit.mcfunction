@@ -1,6 +1,4 @@
-execute unless score #cu$print_version Config matches 0..2 run scoreboard players set #cu$print_version Config 2
-execute unless score #cu$print_init Config matches 0..1 run scoreboard players set #cu$print_init Config 0
-execute unless score #cu$print_config Config matches 0..1 run scoreboard players set #cu$print_config Config 0
+execute unless score #cu$general.print_version Config matches 0..2 run scoreboard players set #cu$general.print_version Config 2
 
 execute unless score #cu$workaround.tick.starts_early Config matches 0..1 run scoreboard players set #cu$workaround.tick.starts_early Config 0
 
