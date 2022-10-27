@@ -1,7 +1,5 @@
 gamerule maxCommandChainLength 2147483647
 
-scoreboard objectives add Config dummy
-
 datapack disable "file/Creative-Utilities"
 datapack disable "file/Creative-Utilities.zip"
 

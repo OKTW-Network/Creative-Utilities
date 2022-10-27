@@ -1,6 +1,8 @@
 {
   "values": [
+    "cu:meta/scoreboard/config/register",
     "cu:config",
+    "cu:meta/scoreboard/config/limit",
     "cu:meta/broadcast/config"
   ]
 }
