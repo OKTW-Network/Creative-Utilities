@@ -1,6 +1,6 @@
 scoreboard players set #cu$dependency_missing Meta 0
 
-execute store success score #cu$dependency-math Meta run function math:version
+execute store success score #cu$dependency-math Meta run function math:meta/exist
 
 execute if score #cu$dependency-math Meta matches 0 run scoreboard players set #cu$dependency_missing Meta 1
 
