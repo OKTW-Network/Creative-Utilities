@@ -1,5 +1,4 @@
 function #cu:scoreboard-register
-function #cu:storage-register
 
 function cu:check-version
 
