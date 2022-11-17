@@ -5,6 +5,7 @@
     "minecraft:zombified_piglin",
     "minecraft:husk",
     "minecraft:drowned",
-    "minecraft:zombie_horse"
+    "minecraft:zombie_horse",
+    "minecraft:zoglin"
   ]
 }

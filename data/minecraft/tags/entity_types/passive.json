@@ -27,6 +27,9 @@
     "minecraft:wandering_trader",
     "minecraft:strider",
     "minecraft:axolotl",
-    "minecraft:glow_squid"
+    "minecraft:glow_squid",
+    "minecraft:allay",
+    "minecraft:frog",
+    "minecraft:tadpole"
   ]
 }
