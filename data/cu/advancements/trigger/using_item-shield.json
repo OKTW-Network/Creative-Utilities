@@ -1,0 +1,23 @@
+{
+    "display": {
+        "icon": {"item": "minecraft:barrier"},
+        "title": {"text":"using_item-shield"},
+        "description": {"text":""},
+		"background": "minecraft:textures/block/command_block_back.png",
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "criteria": {
+        "interacted_with_galaxy_custom_entity": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "item": {
+                    "items": ["minecraft:shield"]
+                }
+            }
+        }
+    },
+    "rewards": {
+		"function": "cu:trigger/shield/update_status"
+    }
+}
