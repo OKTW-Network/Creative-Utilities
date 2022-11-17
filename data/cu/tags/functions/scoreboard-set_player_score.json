@@ -1,6 +1,5 @@
 {
   "values": [
-    "cu:trigger/meta/scoreboard/set_player_score",
-    "cu:library/meta/scoreboard/set_player_score"
+    "cu:trigger/meta/scoreboard/set_player_score"
   ]
 }
