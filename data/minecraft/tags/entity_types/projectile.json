@@ -1,7 +1,7 @@
 {
   "values": [
     "minecraft:egg",
-    "minecraft:arrow",
+    "#minecraft:arrow",
     "minecraft:snowball",
     "minecraft:fireball",
     "minecraft:small_fireball",
@@ -11,9 +11,9 @@
     "minecraft:experience_bottle",
     "minecraft:wither_skull",
     "minecraft:firework_rocket",
-    "minecraft:spectral_arrow",
     "minecraft:shulker_bullet",
     "minecraft:dragon_fireball",
-    "minecraft:llama_spit"
+    "minecraft:llama_spit",
+    "minecraft:trident"
   ]
 }
