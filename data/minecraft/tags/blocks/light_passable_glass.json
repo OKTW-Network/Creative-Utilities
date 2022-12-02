@@ -1,7 +1,6 @@
 {
   "values": [
     "#minecraft:stained_glass",
-    "minecraft:glass",
-    "minecraft:tinted_glass"
+    "minecraft:glass"
   ]
 }

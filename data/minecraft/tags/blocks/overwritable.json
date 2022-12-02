@@ -1,23 +1,23 @@
 {
-    "values": [
-        "minecraft:air",
-        "minecraft:cave_air",
-        "minecraft:void_air",
-        "minecraft:light",
-        "#minecraft:fire",
-        "minecraft:snow",
-        "minecraft:grass",
-        "minecraft:fern",
-        "minecraft:tall_grass",
-        "minecraft:large_fern",
-        "minecraft:dead_bush",
-        "minecraft:vine",
-        "minecraft:crimson_roots",
-        "minecraft:warped_roots",
-        "minecraft:nether_sprouts",
-        "minecraft:hanging_roots",
-        "minecraft:glow_lichen",
-        "minecraft:water",
-        "minecraft:lava"
-    ]
+  "values": [
+    "#minecraft:air",
+    "minecraft:light",
+    "minecraft:structure_void",
+    "#minecraft:fire",
+    "minecraft:snow",
+    "minecraft:grass",
+    "minecraft:fern",
+    "minecraft:tall_grass",
+    "minecraft:large_fern",
+    "minecraft:dead_bush",
+    "minecraft:vine",
+    "minecraft:crimson_roots",
+    "minecraft:warped_roots",
+    "minecraft:nether_sprouts",
+    "minecraft:hanging_roots",
+    "minecraft:glow_lichen",
+    "minecraft:sculk_vein",
+    "#minecraft:fluid",
+    "minecraft:bubble_column"
+  ]
 }
