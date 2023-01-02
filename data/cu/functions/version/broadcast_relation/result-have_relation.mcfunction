@@ -13,6 +13,6 @@ execute if score #version.broadcast_relation.result.diff cu matches 4 run data m
 execute if score #version.broadcast_relation.result.diff cu matches -4 run data modify storage cu:temp version.broadcast_relation.arrow set value '{"text":" -> ","color":"aqua"}'
 execute if score #version.broadcast_relation.result.diff cu matches 5 run data modify storage cu:temp version.broadcast_relation.arrow set value '{"text":" -> ","color":"blue"}'
 
-data modify storage cu:string toStatic.input set value '[{"nbt":"version.broadcast_relation.static_2","storage":"cu:temp","interpret":true},{"nbt":"version.broadcast_relation.arrow","storage":"cu:temp","interpret":true},{"nbt":"version.broadcast_relation.static_1","storage":"cu:temp","interpret":true}]'
+data modify storage cu:string toStatic.input set value '[{"text":"Version: "},{"nbt":"version.broadcast_relation.static_2","storage":"cu:temp","interpret":true},{"nbt":"version.broadcast_relation.arrow","storage":"cu:temp","interpret":true},{"nbt":"version.broadcast_relation.static_1","storage":"cu:temp","interpret":true}]'
 function cu:string/convert_to-static
 data modify storage cu:version broadcast_relation.result.message set from storage cu:string toStatic.result
