@@ -4,5 +4,5 @@ scoreboard players operation #string.input cu = #dataStorage.result cu
 function cu:string/plural
 tag @s[type=minecraft:player] add self
 tellraw @s[tag=self] ["Deleted ",{"score":{"name":"#dataStorage.result","objective":"cu"}}," data container",{"nbt":"plural.result","storage":"cu:string","interpret":false}]
-tellraw @a[tag=!self,tag=cu._tag.debugView] [{"selector":"@s"}," >>> Deleted ",{"score":{"name":"#dataStorage.result","objective":"cu"}}," data container",{"nbt":"plural.result","storage":"cu:string","interpret":false}]
+tellraw @a[tag=!self,tag=cu._tag.listenDebugMessage] [{"selector":"@s"}," >>> Deleted ",{"score":{"name":"#dataStorage.result","objective":"cu"}}," data container",{"nbt":"plural.result","storage":"cu:string","interpret":false}]
 tag @s[type=minecraft:player] remove self
