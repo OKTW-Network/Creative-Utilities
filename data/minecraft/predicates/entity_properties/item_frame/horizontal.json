@@ -1,0 +1,20 @@
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:entity_properties",
+      "predicate": {
+        "nbt": "{Facing:0b}"
+      },
+      "entity":"this"
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "predicate": {
+        "nbt": "{Facing:1b}"
+      },
+      "entity":"this"
+    }
+  ]
+}
+

@@ -7,30 +7,30 @@ execute if entity @s[type=minecraft:fox] run data modify storage cu:library expe
 
 # Axolotl/Bee/Cat/Ocelot/Chicken/Cod/Salmon/Pufferfish/Tropical Fish/Cow/Horse/Llama/Trader Llama/Mooshroom/Panda/Parrot/Pig/Polar Bear/Rabbit/Sheep/Goat/Squid/Glow Squid/Turtle/Wolf/baby Wolf
 scoreboard players set #library.experience._is_target cu 0
-execute if entity @s[type=minecraft:axolotl,predicate=!minecraft:is_baby] run scoreboard players set #library.experience._is_target cu 1
-execute if entity @s[type=minecraft:bee,predicate=!minecraft:is_baby] run scoreboard players set #library.experience._is_target cu 1
-execute if entity @s[type=minecraft:cat,predicate=!minecraft:is_baby] run scoreboard players set #library.experience._is_target cu 1
+execute if entity @s[type=minecraft:axolotl,predicate=!minecraft:entity_properties/is_baby] run scoreboard players set #library.experience._is_target cu 1
+execute if entity @s[type=minecraft:bee,predicate=!minecraft:entity_properties/is_baby] run scoreboard players set #library.experience._is_target cu 1
+execute if entity @s[type=minecraft:cat,predicate=!minecraft:entity_properties/is_baby] run scoreboard players set #library.experience._is_target cu 1
 execute if entity @s[type=minecraft:frog] run scoreboard players set #library.experience._is_target cu 1
-execute if entity @s[type=minecraft:ocelot,predicate=!minecraft:is_baby] run scoreboard players set #library.experience._is_target cu 1
-execute if entity @s[type=minecraft:chicken,predicate=!minecraft:is_baby,nbt=!{IsChickenJockey:1b}] run scoreboard players set #library.experience._is_target cu 1
+execute if entity @s[type=minecraft:ocelot,predicate=!minecraft:entity_properties/is_baby] run scoreboard players set #library.experience._is_target cu 1
+execute if entity @s[type=minecraft:chicken,predicate=!minecraft:entity_properties/is_baby,nbt=!{IsChickenJockey:1b}] run scoreboard players set #library.experience._is_target cu 1
 execute if entity @s[type=minecraft:cod] run scoreboard players set #library.experience._is_target cu 1
 execute if entity @s[type=minecraft:salmon] run scoreboard players set #library.experience._is_target cu 1
 execute if entity @s[type=minecraft:pufferfish] run scoreboard players set #library.experience._is_target cu 1
 execute if entity @s[type=minecraft:tropical_fish] run scoreboard players set #library.experience._is_target cu 1
-execute if entity @s[type=minecraft:cow,predicate=!minecraft:is_baby] run scoreboard players set #library.experience._is_target cu 1
-execute if entity @s[type=minecraft:horse,predicate=!minecraft:is_baby] run scoreboard players set #library.experience._is_target cu 1
-execute if entity @s[type=minecraft:llama,predicate=!minecraft:is_baby] run scoreboard players set #library.experience._is_target cu 1
-execute if entity @s[type=minecraft:mooshroom,predicate=!minecraft:is_baby] run scoreboard players set #library.experience._is_target cu 1
-execute if entity @s[type=minecraft:panda,predicate=!minecraft:is_baby] run scoreboard players set #library.experience._is_target cu 1
-execute if entity @s[type=minecraft:parrot,predicate=!minecraft:is_baby] run scoreboard players set #library.experience._is_target cu 1
-execute if entity @s[type=minecraft:pig,predicate=!minecraft:is_baby] run scoreboard players set #library.experience._is_target cu 1
-execute if entity @s[type=minecraft:polar_bear,predicate=!minecraft:is_baby] run scoreboard players set #library.experience._is_target cu 1
-execute if entity @s[type=minecraft:rabbit,predicate=!minecraft:is_baby] run scoreboard players set #library.experience._is_target cu 1
-execute if entity @s[type=minecraft:sheep,predicate=!minecraft:is_baby] run scoreboard players set #library.experience._is_target cu 1
-execute if entity @s[type=minecraft:goat,predicate=!minecraft:is_baby] run scoreboard players set #library.experience._is_target cu 1
+execute if entity @s[type=minecraft:cow,predicate=!minecraft:entity_properties/is_baby] run scoreboard players set #library.experience._is_target cu 1
+execute if entity @s[type=minecraft:horse,predicate=!minecraft:entity_properties/is_baby] run scoreboard players set #library.experience._is_target cu 1
+execute if entity @s[type=minecraft:llama,predicate=!minecraft:entity_properties/is_baby] run scoreboard players set #library.experience._is_target cu 1
+execute if entity @s[type=minecraft:mooshroom,predicate=!minecraft:entity_properties/is_baby] run scoreboard players set #library.experience._is_target cu 1
+execute if entity @s[type=minecraft:panda,predicate=!minecraft:entity_properties/is_baby] run scoreboard players set #library.experience._is_target cu 1
+execute if entity @s[type=minecraft:parrot,predicate=!minecraft:entity_properties/is_baby] run scoreboard players set #library.experience._is_target cu 1
+execute if entity @s[type=minecraft:pig,predicate=!minecraft:entity_properties/is_baby] run scoreboard players set #library.experience._is_target cu 1
+execute if entity @s[type=minecraft:polar_bear,predicate=!minecraft:entity_properties/is_baby] run scoreboard players set #library.experience._is_target cu 1
+execute if entity @s[type=minecraft:rabbit,predicate=!minecraft:entity_properties/is_baby] run scoreboard players set #library.experience._is_target cu 1
+execute if entity @s[type=minecraft:sheep,predicate=!minecraft:entity_properties/is_baby] run scoreboard players set #library.experience._is_target cu 1
+execute if entity @s[type=minecraft:goat,predicate=!minecraft:entity_properties/is_baby] run scoreboard players set #library.experience._is_target cu 1
 execute if entity @s[type=minecraft:squid] run scoreboard players set #library.experience._is_target cu 1
 execute if entity @s[type=minecraft:glow_squid] run scoreboard players set #library.experience._is_target cu 1
-execute if entity @s[type=minecraft:turtle,predicate=!minecraft:is_baby] run scoreboard players set #library.experience._is_target cu 1
+execute if entity @s[type=minecraft:turtle,predicate=!minecraft:entity_properties/is_baby] run scoreboard players set #library.experience._is_target cu 1
 execute if entity @s[type=minecraft:wolf] run scoreboard players set #library.experience._is_target cu 1
 execute if score #library.experience._is_target cu matches 1 run data modify storage cu:library experience.result set value [1,3]
 
