@@ -1,4 +1,4 @@
-function cu:item/replaceitem/_return/store-armor_set
+function cu:item/replaceitem/_return/store/armor_set
 
 item replace entity @s weapon.offhand with minecraft:air
 function cu:item/replaceitem/_data_temp_storage
