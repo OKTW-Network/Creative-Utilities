@@ -1,0 +1,13 @@
+{
+  "values": [
+    "minecraft:daylight_detector",
+    "minecraft:dirt_path",
+    "minecraft:enchanting_table",
+    "minecraft:end_portal_frame",
+    "minecraft:farmland",
+    "minecraft:lectern",
+    "minecraft:sculk_sensor",
+    "minecraft:snow",
+    "minecraft:stonecutter"
+  ]
+}

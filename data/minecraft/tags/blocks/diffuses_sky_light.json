@@ -1,0 +1,12 @@
+{
+  "values": [
+    "minecraft:water",
+    "minecraft:lava",
+    "minecraft:ice",
+    "#minecraft:leaves",
+    "minecraft:slime_block",
+    "minecraft:honey_block",
+    "minecraft:cobweb",
+    "minecraft:end_gateway"
+  ]
+}

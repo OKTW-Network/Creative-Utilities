@@ -52,12 +52,13 @@
     "minecraft:brewing_stand",
     "#minecraft:cakes",
     "#minecraft:candles",
-    "#minecraft:cauldrons",
     "#minecraft:amethyst_buds",
     "minecraft:amethyst_cluster",
     "minecraft:pointed_dripstone",
     "minecraft:sculk_sensor",
     "minecraft:frogspawn",
-    "minecraft:sculk_shrieker"
+    "minecraft:sculk_shrieker",
+    "#minecraft:beds",
+    "minecraft:powder_snow"
   ]
 }
