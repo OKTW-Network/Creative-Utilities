@@ -1,5 +1,3 @@
-execute as @e[tag=cu.haveOwner,scores={cu.item.giveOwnerTimer=1..}] run function cu:item/item_entity/owner_timer/main
-
 execute as @a at @s run function cu:trigger/health
 execute as @a at @s run function cu:trigger/awake
 execute as @a at @s run function cu:trigger/sleeping
