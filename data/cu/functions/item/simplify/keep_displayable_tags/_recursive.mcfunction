@@ -13,6 +13,6 @@ execute unless score #item.simplify.keep_displayable_tags.dropAuthor cu matches 
 execute unless score #item.simplify.keep_displayable_tags.dropCanDestroy cu matches 1 if data storage cu:item simplify.keep_displayable_tags.items[0].tag.CanDestroy run data modify storage cu:item simplify.keep_displayable_tags._tags.CanDestroy set from storage cu:item simplify.keep_displayable_tags.items[0].tag.CanDestroy
 execute unless score #item.simplify.keep_displayable_tags.dropCanPlaceOn cu matches 1 if data storage cu:item simplify.keep_displayable_tags.items[0].tag.CanPlaceOn run data modify storage cu:item simplify.keep_displayable_tags._tags.CanPlaceOn set from storage cu:item simplify.keep_displayable_tags.items[0].tag.CanPlaceOn
 data modify storage cu:item simplify.keep_displayable_tags.items[0].tag set from storage cu:item simplify.keep_displayable_tags._tags
-data modify storage cu:item simplify.result append from storage cu:item simplify.keep_displayable_tags.items[0]
+data modify storage cu:item simplify.keep_displayable_tags.result append from storage cu:item simplify.keep_displayable_tags.items[0]
 data remove storage cu:item simplify.keep_displayable_tags.items[0]
 execute if data storage cu:item simplify.keep_displayable_tags.items[0] run function cu:item/simplify/keep_displayable_tags/_recursive
