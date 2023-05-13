@@ -1,4 +1,5 @@
 data remove storage cu:item simplify.keep_displayable_tags.result
+execute unless score #item.simplify.keep_displayable_tags.keepHideFlags cu matches -2147483648..2147483647 run scoreboard players set #item.simplify.keep_displayable_tags.keepHideFlags cu 0
 execute unless score #item.simplify.keep_displayable_tags.dropCustomModelData cu matches -2147483648..2147483647 run scoreboard players set #item.simplify.keep_displayable_tags.dropCustomModelData cu 0
 execute unless score #item.simplify.keep_displayable_tags.dropDisplayName cu matches -2147483648..2147483647 run scoreboard players set #item.simplify.keep_displayable_tags.dropDisplayName cu 0
 execute unless score #item.simplify.keep_displayable_tags.dropDisplayLore cu matches -2147483648..2147483647 run scoreboard players set #item.simplify.keep_displayable_tags.dropDisplayLore cu 0
@@ -14,7 +15,9 @@ execute unless score #item.simplify.keep_displayable_tags.dropCanDestroy cu matc
 execute unless score #item.simplify.keep_displayable_tags.dropCanPlaceOn cu matches -2147483648..2147483647 run scoreboard players set #item.simplify.keep_displayable_tags.dropCanPlaceOn cu 0
 execute if data storage cu:item simplify.keep_displayable_tags.items[0] run function cu:item/simplify/keep_displayable_tags/_recursive
 
+data remove storage cu:item simplify.keep_displayable_tags.items
 data remove storage cu:item simplify.keep_displayable_tags._tags
+scoreboard players reset #item.simplify.keep_displayable_tags.keepHideFlags cu
 scoreboard players reset #item.simplify.keep_displayable_tags.dropCustomModelData cu
 scoreboard players reset #item.simplify.keep_displayable_tags.dropDisplayName cu
 scoreboard players reset #item.simplify.keep_displayable_tags.dropDisplayLore cu
