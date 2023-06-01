@@ -15,10 +15,9 @@ scoreboard players set #cu$general.print_version Config 2
   # Use item                             #
   ########################################
 
-# For cu, this only means [Use] the "carrot on a stick".
+# For cu, this only means [Use] the "minecraft:carrot_on_a_stick".
 # [Use] means the control button "Use Item/Place Block" in the game.
 
-# Double click timeout
-# The clicks between ticks will count as successful double click.
-# interger, 1 ~ 20, tick, default: 8
-scoreboard players set #cu$trigger.use_item.double_click_timeout Config 8
+# Recorder timeout
+# interger, 1 ~ 72000, tick, default: 1200
+scoreboard players set #cu$trigger.use_item.record_timeout Config 1200

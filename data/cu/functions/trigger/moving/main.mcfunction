@@ -23,5 +23,5 @@ execute if entity @s[scores={cu.trigger.moving.rideStrider=1..}] run function cu
 execute if entity @s[scores={cu.trigger.moving.rideBoat=1..}] run function cu:trigger/moving/tag/ride_boat
 execute if entity @s[scores={cu.trigger.moving.rideMinecart=1..}] run function cu:trigger/moving/tag/ride_minecart
 
-execute if score #trigger.moving cu matches 1 if entity @s[tag=!cu._status.moving] run function #minecraft:moving-end
-execute if score #trigger.moving cu matches 0 if entity @s[tag=cu._status.moving] run function #minecraft:moving-start
+execute if score #trigger.moving cu matches 1 if entity @s[tag=!cu._status.moving] run tag @s add cu._task.trigger.moving_end
+execute if score #trigger.moving cu matches 0 if entity @s[tag=cu._status.moving] run tag @s add cu._task.trigger.moving_start

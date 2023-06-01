@@ -1,2 +1,2 @@
 tag @s add cu._status.shieldReady
-function #minecraft:shield-ready
+tag @s add cu._task.trigger.shield_ready

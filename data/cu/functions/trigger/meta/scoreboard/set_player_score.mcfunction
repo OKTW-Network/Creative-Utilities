@@ -1,9 +1,9 @@
 scoreboard players remove @s cu.trigger.jumpCounter 0
 
 scoreboard players remove @s cu.trigger.useItemCounter 0
-scoreboard players remove @s cu.trigger.useItemTimer 0
+scoreboard players remove @s cu.trigger.useItemRecord 0
 
-scoreboard players remove @s cu.trigger.useShieldCounter 0
+scoreboard players remove @s cu.trigger.usingShieldCounter 0
 
 scoreboard players remove @s cu.trigger.moving.walk 0
 scoreboard players remove @s cu.trigger.moving.walkOnWater 0
