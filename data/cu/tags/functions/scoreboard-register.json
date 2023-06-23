@@ -1,7 +1,6 @@
 {
   "values": [
     "cu:meta/scoreboard/register",
-    "cu:data_storage/meta/scoreboard/register",
     "cu:trigger/meta/scoreboard/register"
   ]
 }

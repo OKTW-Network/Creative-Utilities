@@ -13,7 +13,6 @@ setblock 0 1 1 minecraft:oak_sign keep
 kill @e[tag=cu.stringConverter]
 summon minecraft:marker 0 1 1 {Tags:["cu.stringConverter"]}
 
-kill @e[tag=cu.dataStorage.base]
-summon minecraft:marker 0 1 2 {Tags:["cu.dataStorage.base"]}
+function cu:data_storage/create_base
 
 fill 0 8 0 15 8 15 minecraft:bedrock replace
