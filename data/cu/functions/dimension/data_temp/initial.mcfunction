@@ -2,8 +2,8 @@ forceload add 0 0
 fill 0 0 0 15 0 15 minecraft:bedrock replace
 
 setblock 0 0 0 minecraft:barrel{Items:[{Slot:13b,id:"minecraft:barrier",Count:1b,tag:{CustomData:{cu:{id:"data_temp"}}}}]} replace
-kill @e[tag=cu.data_temp]
-summon minecraft:marker 0 0 0 {Tags:["cu.data_temp"]}
+kill @e[tag=cu.dimension.data_temp]
+summon minecraft:marker 0 0 0 {Tags:["cu.dimension.data_temp"]}
 
 setblock 0 1 0 minecraft:shulker_box keep
 kill @e[tag=cu.itemStorageTemp.1]
