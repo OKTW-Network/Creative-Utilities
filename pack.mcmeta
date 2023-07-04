@@ -1,6 +1,6 @@
 {
   "pack": {
-    "pack_format": 9,
-    "description": "Author: bill96012"
+    "pack_format": 12,
+    "description": "Provide utilities for Minecraft data pack development"
   }
 }
