@@ -8,7 +8,7 @@
         "announce_to_chat": false
     },
     "criteria": {
-        "interacted_with_galaxy_custom_entity": {
+        "using_shield": {
             "trigger": "minecraft:using_item",
             "conditions": {
                 "item": {
