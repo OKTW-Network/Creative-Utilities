@@ -1,5 +1,6 @@
 execute if score #cu$general.print_version Config matches 1..2 run function cu:broadcast_version
 
+function cu:version
 scoreboard players operation #cu$previous_version.x Meta = #cu$current_version.x Meta
 scoreboard players operation #cu$previous_version.y Meta = #cu$current_version.y Meta
 scoreboard players operation #cu$previous_version.z Meta = #cu$current_version.z Meta
