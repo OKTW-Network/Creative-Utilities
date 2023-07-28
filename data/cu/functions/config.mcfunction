@@ -2,9 +2,12 @@
 # General                                  #
 ############################################
 
-# Allow version prompt print out while initializing
-# 0 = don't print anything, 1 = only print while version changed, 2 = always print version when /reload
-# integer, default: 2
+# Print version on initializing
+# integer, 0 ~ 2, default: 2
+# values:
+#  0: Do not print anything.
+#  1: Only print if the version changed.
+#  2: Always.
 scoreboard players set #cu$general.print_version Config 2
 
 ############################################
