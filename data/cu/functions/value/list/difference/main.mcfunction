@@ -1,5 +1,5 @@
-execute unless score #value.list.difference.method cu matches -2147483648..2147483647 run scoreboard players set #value.list.difference.method cu 0
-execute unless score #value.list.difference.differentMethod cu matches -2147483648..2147483647 run scoreboard players set #value.list.difference.differentMethod cu 0
+execute unless score #value.list.difference.method cu matches 0..2 run scoreboard players set #value.list.difference.method cu 0
+execute unless score #value.list.difference.differentMethod cu matches 0..2 run scoreboard players set #value.list.difference.differentMethod cu 0
 data remove storage cu:value list.difference.result
 scoreboard players set #value.list.difference._excessInput cu 0
 scoreboard players set #value.list.difference._excessCount cu 0

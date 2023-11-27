@@ -1,5 +1,5 @@
 data modify storage cu:value digit.sequence.result set value []
-execute unless score #value.digit.sequence.method cu matches -2147483648..2147483647 run scoreboard players set #value.digit.sequence.method cu 0
+execute unless score #value.digit.sequence.method cu matches 0..2 run scoreboard players set #value.digit.sequence.method cu 0
 execute unless score #value.digit.sequence.origin cu matches -2147483648..2147483647 run scoreboard players set #value.digit.sequence.origin cu 0
 execute unless score #value.digit.sequence.value cu matches -2147483648..2147483647 run scoreboard players set #value.digit.sequence.value cu 0
 execute unless score #value.digit.sequence.count cu matches -2147483648..2147483647 run scoreboard players set #value.digit.sequence.count cu 0
