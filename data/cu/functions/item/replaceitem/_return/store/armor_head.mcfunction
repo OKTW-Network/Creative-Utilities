@@ -1,4 +1,3 @@
 data remove storage cu:item replaceitem._return.armorHead
-data modify storage cu:get item set value []
 function cu:entity/get/head_armor
-execute if data storage cu:get item[0] run data modify storage cu:item replaceitem._return.armorHead set from storage cu:get item[0]
+data modify storage cu:item replaceitem._return.armorHead set from storage cu:entity get.head_armor.result
