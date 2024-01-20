@@ -1,4 +1,4 @@
-# 1.19.4
+# 1.20.4
 execute if score #entity.damage_reduction.damage cu matches 10000000.. run scoreboard players set #entity.damage_reduction.damage cu 9999999
 execute unless score #entity.damage_reduction.damage cu matches 0..9999999 run scoreboard players set #entity.damage_reduction.damage cu 0
 execute unless score #entity.damage_reduction.ignoreArmorPercent cu matches 0..100 run scoreboard players set #entity.damage_reduction.ignoreArmorPercent cu 0
@@ -11,7 +11,7 @@ execute unless score #entity.damage_reduction.damageType.fall cu matches 0..1 ru
 
 execute unless score #entity.damage_reduction.ignoreArmorPercent cu matches 100 run function cu:entity/damage_reduction/armor
 execute unless score #entity.damage_reduction.ignoreEnchantmentPercent cu matches 100 run function cu:entity/damage_reduction/armor_enchantment/main
-execute unless score #entity.damage_reduction.ignoreResistanceEffect cu matches 100 if data entity @s ActiveEffects[{Id:11}] run function cu:entity/damage_reduction/resistance_effect
+execute unless score #entity.damage_reduction.ignoreResistanceEffect cu matches 100 if data entity @s active_effects[{id:"minecraft:resistance"}] run function cu:entity/damage_reduction/resistance_effect
 
 scoreboard players operation #entity.damage_reduction.result cu = #entity.damage_reduction.damage cu
 
