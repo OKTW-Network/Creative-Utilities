@@ -4,4 +4,4 @@ scoreboard players set #value.list.index.end cu 0
 scoreboard players set #value.list.index.arrange cu 1
 scoreboard players set #value.list.index.circular cu 1
 function cu:value/list/index/main
-tellraw @a [{"nbt":"list.index.result","storage":"cu:value","interpret":false}]
+tellraw @a [{"nbt":"list.index.result","storage":"cu:value"}]
