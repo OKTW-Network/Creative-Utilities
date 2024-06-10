@@ -35,7 +35,7 @@ tag @s[tag=cu._task.trigger.using_shield_start] remove cu._task.trigger.using_sh
 execute if entity @s[tag=cu._task.trigger.shield_ready] run function #minecraft:shield_ready
 tag @s[tag=cu._task.trigger.shield_ready] remove cu._task.trigger.shield_ready
 
-execute if score @s cu.trigger.useItemRecord matches 0..2147483647 run function cu:trigger/use_item/record
+execute if score @s cu.trigger.useItemRecord matches 0.. run function cu:trigger/use_item/record
 execute if score @s cu.trigger.useItemCounter matches 1.. run function cu:trigger/use_item/main
 execute if score @s cu.trigger.jumpCounter matches 1.. run function cu:trigger/jump
 execute if score @s cu.trigger.leaveGameCounter matches 1.. run function cu:trigger/join_game
