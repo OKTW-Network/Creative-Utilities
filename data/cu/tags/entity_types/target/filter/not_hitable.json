@@ -4,6 +4,6 @@
     "minecraft:marker",
     "#minecraft:displays",
     "#minecraft:drops",
-    "#minecraft:projectile/hitable"
+    "#minecraft:projectile/not_hitable"
   ]
 }
