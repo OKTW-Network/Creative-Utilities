@@ -8,9 +8,9 @@ scoreboard players remove #value.list.index._listIndexMax cu 1
 execute if score #value.list.index.start cu matches ..-1 store result score #value.list.index.start cu run scoreboard players operation #value.list.index._listLength1 cu -= #value.list.index.start cu
 execute if score #value.list.index.end cu matches ..-1 store result score #value.list.index.end cu run scoreboard players operation #value.list.index._listLength2 cu -= #value.list.index.end cu
 scoreboard players operation #value.list.index.start cu < #value.list.index._listIndexMax cu
-scoreboard players operation #value.list.index.start cu > #0 num
+execute if score #value.list.index.start cu matches ..-1 run scoreboard players set #value.list.index.start cu 0
 scoreboard players operation #value.list.index.end cu < #value.list.index._listIndexMax cu
-scoreboard players operation #value.list.index.end cu > #0 num
+execute if score #value.list.index.end cu matches ..-1 run scoreboard players set #value.list.index.end cu 0
 scoreboard players operation #value.list.index._min cu = #value.list.index.start cu
 scoreboard players operation #value.list.index._min cu < #value.list.index.end cu
 scoreboard players operation #value.list.index._max cu = #value.list.index.start cu

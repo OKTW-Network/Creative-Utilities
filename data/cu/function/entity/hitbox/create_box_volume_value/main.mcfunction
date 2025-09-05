@@ -13,37 +13,40 @@ scoreboard players operation #entity.hitbox.create_volume_value.sizeY cu < #2 te
 scoreboard players operation #entity.hitbox.create_volume_value.sizeZ cu > #1 temp
 scoreboard players operation #entity.hitbox.create_volume_value.sizeZ cu < #2 temp
 
+scoreboard players set #1 temp 10
+scoreboard players set #2 temp 2
+scoreboard players set #3 temp -1
 scoreboard players operation #entity.hitbox.create_volume_value.anchor1.offsetX cu = #entity.hitbox.create_volume_value.sizeX cu
-scoreboard players operation #entity.hitbox.create_volume_value.anchor1.offsetX cu *= #10 num
-scoreboard players operation #entity.hitbox.create_volume_value.anchor1.offsetX cu /= #2 num
-scoreboard players operation #entity.hitbox.create_volume_value.anchor1.offsetX cu *= #-1 num
+scoreboard players operation #entity.hitbox.create_volume_value.anchor1.offsetX cu *= #1 temp
+scoreboard players operation #entity.hitbox.create_volume_value.anchor1.offsetX cu /= #2 temp
+scoreboard players operation #entity.hitbox.create_volume_value.anchor1.offsetX cu *= #3 temp
 scoreboard players operation #entity.hitbox.create_volume_value.anchor2.offsetX cu = #entity.hitbox.create_volume_value.anchor1.offsetX cu
 execute if score #entity.hitbox.create_volume_value.sizeX cu matches ..999 run scoreboard players add #entity.hitbox.create_volume_value.anchor2.offsetX cu 10000
-execute if score #entity.hitbox.create_volume_value.sizeX cu matches ..999 run scoreboard players operation #entity.hitbox.create_volume_value.anchor2.offsetX cu *= #-1 num
+execute if score #entity.hitbox.create_volume_value.sizeX cu matches ..999 run scoreboard players operation #entity.hitbox.create_volume_value.anchor2.offsetX cu *= #3 temp
 execute if score #entity.hitbox.create_volume_value.sizeX cu matches 1000.. run scoreboard players remove #entity.hitbox.create_volume_value.sizeX cu 1000
 execute store result storage cu:entity hitbox.create_volume_value.result.sizeX float 0.001 run scoreboard players get #entity.hitbox.create_volume_value.sizeX cu
 execute store result storage cu:entity hitbox.create_volume_value.result.anchor1_offsetX float 0.0001 run scoreboard players get #entity.hitbox.create_volume_value.anchor1.offsetX cu
 execute store result storage cu:entity hitbox.create_volume_value.result.anchor2_offsetX float 0.0001 run scoreboard players get #entity.hitbox.create_volume_value.anchor2.offsetX cu
 
 scoreboard players operation #entity.hitbox.create_volume_value.anchor1.offsetY cu = #entity.hitbox.create_volume_value.sizeY cu
-scoreboard players operation #entity.hitbox.create_volume_value.anchor1.offsetY cu *= #10 num
-scoreboard players operation #entity.hitbox.create_volume_value.anchor1.offsetY cu /= #2 num
-scoreboard players operation #entity.hitbox.create_volume_value.anchor1.offsetY cu *= #-1 num
+scoreboard players operation #entity.hitbox.create_volume_value.anchor1.offsetY cu *= #1 temp
+scoreboard players operation #entity.hitbox.create_volume_value.anchor1.offsetY cu /= #2 temp
+scoreboard players operation #entity.hitbox.create_volume_value.anchor1.offsetY cu *= #3 temp
 scoreboard players operation #entity.hitbox.create_volume_value.anchor2.offsetY cu = #entity.hitbox.create_volume_value.anchor1.offsetY cu
 execute if score #entity.hitbox.create_volume_value.sizeY cu matches ..999 run scoreboard players add #entity.hitbox.create_volume_value.anchor2.offsetY cu 10000
-execute if score #entity.hitbox.create_volume_value.sizeY cu matches ..999 run scoreboard players operation #entity.hitbox.create_volume_value.anchor2.offsetY cu *= #-1 num
+execute if score #entity.hitbox.create_volume_value.sizeY cu matches ..999 run scoreboard players operation #entity.hitbox.create_volume_value.anchor2.offsetY cu *= #3 temp
 execute if score #entity.hitbox.create_volume_value.sizeY cu matches 1000.. run scoreboard players remove #entity.hitbox.create_volume_value.sizeY cu 1000
 execute store result storage cu:entity hitbox.create_volume_value.result.sizeY float 0.001 run scoreboard players get #entity.hitbox.create_volume_value.sizeX cu
 execute store result storage cu:entity hitbox.create_volume_value.result.anchor1_offsetY float 0.0001 run scoreboard players get #entity.hitbox.create_volume_value.anchor1.offsetY cu
 execute store result storage cu:entity hitbox.create_volume_value.result.anchor2_offsetY float 0.0001 run scoreboard players get #entity.hitbox.create_volume_value.anchor2.offsetY cu
 
 scoreboard players operation #entity.hitbox.create_volume_value.anchor1.offsetZ cu = #entity.hitbox.create_volume_value.sizeZ cu
-scoreboard players operation #entity.hitbox.create_volume_value.anchor1.offsetZ cu *= #10 num
-scoreboard players operation #entity.hitbox.create_volume_value.anchor1.offsetZ cu /= #2 num
-scoreboard players operation #entity.hitbox.create_volume_value.anchor1.offsetZ cu *= #-1 num
+scoreboard players operation #entity.hitbox.create_volume_value.anchor1.offsetZ cu *= #1 temp
+scoreboard players operation #entity.hitbox.create_volume_value.anchor1.offsetZ cu /= #2 temp
+scoreboard players operation #entity.hitbox.create_volume_value.anchor1.offsetZ cu *= #3 temp
 scoreboard players operation #entity.hitbox.create_volume_value.anchor2.offsetZ cu = #entity.hitbox.create_volume_value.anchor1.offsetZ cu
 execute if score #entity.hitbox.create_volume_value.sizeZ cu matches ..999 run scoreboard players add #entity.hitbox.create_volume_value.anchor2.offsetZ cu 10000
-execute if score #entity.hitbox.create_volume_value.sizeZ cu matches ..999 run scoreboard players operation #entity.hitbox.create_volume_value.anchor2.offsetZ cu *= #-1 num
+execute if score #entity.hitbox.create_volume_value.sizeZ cu matches ..999 run scoreboard players operation #entity.hitbox.create_volume_value.anchor2.offsetZ cu *= #3 temp
 execute if score #entity.hitbox.create_volume_value.sizeZ cu matches 1000.. run scoreboard players remove #entity.hitbox.create_volume_value.sizeZ cu 1000
 execute store result storage cu:entity hitbox.create_volume_value.result.sizeZ float 0.001 run scoreboard players get #entity.hitbox.create_volume_value.sizeX cu
 execute store result storage cu:entity hitbox.create_volume_value.result.anchor1_offsetZ float 0.0001 run scoreboard players get #entity.hitbox.create_volume_value.anchor1.offsetZ cu

@@ -8,7 +8,8 @@ execute store result score #2 temp store result score #4 temp run data get stora
 execute if score #1 temp > #2 temp run scoreboard players set #value.list.difference._excessInput cu 1
 execute if score #1 temp < #2 temp run scoreboard players set #value.list.difference._excessInput cu 2
 execute if score #value.list.difference._excessInput cu matches 1.. store result score #value.list.difference._excessCount cu run scoreboard players operation #3 temp -= #4 temp
-execute if score #value.list.difference._excessCount cu matches ..-1 run scoreboard players operation #value.list.difference._excessCount cu *= #-1 num
+scoreboard players set #3 temp -1
+execute if score #value.list.difference._excessCount cu matches ..-1 run scoreboard players operation #value.list.difference._excessCount cu *= #3 temp
 execute store result score #value.list.difference._compareCount cu store result score #value.list.difference._compareCountMax cu run scoreboard players operation #1 temp < #2 temp
 
 function cu:value/list/difference/_recursive-compare
