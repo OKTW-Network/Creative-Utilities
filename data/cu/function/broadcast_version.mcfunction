@@ -1,4 +1,4 @@
-data modify storage cu:version broadcast_relation.input.datapack_name set value '{"text":"Creative Utilities"}'
+data modify storage cu:version broadcast_relation.input.datapack_name set value {"text":"Creative Utilities"}
 scoreboard players operation #version.broadcast_relation.input.method cu = #cu$general.print_version Config
 function cu:version
 scoreboard players operation #version.broadcast_relation.input_1.x cu = #cu$version.x Meta
