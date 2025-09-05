@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {"id":"minecraft:barrier"},
+    "title": "using_item-shield",
+    "description": "",
+  "background": "minecraft:textures/block/command_block_back.png",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "using_shield": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": ["minecraft:shield"]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "cu:trigger/shield/update_status"
+  }
+}

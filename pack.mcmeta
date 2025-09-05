@@ -1,10 +1,6 @@
 {
   "pack": {
     "description": "Provide utilities for Minecraft data pack development",
-    "pack_format": 22,
-    "supported_formats": {
-      "min_inclusive": 18,
-      "max_inclusive": 22
-    }
+    "pack_format": 81
   }
 }
