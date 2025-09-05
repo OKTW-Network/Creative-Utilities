@@ -1,7 +1,7 @@
 forceload add 0 0
 fill 0 0 0 15 0 15 minecraft:bedrock replace
 
-setblock 0 0 0 minecraft:barrel{Items:[{Slot:13b,id:"minecraft:barrier",Count:1b,components:{"minecraft:custom_data":{cu:{id:"data_temp"}}}}]} replace
+setblock 0 0 0 minecraft:barrel{Items:[{Slot:13b,id:"minecraft:barrier",count:1,components:{"minecraft:custom_data":{cu:{id:"data_temp"}}}}]} replace
 kill @e[tag=cu.dimension.data_temp]
 summon minecraft:marker 0 0 0 {Tags:["cu.dimension.data_temp"]}
 
