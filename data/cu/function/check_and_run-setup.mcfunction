@@ -1,7 +1,5 @@
 scoreboard objectives add Meta dummy
 
-function cu:check-dependency
+execute unless score #cu$setup Meta matches 1 run function cu:setup
 
-execute if score #cu$dependency_missing Meta matches 0 if score #math$setup Meta matches 1 unless score #cu$setup Meta matches 1 run function cu:setup
-
-execute if score #cu$dependency_missing Meta matches 0 if score #cu$setup Meta matches 1 run function cu:initial
+execute if score #cu$setup Meta matches 1 run function cu:initial
