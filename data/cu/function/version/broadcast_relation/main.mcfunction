@@ -27,7 +27,7 @@ execute if score #version.broadcast_relation.result.diff cu matches -4..5 unless
 execute if score #version.broadcast_relation.result.diff cu matches 0 run function cu:version/broadcast_relation/result-no_relation
 
 execute if score #version.broadcast_relation.lock.broadcast cu matches 0 run tellraw @a ["",{"translate":"[%s]:","with":[{"type":"nbt","source":"storage","nbt":"broadcast_relation.input.datapack_name","storage":"cu:version","interpret":true}],"color":"yellow","bold":true}," ",{"type":"nbt","source":"storage","nbt":"broadcast_relation.result.message","storage":"cu:version","interpret":true}]
-execute if score #version.broadcast_relation.lock.broadcast cu matches 0 run function cu:version/broadcast_relation/none_player_broadcast
+execute if score #version.broadcast_relation.lock.broadcast cu matches 0 unless entity @a run function cu:version/broadcast_relation/none_player_broadcast
 
 scoreboard players set #version.broadcast_relation.input_1.x cu 0
 scoreboard players set #version.broadcast_relation.input_1.y cu 0
