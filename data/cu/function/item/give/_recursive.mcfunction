@@ -1,4 +1,4 @@
-execute in cu:data_temp positioned 0 9 0 run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:structure_void",count:1},Invulnerable:1b,Tags:["cu.item.give"]}
+execute in cu:simulation positioned 0 9 0 run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:structure_void",count:1},Invulnerable:1b,Tags:["cu.item.give"]}
 data modify entity @e[tag=cu.item.give,limit=1] Item set from storage cu:item give.input[0]
 data modify entity @e[tag=cu.item.give,limit=1] Owner set from storage cu:item give.owner
 tp @e[tag=cu.item.give] @s

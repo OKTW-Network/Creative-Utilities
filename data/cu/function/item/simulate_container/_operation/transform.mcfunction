@@ -5,7 +5,7 @@ scoreboard players set #2 temp -1
 execute if score #1 temp matches ..-1 run scoreboard players operation #1 temp *= #2 temp
 execute store result storage cu:item simulate_container._insert[{_this:1b}].shift int 1.0 run scoreboard players get #1 temp
 data modify storage cu:item simulate_container._insert[{_this:1b}].content.operation set from storage cu:item simulate_container._current.value.operation
-execute in cu:data_temp run data modify storage cu:item simulate_container._insert[{_this:1b}].content.value set from block 0 1 0 Items
+execute in cu:simulation run data modify storage cu:item simulate_container._insert[{_this:1b}].content.value set from block 0 1 0 Items
 data remove storage cu:item simulate_container._insert[{_this:1b}]._this
 
 scoreboard players set #1 temp 0

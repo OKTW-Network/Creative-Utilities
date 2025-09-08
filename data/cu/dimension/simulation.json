@@ -1,18 +1,18 @@
 {
-  "type": "cu:data",
+  "type": "cu:simulation",
   "generator": {
     "type": "minecraft:flat",
     "settings": {
-      "structure_overrides": [],
-      "lakes": false,
-      "features": false,
-      "biome": "minecraft:the_void",
       "layers": [
         {
           "height": 1,
           "block": "minecraft:air"
         }
-      ]
+      ],
+      "biome": "minecraft:the_void",
+      "lakes": false,
+      "features": false,
+      "structure_overrides": []
     }
   }
 }
