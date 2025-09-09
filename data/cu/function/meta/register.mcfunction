@@ -2,8 +2,8 @@ scoreboard objectives add temp dummy
 scoreboard objectives add Config dummy
 
 scoreboard objectives add cu dummy "@cu"
-scoreboard objectives add cu-IO dummy
-scoreboard objectives add cu-INTERNAL dummy
+scoreboard objectives add cu-io dummy
+scoreboard objectives add cu-internal dummy
 
 scoreboard objectives add cu.meta.version.x dummy
 scoreboard objectives add cu.meta.version.y dummy
