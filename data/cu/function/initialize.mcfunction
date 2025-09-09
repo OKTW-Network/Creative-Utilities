@@ -5,6 +5,6 @@ execute unless score #cu$setup Meta matches 1 run return fail
 function cu:meta/register
 function #cu:config
 function cu:dimension/initialize
-function cu:check-version
-execute as @a run function cu:initial-player
+function cu:_func/update_version
+execute as @a run function cu:player/initialize
 function #cu:tick_schedule

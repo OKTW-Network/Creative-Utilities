@@ -5,9 +5,12 @@ scoreboard objectives add cu dummy "@cu"
 scoreboard objectives add cu-io dummy
 scoreboard objectives add cu-internal dummy
 
-scoreboard objectives add cu.meta.version.x dummy
-scoreboard objectives add cu.meta.version.y dummy
-scoreboard objectives add cu.meta.version.z dummy
+scoreboard objectives add cu-meta.current_entity_version_x dummy
+scoreboard objectives add cu-meta.current_entity_version_y dummy
+scoreboard objectives add cu-meta.current_entity_version_z dummy
+scoreboard objectives add cu-meta.previous_entity_version_x dummy
+scoreboard objectives add cu-meta.previous_entity_version_y dummy
+scoreboard objectives add cu-meta.previous_entity_version_z dummy
 scoreboard objectives add cu.trigger.jumpCounter minecraft.custom:minecraft.jump "@cu+trigger Jump counter"
 scoreboard objectives add cu.trigger.useItemCounter minecraft.used:minecraft.carrot_on_a_stick "@cu+trigger Use item counter"
 scoreboard objectives add cu.trigger.useItemRecord dummy "@cu+trigger Use Item record"

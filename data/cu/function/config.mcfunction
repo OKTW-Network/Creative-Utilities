@@ -2,13 +2,13 @@
 # General                                  #
 ############################################
 
-# Print version on initializing
-# integer, 0 ~ 2, default: 2
+# Print version on load
+# integer, 0 ~ 2, default: 1
 # values:
-#  0: Do not print anything.
-#  1: Only print if the version changed.
-#  2: Always.
-scoreboard players set #cu$general.print_version Config 2
+#  0: Do not print.
+#  1: Always.
+#  2: Only print if the version changed.
+scoreboard players set #cu$general.broadcast_version_on_load Config 1
 
 ############################################
 # Trigger                                  #
