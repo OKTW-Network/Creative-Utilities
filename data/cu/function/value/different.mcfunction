@@ -1,6 +1,9 @@
-execute store success score #value.different.result cu run data modify storage cu:value different.input1 set from storage cu:value different.input2
+scoreboard players reset #value.different.Result cu-IO
+execute unless data storage cu:io value.different.Input.1 unless data storage cu:io value.different.Input.2 run return fail
 
-execute if score #value.different.result cu matches 0 unless data storage cu:value different.input1 unless data storage cu:value different.input2 run scoreboard players set #value.different.result cu -1
+execute store success score #value.different.Result cu run data modify storage cu:io value.different.Input.1 set from storage cu:io value.different.Input.2
 
-data remove storage cu:value different.input1
-data remove storage cu:value different.input2
+data remove storage cu:io value.different.Input.1
+data remove storage cu:io value.different.Input.2
+
+return run execute unless score #value.different.Result cu-IO matches 0 run scoreboard players get #value.different.Result cu-IO
