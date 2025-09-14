@@ -10,3 +10,5 @@ scoreboard players operation #version.normalize.Result.version_z cu-io = #versio
 data modify storage cu:io version.normalize.Result.version_tag set from storage cu:io version.Input.version_tag
 
 function cu:version/_reset_function
+
+return run execute if data storage cu:io version.normalize.Result
