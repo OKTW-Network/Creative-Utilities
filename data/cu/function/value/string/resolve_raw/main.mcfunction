@@ -1,6 +1,6 @@
 data remove storage cu:io value.string.resolve_raw.Result
 
-execute summon minecraft:text_display run function cu:value/string/resolve_raw/_func/text_display_resolve_raw
+execute summon minecraft:text_display run function cu:value/string/resolve_raw/_func
 
 data remove storage cu:io value.string.resolve_raw.Input
 
