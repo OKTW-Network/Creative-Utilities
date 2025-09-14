@@ -1,15 +1,36 @@
-data modify storage cu:value digit.sequence.result set value []
-execute unless score #value.digit.sequence.method cu matches 0..2 run scoreboard players set #value.digit.sequence.method cu 0
-execute unless score #value.digit.sequence.origin cu matches -2147483648..2147483647 run scoreboard players set #value.digit.sequence.origin cu 0
-execute unless score #value.digit.sequence.value cu matches -2147483648..2147483647 run scoreboard players set #value.digit.sequence.value cu 0
-execute unless score #value.digit.sequence.count cu matches -2147483648..2147483647 run scoreboard players set #value.digit.sequence.count cu 0
-execute store result storage cu:value digit.sequence.result[] int 1 run scoreboard players operation #value.digit.sequence._lastValue cu = #value.digit.sequence.origin cu
+scoreboard players set #value.digit.sequence.FUNCTION_STAGE cu-io 0
+# Result
+#  absent : Invalid inputs or error.
+#  []     : The result.
+data remove storage cu:io value.digit.sequence.Result
+execute unless score #value.digit.sequence.Input.base cu-io matches -2147483648..2147483647 run return run function cu:value/digit/sequence/_return_fail
+# Option.operation
+#  0 : Addition
+#  1 : Subtraction
+#  2 : Multiplication
+#  3 : Division
+#  4 : Base addition
+#  5 : Base multiplication
+execute unless score #value.digit.sequence.Option.operation cu-io matches 0..5 run scoreboard players set #value.digit.sequence.Option.operation cu-io 0
+execute if score #value.digit.sequence.Option.operation cu-io matches 0..3 unless score #value.digit.sequence.Input.value cu-io matches -2147483648..2147483647 run return run function cu:value/digit/sequence/_return_fail
+# Option.count
+#  1..2147483647   : Specify the quantity excluding the base. Extend tail.
+#  -2147483648..-1 : Specify the quantity excluding the base. Extend head.
+execute unless score #value.digit.sequence.Option.count cu-io matches -2147483648..-1 unless score #value.digit.sequence.Option.count cu-io matches 1..2147483647 run scoreboard players set #value.digit.sequence.Option.count cu-io 1
+# Option.exclude_base
+#  0 : Do not apply this option.
+#  1 : Excludes the base.
+execute unless score #value.digit.sequence.Option.exclude_base cu-io matches 0..1 run scoreboard players set #value.digit.sequence.Option.exclude_base cu-io 0
 
-execute if score #value.digit.sequence.count cu matches 2.. run function cu:value/digit/sequence/_recursive-append
-execute if score #value.digit.sequence.count cu matches ..-2 run function cu:value/digit/sequence/_recursive-prepend
+scoreboard players set #value.digit.sequence.FUNCTION_STAGE cu-io 1
+scoreboard players operation #value.digit.sequence.last_value cu-internal = #value.digit.sequence.Input.base cu-io
+execute if score #value.digit.sequence.Option.include_base cu-io matches 1 run function cu:value/digit/sequence/_func/include_base
+scoreboard players operation #value.digit.sequence.recur_count cu-internal = #value.digit.sequence.Option.count cu-io
+scoreboard players set #1 temp -1
+execute if score #value.digit.sequence.recur_count cu-internal matches ..-1 run scoreboard players operation #value.digit.sequence.recur_count cu-internal = #1 temp
+function cu:value/digit/sequence/_func/calculate
 
-scoreboard players reset #value.digit.sequence.method cu
-scoreboard players reset #value.digit.sequence.origin cu
-scoreboard players reset #value.digit.sequence.value cu
-scoreboard players reset #value.digit.sequence.count cu
-scoreboard players reset #value.digit.sequence._lastValue cu
+scoreboard players set #value.digit.sequence.FUNCTION_STAGE cu-io -1
+function cu:value/digit/sequence/_reset_function
+
+return run execute if data storage cu:io value.digit.sequence.Result
