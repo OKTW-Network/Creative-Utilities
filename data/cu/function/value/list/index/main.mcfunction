@@ -1,38 +1,48 @@
-data remove storage cu:value list.index.result
-execute unless score #value.list.index.start cu matches -2147483648..2147483647 run scoreboard players set #value.list.index.start cu 0
-execute unless score #value.list.index.end cu matches -2147483648..2147483647 run scoreboard players operation #value.list.index.end cu = #value.list.index.start cu
-execute unless score #value.list.index.arrange cu matches 0..1 run scoreboard players set #value.list.index.arrange cu 0
-execute unless score #value.list.index.circular cu matches 0..3 run scoreboard players set #value.list.index.circular cu 0
-execute store result score #value.list.index._listLength1 cu store result score #value.list.index._listLength2 cu store result score #value.list.index._listIndexMax cu run data get storage cu:value list.index.input
-scoreboard players remove #value.list.index._listIndexMax cu 1
-execute if score #value.list.index.start cu matches ..-1 store result score #value.list.index.start cu run scoreboard players operation #value.list.index._listLength1 cu -= #value.list.index.start cu
-execute if score #value.list.index.end cu matches ..-1 store result score #value.list.index.end cu run scoreboard players operation #value.list.index._listLength2 cu -= #value.list.index.end cu
-scoreboard players operation #value.list.index.start cu < #value.list.index._listIndexMax cu
-execute if score #value.list.index.start cu matches ..-1 run scoreboard players set #value.list.index.start cu 0
-scoreboard players operation #value.list.index.end cu < #value.list.index._listIndexMax cu
-execute if score #value.list.index.end cu matches ..-1 run scoreboard players set #value.list.index.end cu 0
-scoreboard players operation #value.list.index._min cu = #value.list.index.start cu
-scoreboard players operation #value.list.index._min cu < #value.list.index.end cu
-scoreboard players operation #value.list.index._max cu = #value.list.index.start cu
-scoreboard players operation #value.list.index._max cu > #value.list.index.end cu
-scoreboard players set #value.list.index._trueCircular cu 0
-execute if score #value.list.index.circular cu matches 2 if score #value.list.index.start cu > #value.list.index.end cu run scoreboard players set #value.list.index._trueCircular cu 1
-execute if score #value.list.index.circular cu matches 3 if score #value.list.index.end cu > #value.list.index.start cu run scoreboard players set #value.list.index._trueCircular cu 1
-execute if score #value.list.index.circular cu matches 2.. run scoreboard players operation #value.list.index.circular cu = #value.list.index._trueCircular cu
+scoreboard players set #value.list.index.FUNCTION_STAGE cu-io 0
+# Result
+#  absent : Invalid input or error
+#  []     : The result
+data remove storage cu:io value.list.index.Result
+execute unless data storage cu:io value.list.index.Input[0] run return run function cu:value/list/index/_return_fail
+# Option.start
+#  0..2147483638   : Specifies *index* as the start (include).
+#  -2147483639..-1 : Specifies *number* from the last as the start (include).
+execute unless score #value.list.index.Option.start cu-io matches -2147483639..2147483638 run scoreboard players set #value.list.index.Option.start cu-io 0
+# Option.end
+#  0..2147483638   : Specifies *index* as the end (include).
+#  -2147483639..-1 : Specifies *number* from the last as the end (include).
+execute unless score #value.list.index.Option.end cu-io matches -2147483639..2147483638 run scoreboard players operation #value.list.index.Option.end cu-io = #value.list.index.Option.start cu-io
+# Option.arrange
+#  0 : Do not apply this option.
+#  1 : Arranges the result from start to end.
+execute unless score #value.list.index.Option.arrange cu-io matches 0..1 run scoreboard players set #value.list.index.Option.arrange cu-io 0
+# Option.circular
+#  0 : Do not apply this option.
+#  1 : Results from the boundary to the start/end point, rather than point to point.
+#  2 : Only if the start is greater than the end.
+#  3 : Only if the end is greater than the start.
+execute unless score #value.list.index.Option.circular cu-io matches 0..3 run scoreboard players set #value.list.index.Option.circular cu-io 0
 
-execute if data storage cu:value list.index.input[0] run function cu:value/list/index/_recursive
+scoreboard players set #value.list.index.FUNCTION_STAGE cu-io 1
+execute store result score #value.list.index.max_index cu-internal store result score #1 temp store result score #2 temp run data get storage cu:io value.list.index.Input
+scoreboard players remove #value.list.index.max_index cu-internal 1
+execute if score #value.list.index.Option.start cu-io matches ..-1 store result score #value.list.index.Option.start cu-io run scoreboard players operation #1 temp -= #value.list.index.Option.start cu-io
+execute if score #value.list.index.Option.end cu-io matches ..-1 store result score #value.list.index.Option.end cu-io run scoreboard players operation #2 temp -= #value.list.index.Option.end cu-io
+scoreboard players operation #value.list.index.Option.start cu-io < #value.list.index.max_index cu-internal
+execute if score #value.list.index.Option.start cu-io matches ..-1 run scoreboard players set #value.list.index.Option.start cu-io 0
+scoreboard players operation #value.list.index.Option.end cu-io < #value.list.index.max_index cu-internal
+execute if score #value.list.index.Option.end cu-io matches ..-1 run scoreboard players set #value.list.index.Option.end cu-io 0
+scoreboard players operation #value.list.index.head_countdown cu-internal = #value.list.index.Option.start cu-io
+scoreboard players operation #value.list.index.head_countdown cu-internal < #value.list.index.Option.end cu-io
+scoreboard players operation #value.list.index.tail_countdown cu-internal = #value.list.index.Option.start cu-io
+scoreboard players operation #value.list.index.tail_countdown cu-internal > #value.list.index.Option.end cu-io
+scoreboard players set #1 temp 0
+execute if score #value.list.index.Option.circular cu-io matches 2 if score #value.list.index.Option.start cu-io > #value.list.index.Option.end cu-io run scoreboard players set #1 temp 1
+execute if score #value.list.index.Option.circular cu-io matches 3 if score #value.list.index.Option.end cu-io > #value.list.index.Option.start cu-io run scoreboard players set #1 temp 1
+execute if score #value.list.index.Option.circular cu-io matches 2.. run scoreboard players operation #value.list.index.Option.circular cu-io = #1 temp
+function cu:value/list/index/_func/index
 
-data remove storage cu:value list.index.input
-data remove storage cu:value list.index._circularMinResult
-data remove storage cu:value list.index._circularMaxResult
-scoreboard players reset #value.list.index.start cu
-scoreboard players reset #value.list.index.end cu
-scoreboard players reset #value.list.index.arrange cu
-scoreboard players reset #value.list.index.circular cu
-scoreboard players reset #value.list.index._min cu
-scoreboard players reset #value.list.index._max cu
-scoreboard players reset #value.list.index._listLength1 cu
-scoreboard players reset #value.list.index._listLength2 cu
-scoreboard players reset #value.list.index._trueCircular cu
-scoreboard players reset #value.list.index._reverseResult cu
-scoreboard players reset #value.list.index._circularAppend cu
+scoreboard players set #value.list.index.FUNCTION_STAGE cu-io -1
+function cu:value/list/index/_reset_function
+
+return run execute if data storage cu:io value.list.index.Result

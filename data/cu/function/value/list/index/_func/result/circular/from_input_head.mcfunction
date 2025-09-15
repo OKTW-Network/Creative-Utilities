@@ -1,0 +1,2 @@
+execute if score #value.list.index.Option.arrange cu-io matches 1 if score #value.list.index.Option.start cu-io < #value.list.index.Option.end cu-io run return run data modify storage cu:internal value.list.index.circular_head_result prepend from storage cu:io value.list.index.Input[0]
+return run data modify storage cu:internal value.list.index.circular_head_result append from storage cu:io value.list.index.Input[0]

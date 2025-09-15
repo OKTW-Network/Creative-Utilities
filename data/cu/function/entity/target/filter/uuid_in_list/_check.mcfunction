@@ -1,4 +1,4 @@
-data modify storage cu:value list.include.target set from entity @s UUID
-data modify storage cu:value list.include.source set from storage cu:entity target.filter.uuid_in_list.input
-function cu:value/list/include/main
-execute if score #value.list.include.result cu matches 1 run tag @s remove cu._tag.entity.target.selected
+data modify storage cu:io value.list.contains.Input.target set from entity @s UUID
+data modify storage cu:io value.list.contains.Input.data set from storage cu:entity target.filter.uuid_in_list.input
+function cu:value/list/contains/main
+execute if score #value.list.contains.Result cu-io matches 1 run tag @s remove cu._tag.entity.target.selected

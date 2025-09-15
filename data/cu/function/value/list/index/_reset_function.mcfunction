@@ -1,0 +1,9 @@
+data remove storage cu:io value.list.index.Input
+scoreboard players reset #value.list.index.Option.start cu-io
+scoreboard players reset #value.list.index.Option.end cu-io
+scoreboard players reset #value.list.index.Option.arrange cu-io
+scoreboard players reset #value.list.index.Option.circular cu-io
+data remove storage cu:internal value.list.index
+scoreboard players reset #value.list.index.max_index cu-internal
+scoreboard players reset #value.list.index.head_countdown cu-internal
+scoreboard players reset #value.list.index.tail_countdown cu-internal
