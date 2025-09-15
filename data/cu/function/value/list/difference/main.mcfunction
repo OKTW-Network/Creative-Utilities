@@ -11,8 +11,8 @@ scoreboard players set #value.list.difference.FUNCTION_STAGE cu-io 0
 #            {value:[]}            : When diff is 1, the values from <Input.1> and <Input.2>.
 #            {value:<value>}       : When diff is 0, 2, or 3, the value of <Input.1> or <Input.2>.
 data remove storage cu:io value.list.difference.Result
-execute unless data storage cu:io value.list.difference.Input.1[] run return run function cu:value/list/difference/main
-execute unless data storage cu:io value.list.difference.Input.2[] run return run function cu:value/list/difference/main
+execute unless data storage cu:io value.list.difference.Input.1[] run return run function cu:value/list/difference/_return_fail
+execute unless data storage cu:io value.list.difference.Input.2[] run return run function cu:value/list/difference/_return_fail
 
 scoreboard players set #value.list.difference.FUNCTION_STAGE cu-io 1
 execute store result score #1 temp if data storage cu:io value.list.difference.Input.1[]
