@@ -25,9 +25,9 @@ execute unless score #value.digit.sequence.Option.exclude_base cu-io matches 0..
 scoreboard players set #value.digit.sequence.FUNCTION_STAGE cu-io 1
 scoreboard players operation #value.digit.sequence.last_value cu-internal = #value.digit.sequence.Input.base cu-io
 execute if score #value.digit.sequence.Option.include_base cu-io matches 1 run function cu:value/digit/sequence/_func/include_base
-scoreboard players operation #value.digit.sequence.recur_count cu-internal = #value.digit.sequence.Option.count cu-io
+scoreboard players operation #value.digit.sequence.recur_countdown cu-internal = #value.digit.sequence.Option.count cu-io
 scoreboard players set #1 temp -1
-execute if score #value.digit.sequence.recur_count cu-internal matches ..-1 run scoreboard players operation #value.digit.sequence.recur_count cu-internal = #1 temp
+execute if score #value.digit.sequence.recur_countdown cu-internal matches ..-1 run scoreboard players operation #value.digit.sequence.recur_countdown cu-internal = #1 temp
 function cu:value/digit/sequence/_func/calculate
 
 scoreboard players set #value.digit.sequence.FUNCTION_STAGE cu-io -1
