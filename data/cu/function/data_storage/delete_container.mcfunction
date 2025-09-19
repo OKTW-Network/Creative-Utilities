@@ -1,7 +1,8 @@
-data modify storage cu:entity find_uuid.input append from storage cu:data_storage delete_container.input
+data modify storage cu:io entity.target.select.uuid_list.Input append from storage cu:data_storage delete_container.input
 data remove storage cu:data_storage delete_container.input
-execute at @e[tag=cu.data_storage.base] run function cu:entity/find_uuid/main
-kill @e[tag=cu._tag.entity.find_uuid.elect]
+function cu:entity/target/reset_tag
+function cu:entity/target/select/uuid_list/main
+kill @e[tag=cu-io.entity.target]
 
 tag @s add cu._tag.ThisEntity
 tellraw @s ["Deleted data container ",{"type":"nbt","source":"storage","nbt":"delete_container.input","storage":"cu:data_storage"}]

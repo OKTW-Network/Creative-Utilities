@@ -1,0 +1,9 @@
+scoreboard players reset #entity.generate_volume_selection_info.Input.size_x_1e3 cu-io
+scoreboard players reset #entity.generate_volume_selection_info.Input.size_y_1e3 cu-io
+scoreboard players reset #entity.generate_volume_selection_info.Input.size_z_1e3 cu-io
+scoreboard players reset #entity.generate_volume_selection_info.Option.center_x cu-io
+scoreboard players reset #entity.generate_volume_selection_info.Option.center_y cu-io
+scoreboard players reset #entity.generate_volume_selection_info.Option.center_z cu-io
+scoreboard players reset #entity.generate_volume_selection_info.Option.offset_x_1e3 cu-io
+scoreboard players reset #entity.generate_volume_selection_info.Option.offset_y_1e3 cu-io
+scoreboard players reset #entity.generate_volume_selection_info.Option.offset_z_1e3 cu-io

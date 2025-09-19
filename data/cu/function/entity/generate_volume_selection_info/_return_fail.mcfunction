@@ -1,0 +1,2 @@
+function cu:entity/generate_volume_selection_info/_reset_function
+return fail

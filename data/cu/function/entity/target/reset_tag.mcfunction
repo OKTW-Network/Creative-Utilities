@@ -1,1 +1,1 @@
-tag @e remove cu._tag.entity.target.selected
+tag @e remove cu-io.entity.target
