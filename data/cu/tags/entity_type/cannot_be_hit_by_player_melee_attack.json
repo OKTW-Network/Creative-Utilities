@@ -1,0 +1,31 @@
+{
+  "values": [
+    "#minecraft:arrows",
+    "minecraft:breeze_wind_charge",
+    "minecraft:dragon_fireball",
+    "minecraft:egg",
+    "minecraft:ender_pearl",
+    "minecraft:experience_bottle",
+    "minecraft:firework_rocket",
+    "minecraft:lingering_potion",
+    "minecraft:llama_spit",
+    "minecraft:small_fireball",
+    "minecraft:snowball",
+    "minecraft:splash_potion",
+    "minecraft:trident",
+    "minecraft:wind_charge",
+    "minecraft:wither_skull",
+    "minecraft:experience_orb",
+    "minecraft:item",
+    "minecraft:block_display",
+    "minecraft:item_display",
+    "minecraft:text_display",
+    "minecraft:area_effect_cloud",
+    "minecraft:evoker_fangs",
+    "minecraft:eye_of_ender",
+    "minecraft:fishing_bobber",
+    "minecraft:lightning_bolt",
+    "minecraft:marker",
+    "minecraft:ominous_item_spawner"
+  ]
+}
