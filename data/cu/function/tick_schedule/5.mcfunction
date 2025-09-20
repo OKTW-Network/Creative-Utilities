@@ -1,1 +1,1 @@
-schedule function #minecraft:5_tick 5t replace
+schedule function #cu:5_tick 5t replace

@@ -1,1 +1,1 @@
-schedule function #minecraft:20_tick 20t replace
+schedule function #cu:20_tick 20t replace

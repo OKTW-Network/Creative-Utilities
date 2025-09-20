@@ -1,1 +1,1 @@
-schedule function #minecraft:200_tick 200t replace
+schedule function #cu:200_tick 200t replace
