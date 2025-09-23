@@ -10,6 +10,9 @@ setblock 0 1 1 minecraft:oak_sign keep
 kill @e[tag=cu-Marker.simulation.sign_block]
 summon minecraft:marker 0 1 1 {Tags:["cu-Marker.simulation.sign_block"]}
 
+function cu:dimension/simulation/block_testing/reset_testing_area
+# central: 2 3 13
+
 function cu:data_storage/create_base
 
 fill 0 8 0 15 8 15 minecraft:bedrock replace

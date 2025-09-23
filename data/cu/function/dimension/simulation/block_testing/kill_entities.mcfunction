@@ -1,0 +1,1 @@
+return run execute in cu:simulation positioned 0 1 11 align xyz run kill @e[dx=4,dy=4,dz=4]
