@@ -21,4 +21,4 @@ function cu:data/compound/filter_match_list/_func/filter_match_list
 scoreboard players set #data.compound.filter_match_list.FUNCTION_STAGE cu-io -1
 function cu:data/compound/filter_match_list/_reset_function
 
-return run execute if data storage cu:io data.compound.filter_match_list.Result
+return run execute if data storage cu:io data.compound.filter_match_list.Result[]
