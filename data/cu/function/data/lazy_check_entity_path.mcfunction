@@ -1,0 +1,1 @@
+$return run execute as $(entity) if data entity $(entity) $(path)

@@ -1,0 +1,1 @@
+$return run execute if data block $(pos) $(path)
