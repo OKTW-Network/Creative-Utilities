@@ -1,4 +1,5 @@
 # Reminder
+#  The result cannot be reset if the function failed to instantiate.
 #  The entity selector cannot select unloaded entities.
 scoreboard players reset entity.target.filter.lax_limit.Result cu-internal
 function cu:entity/target/filter/_normalize_option
