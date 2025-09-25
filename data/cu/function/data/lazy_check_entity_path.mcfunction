@@ -1,1 +1,1 @@
-$return run execute as $(entity) if data entity $(entity) $(path)
+$return run execute as $(entity) if data entity @s $(path)
