@@ -1,0 +1,1 @@
+$return run execute as $(entity) run data modify entity @s $(path) insert $(index) value $(value)

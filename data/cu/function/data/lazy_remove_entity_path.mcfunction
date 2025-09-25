@@ -1,0 +1,1 @@
+$return run execute as $(entity) run data remove entity @s $(path)

@@ -1,0 +1,1 @@
+$return run data modify block $(pos) $(path) append value $(value)

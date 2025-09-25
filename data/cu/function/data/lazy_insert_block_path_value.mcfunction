@@ -1,0 +1,1 @@
+$return run data modify block $(pos) $(path) insert $(index) value $(value)

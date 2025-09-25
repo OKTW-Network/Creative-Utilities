@@ -1,0 +1,1 @@
+$return run data remove storage $(namespace) $(path)

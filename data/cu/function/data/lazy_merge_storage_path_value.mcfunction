@@ -1,0 +1,1 @@
+$return run data modify storage $(namespace) $(path) merge value $(value)

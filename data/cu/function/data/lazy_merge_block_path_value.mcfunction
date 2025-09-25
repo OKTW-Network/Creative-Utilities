@@ -1,0 +1,1 @@
+$return run data modify block $(pos) $(path) merge value $(value)
