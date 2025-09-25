@@ -20,6 +20,6 @@ scoreboard objectives add cu.player.timer.input_sneak dummy
 scoreboard objectives add cu.player.timer.input_sprint dummy
 scoreboard objectives add cu-internal.player.trigger.leave_game minecraft.custom:minecraft.leave_game
 
-# data get storage cu:io
+# data remove storage cu:io
 data remove storage cu:internal {}
-data remove storage cu:static {}
+execute unless data storage cu:storage player run data merge storage cu:storage {player:[]}

@@ -1,0 +1,1 @@
+$return run data modify storage cu:storage player[{uuid:$(uuid)}].data.$(path) append value $(value)
