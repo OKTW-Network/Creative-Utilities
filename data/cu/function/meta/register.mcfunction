@@ -23,3 +23,4 @@ scoreboard objectives add cu-internal.player.trigger.leave_game minecraft.custom
 # data remove storage cu:io
 data remove storage cu:internal {}
 execute unless data storage cu:storage player run data merge storage cu:storage {player:[]}
+execute unless data storage cu:storage world run data merge storage cu:storage {world:[]}

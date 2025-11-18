@@ -1,0 +1,1 @@
+$return run data modify storage cu:storage world[{name:$(name)}].data.$(path) prepend value $(value)

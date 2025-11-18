@@ -1,0 +1,1 @@
+$return run data remove storage cu:storage world[{name:$(name)}].data.$(path)
