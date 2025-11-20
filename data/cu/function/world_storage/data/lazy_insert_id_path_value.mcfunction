@@ -1,0 +1,1 @@
+$return run data modify storage cu:storage world[{id:$(id)}].data.$(path) insert $(index) value $(value)
