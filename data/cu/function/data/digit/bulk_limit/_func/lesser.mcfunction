@@ -1,0 +1,2 @@
+execute if score #data.digit.bulk_limit.Option.filter cu-io matches 1..2 run return run scoreboard players add #data.digit.bulk_limit.filter_condition cu-internal 1
+scoreboard players operation #data.digit.bulk_limit.value cu-internal = #data.digit.bulk_limit.Option.min cu-io

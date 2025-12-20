@@ -1,0 +1,5 @@
+data modify storage cu:internal dummy set value 0
+execute store result storage cu:internal dummy int 1 run scoreboard players get #data.digit.bulk_limit.value cu-internal
+execute if score #data.digit.bulk_limit.Option.filter cu-io matches 0 run return run data modify storage cu:io data.digit.bulk_limit.Result append from storage cu:internal dummy
+execute if score #data.digit.bulk_limit.Option.filter cu-io matches 1 if score #data.digit.bulk_limit.filter_condition cu-internal matches 0 run return run data modify storage cu:io data.digit.bulk_limit.Result append from storage cu:internal dummy
+execute if score #data.digit.bulk_limit.Option.filter cu-io matches 2 if score #data.digit.bulk_limit.filter_condition cu-internal matches 1.. run data modify storage cu:io data.digit.bulk_limit.Result append from storage cu:internal dummy
