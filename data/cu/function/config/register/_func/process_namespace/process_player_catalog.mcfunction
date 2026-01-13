@@ -1,0 +1,3 @@
+data modify storage cu:internal config.register.namespace_result merge value {player_catalog:[]}
+data modify storage cu:internal config.register.current_catalog set from storage cu:internal config.register.current_namespace.player_catalog
+execute if function cu:config/register/_func/process_catalog/main run data modify storage cu:internal config.register.namespace_result.player_catalog set from storage cu:internal config.register.processed_catalog

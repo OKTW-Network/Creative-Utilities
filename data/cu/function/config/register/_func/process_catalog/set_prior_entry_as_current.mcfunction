@@ -1,0 +1,2 @@
+data modify storage cu:internal config.register.current_entry set from storage cu:internal config.register.prior_entry_stack[0][0]
+data remove storage cu:internal config.register.prior_entry_stack[0][0]

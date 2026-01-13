@@ -1,0 +1,2 @@
+data remove storage cu:internal config.record.world.easy_apply_id_default.default_value
+return run function cu:config/record/world/easy_apply_id_default/_func/get_player_default/macro with storage cu:io config.record.Input

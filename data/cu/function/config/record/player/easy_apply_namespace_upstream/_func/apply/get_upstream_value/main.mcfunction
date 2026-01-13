@@ -1,0 +1,4 @@
+data remove storage cu:internal config.record.player.easy_apply_namespace_upstream.upstream_value
+execute if data storage cu:internal config.record.player.easy_apply_namespace_upstream.world_content if function cu:config/record/player/easy_apply_namespace_upstream/_func/apply/get_upstream_value/get_world_content_id/main run return 1
+execute if data storage cu:internal config.record.player.easy_apply_namespace_upstream.registry_content[0].specification.default run return run data modify storage cu:internal config.record.player.easy_apply_namespace_upstream.upstream_value set from storage cu:internal config.record.player.easy_apply_namespace_upstream.registry_content[0].specification.default
+return fail

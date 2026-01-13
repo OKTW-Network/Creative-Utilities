@@ -1,0 +1,1 @@
+return run function cu:player/storage/data/lax_set_path_value {path:'"cu:player_config"',value:[]}

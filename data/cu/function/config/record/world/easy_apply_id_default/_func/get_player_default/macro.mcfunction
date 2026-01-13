@@ -1,0 +1,1 @@
+$return run data modify storage cu:internal config.record.world.easy_apply_id_default.default_value set from storage cu:cache config_registry[{namespace:'$(namespace)'}].player_catalog[{id:'$(id)'}].specification.default

@@ -1,0 +1,1 @@
+$return run data modify storage cu:internal config.register.namespace_keys merge value {'$(key)':0b}

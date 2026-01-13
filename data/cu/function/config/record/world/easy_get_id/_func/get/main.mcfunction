@@ -1,0 +1,3 @@
+execute if score #config.record.world.Option.pool cu-io matches 0 run return run function cu:config/record/world/easy_get_id/_func/get/try_every
+execute if score #config.record.world.Option.pool cu-io matches 1 run return run execute if function cu:config/record/world/_func/check_input_world_id run data modify storage cu:io config.record.world.easy_get_id.Result set from storage cu:io config.record.world.lazy_get_world_id.Result
+execute if score #config.record.world.Option.pool cu-io matches 2 run return run execute if function cu:config/record/world/_func/check_input_player_id run data modify storage cu:io config.record.world.easy_get_id.Result set from storage cu:io config.record.world.lazy_get_player_id.Result

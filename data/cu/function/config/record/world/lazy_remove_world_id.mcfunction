@@ -1,0 +1,1 @@
+$return run data remove storage cu:storage world[{id:'cu:world_config'}].data[{namespace:'$(namespace)'}].record[{id:'$(id)'}]

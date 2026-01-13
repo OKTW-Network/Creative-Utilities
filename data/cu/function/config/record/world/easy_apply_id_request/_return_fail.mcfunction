@@ -1,0 +1,2 @@
+function cu:config/record/world/easy_apply_id_request/_reset_function
+return fail

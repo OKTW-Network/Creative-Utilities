@@ -1,0 +1,1 @@
+$return run data modify storage cu:internal config.record.world.easy_apply_id_request.specification set from storage cu:cache config_registry[{namespace:'$(namespace)'}].world_catalog[{id:'$(id)'}].specification

@@ -1,0 +1,1 @@
+$return run function cu:player/storage/data/lax_remove_path {path:'"cu:player_config"[{namespace:"$(namespace)"}]'}

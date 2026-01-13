@@ -1,0 +1,3 @@
+execute if function cu:config/record/world/_func/check_input_world_namespace run return run data modify storage cu:io config.record.world.easy_get_namespace.Result set from storage cu:io config.record.world.lazy_get_world_namespace.Result
+execute if function cu:config/record/world/_func/check_input_player_namespace run return run data modify storage cu:io config.record.world.easy_get_namespace.Result set from storage cu:io config.record.world.lazy_get_player_namespace.Result
+return fail

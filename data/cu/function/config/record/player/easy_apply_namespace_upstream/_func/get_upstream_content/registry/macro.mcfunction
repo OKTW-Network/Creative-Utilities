@@ -1,0 +1,1 @@
+$return run data modify storage cu:internal config.record.player.easy_apply_namespace_upstream.registry_content set from storage cu:cache config_registry[{namespace:'$(namespace)'}].player_catalog

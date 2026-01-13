@@ -1,0 +1,1 @@
+$return run data modify storage cu:internal config.record.player.easy_apply_namespace_upstream.upstream_value set from storage cu:internal config.record.player.easy_apply_namespace_upstream.world_content[{id:'$(id)'}].value

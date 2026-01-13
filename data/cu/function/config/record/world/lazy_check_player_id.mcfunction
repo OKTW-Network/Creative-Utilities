@@ -1,0 +1,1 @@
+$return run execute if data storage cu:storage world[{id:'cu:player_config'}].data[{namespace:'$(namespace)'}].record[{id:'$(id)'}]

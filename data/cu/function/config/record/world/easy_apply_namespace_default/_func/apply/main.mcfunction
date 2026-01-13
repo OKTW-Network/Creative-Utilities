@@ -1,0 +1,3 @@
+execute if score #config.record.world.Option.pool cu-io matches 0 run return run function cu:config/record/world/easy_apply_namespace_default/_func/apply/through_every
+execute if score #config.record.world.Option.pool cu-io matches 1 run return run function cu:config/record/world/easy_apply_namespace_default/_func/apply/world/main
+execute if score #config.record.world.Option.pool cu-io matches 2 run return run function cu:config/record/world/easy_apply_namespace_default/_func/apply/player/main

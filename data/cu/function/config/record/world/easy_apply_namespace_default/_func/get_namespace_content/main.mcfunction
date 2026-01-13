@@ -1,0 +1,2 @@
+data remove storage cu:internal config.record.world.easy_apply_namespace_default.namespace_content
+return run function cu:config/record/world/easy_apply_namespace_default/_func/get_namespace_content/macro with storage cu:io config.record.Input

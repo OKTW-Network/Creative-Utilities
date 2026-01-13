@@ -1,0 +1,1 @@
+$return run data modify storage cu:internal config.record.player.easy_apply_id_request.specification set from storage cu:cache config_registry[{namespace:'$(namespace)'}].player_catalog[{id:'$(id)'}].specification

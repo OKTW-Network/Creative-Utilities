@@ -1,0 +1,2 @@
+function cu:config/record/world/easy_remove_namespace/_reset_function
+return fail

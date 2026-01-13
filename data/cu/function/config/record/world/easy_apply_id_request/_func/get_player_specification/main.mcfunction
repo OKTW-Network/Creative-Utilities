@@ -1,0 +1,2 @@
+data remove storage cu:internal config.record.world.easy_apply_id_request.specification
+return run function cu:config/record/world/easy_apply_id_request/_func/get_player_specification/macro with storage cu:io config.record.Input

@@ -1,0 +1,2 @@
+data remove storage cu:internal config.record.player.easy_apply_namespace_upstream.registry_content
+return run function cu:config/record/player/easy_apply_namespace_upstream/_func/get_upstream_content/registry/macro with storage cu:io config.record.Input

@@ -1,0 +1,1 @@
+return run function cu:config/record/world/lazy_get_player_id with storage cu:io config.record.Input

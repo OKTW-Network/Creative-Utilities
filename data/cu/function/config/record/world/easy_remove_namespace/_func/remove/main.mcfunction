@@ -1,0 +1,3 @@
+execute if score #config.record.world.Option.pool cu-io matches 0 run return run function cu:config/record/world/easy_remove_namespace/_func/remove/through_every
+execute if score #config.record.world.Option.pool cu-io matches 1 run return run function cu:config/record/world/lazy_remove_world_namespace with storage cu:io config.record.Input
+execute if score #config.record.world.Option.pool cu-io matches 2 run return run function cu:config/record/world/lazy_remove_player_namespace with storage cu:io config.record.Input

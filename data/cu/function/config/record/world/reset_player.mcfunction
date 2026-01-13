@@ -1,0 +1,1 @@
+return run data modify storage cu:storage world[{id:'cu:player_config'}].data set value []

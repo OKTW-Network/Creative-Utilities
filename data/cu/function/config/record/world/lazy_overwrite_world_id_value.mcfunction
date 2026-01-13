@@ -1,0 +1,2 @@
+$data remove storage cu:storage world[{id:'cu:world_config'}].data[{namespace:'$(namespace)'}].record[{id:'$(id)'}]
+$return run data modify storage cu:storage world[{id:'cu:world_config'}].data[{namespace:'$(namespace)'}].record append value {id:'$(id)',value:$(value)}

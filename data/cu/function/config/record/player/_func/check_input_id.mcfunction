@@ -1,0 +1,1 @@
+return run function cu:config/record/player/lax_get_id with storage cu:io config.record.Input

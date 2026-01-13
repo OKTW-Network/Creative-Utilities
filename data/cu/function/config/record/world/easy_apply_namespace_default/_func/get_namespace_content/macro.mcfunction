@@ -1,0 +1,1 @@
+$return run data modify storage cu:internal config.record.world.easy_apply_namespace_default.namespace_content set from storage cu:cache config_registry[{namespace:'$(namespace)'}]

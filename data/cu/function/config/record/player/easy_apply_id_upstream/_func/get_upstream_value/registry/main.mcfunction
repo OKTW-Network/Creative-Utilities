@@ -1,0 +1,1 @@
+function cu:config/record/player/easy_apply_id_upstream/_func/get_upstream_value/registry/macro with storage cu:io config.record.Input

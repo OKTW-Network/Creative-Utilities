@@ -1,0 +1,1 @@
+return run function cu:config/record/world/lazy_get_world_namespace with storage cu:io config.record.Input

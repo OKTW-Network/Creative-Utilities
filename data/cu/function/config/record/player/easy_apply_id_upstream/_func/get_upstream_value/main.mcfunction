@@ -1,0 +1,4 @@
+data remove storage cu:internal config.record.player.easy_apply_id_upstream.upstream_value
+execute if score #config.record.player.Option.upstream cu-io matches 0 run return run function cu:config/record/player/easy_apply_id_upstream/_func/get_upstream_value/try_every
+execute if score #config.record.player.Option.upstream cu-io matches 1 run return run execute if function cu:config/record/world/_func/check_input_player_id run data modify storage cu:internal config.record.player.easy_apply_id_upstream.upstream_value set from storage cu:io config.record.world.lazy_get_player_id.Result.value
+execute if score #config.record.player.Option.upstream cu-io matches 2 run return run function cu:config/record/player/easy_apply_id_upstream/_func/get_upstream_value/registry/main

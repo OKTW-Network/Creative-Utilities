@@ -1,0 +1,2 @@
+function cu:config/verify_request/_reset_function
+return fail

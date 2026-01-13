@@ -1,0 +1,2 @@
+$function cu:player/storage/data/lax_remove_path {path:'"cu:player_config"[{namespace:"$(namespace)"}].record[{id:"$(id)"}]'}
+$return run function cu:player/storage/data/lax_append_path_value {path:'"cu:player_config"[{namespace:"$(namespace)"}].record',value:{id:'$(id)',value:$(value)}}

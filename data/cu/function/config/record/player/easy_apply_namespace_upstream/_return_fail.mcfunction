@@ -1,0 +1,2 @@
+function cu:config/record/player/easy_apply_namespace_upstream/_reset_function
+return fail
