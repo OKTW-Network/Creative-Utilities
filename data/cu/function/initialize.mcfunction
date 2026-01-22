@@ -2,7 +2,7 @@ scoreboard objectives add Meta dummy
 execute unless score #cu$setup Meta matches 1 run function cu:setup
 execute unless score #cu$setup Meta matches 1 run return fail
 
-function cu:meta/register
+function cu:_func/register/general
 function cu:config/initialize
 function cu:dimension/initialize
 function cu:_func/update_version
