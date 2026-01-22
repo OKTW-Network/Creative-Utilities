@@ -1,5 +1,4 @@
 scoreboard objectives add temp dummy
-scoreboard objectives add Config dummy
 
 scoreboard objectives add cu dummy "@cu"
 scoreboard objectives add cu-io dummy
