@@ -11,6 +11,7 @@ scoreboard objectives add cu-meta.previous_entity_version_x dummy
 scoreboard objectives add cu-meta.previous_entity_version_y dummy
 scoreboard objectives add cu-meta.previous_entity_version_z dummy
 scoreboard objectives add cu-io.player.trigger.leave_game_record minecraft.custom:minecraft.leave_game
+scoreboard objectives add cu-io.player.trigger.using_item_record dummy
 scoreboard objectives add cu-io.player.trigger.input_forward_record dummy
 scoreboard objectives add cu-io.player.trigger.input_backward_record dummy
 scoreboard objectives add cu-io.player.trigger.input_left_record dummy

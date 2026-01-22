@@ -1,0 +1,25 @@
+{
+  "parent": "cu:player/trigger/root",
+  "criteria": {
+    "using_item": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "custom_data": {
+              "cu:triggers_using_item": {}
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "using_item"
+    ]
+  ],
+  "rewards": {
+    "function": "cu:player/trigger/using_item/record"
+  }
+}
