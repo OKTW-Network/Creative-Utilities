@@ -13,6 +13,9 @@ execute if data storage cu:io data.digit.bulk_limit.Input[0] run function cu:dat
 data remove storage cu:io data.digit.bulk_limit.Input
 scoreboard players reset #data.digit.bulk_limit.Option.min cu-io
 scoreboard players reset #data.digit.bulk_limit.Option.max cu-io
+scoreboard players reset #data.digit.bulk_limit.Option.exclude_min cu-io
+scoreboard players reset #data.digit.bulk_limit.Option.exclude_max cu-io
+scoreboard players reset #data.digit.bulk_limit.Option.filter cu-io
 scoreboard players reset #data.digit.bulk_limit.value cu-internal
 scoreboard players reset #data.digit.bulk_limit.filter_condition cu-internal
 
