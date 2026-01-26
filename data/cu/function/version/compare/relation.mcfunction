@@ -1,7 +1,7 @@
 scoreboard players reset #version.compare.relation.Result cu-io
 function cu:version/compare/_func/normalize_input
 
-execute store result score #version.compare.relation.Result cu-io run function cu:version/compare/_func/relation
+execute store result score #version.compare.relation.Result cu-io run function cu:version/compare/_func/input_relation
 
 function cu:version/compare/_reset_function
 

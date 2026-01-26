@@ -1,0 +1,2 @@
+execute unless entity @a run return run function cu:version/compare/broadcast_relation/_func/none_player_broadcast
+return run tellraw @a ["",{"translate":"[%s]:","with":[{"type":"nbt","source":"storage","nbt":"version.compare.broadcast_relation.Input.datapack_name","storage":"cu:io","interpret":true}],"color":"yellow","bold":true}," ",{"type":"nbt","source":"storage","nbt":"version.compare.broadcast_relation.unsolved_message","storage":"cu:internal","interpret":true}]
