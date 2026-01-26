@@ -1,7 +1,7 @@
 scoreboard players set #version.Input.version_x cu-io 4
 scoreboard players set #version.Input.version_y cu-io 0
 scoreboard players set #version.Input.version_z cu-io 0
-data modify storage cu:io version.Input.version_tag set value 'pack-94-1.0'
+data modify storage cu:io version.Input.version_tag set value 'pack-94-1.1'
 function cu:version/normalize
 scoreboard players operation #cu$previous_version_x Meta = #cu$current_version_x Meta
 scoreboard players operation #cu$previous_version_y Meta = #cu$current_version_y Meta
