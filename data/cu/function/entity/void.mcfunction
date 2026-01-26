@@ -1,1 +1,2 @@
-execute at @s run return run tp @s ~ -19999999 ~
+execute at @s run tp @s ~ -19999999 ~
+return run kill @s
