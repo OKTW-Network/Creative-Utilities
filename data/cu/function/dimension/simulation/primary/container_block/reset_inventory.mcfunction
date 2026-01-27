@@ -1,0 +1,1 @@
+return run execute in cu:simulation run data modify block 0 1 0 Items set value []

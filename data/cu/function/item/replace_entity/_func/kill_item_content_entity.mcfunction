@@ -1,0 +1,1 @@
+return run kill @e[type=minecraft:item_display,tag=cu-dummy.item.replace_entity.item_content]
