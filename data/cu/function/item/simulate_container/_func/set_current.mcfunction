@@ -1,0 +1,3 @@
+execute if data storage cu:internal item.simulate_container.insertion_queue[0] if score #item.simulate_container.insertion_countdown cu-internal matches 0 run return run function cu:item/simulate_container/_func/set_insertion_as_current
+data modify storage cu:internal item.simulate_container.current set from storage cu:io item.simulate_container.Input[0]
+data remove storage cu:io item.simulate_container.Input[0]

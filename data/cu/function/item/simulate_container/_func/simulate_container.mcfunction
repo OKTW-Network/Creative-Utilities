@@ -1,7 +1,4 @@
-scoreboard players set #1 temp 0
-execute if data storage cu:internal item.simulate_container.insertion_queue[0] if score #item.simulate_container.insertion_countdown cu-internal matches 0 run scoreboard players set #1 temp 1
-execute if score #1 temp matches 0 run data modify storage cu:internal item.simulate_container.current set from storage cu:io item.simulate_container.Input[0]
-execute if score #1 temp matches 1 run function cu:item/simulate_container/_func/set_insertion_as_current
+function cu:item/simulate_container/_func/set_current
 execute if score #item.simulate_container.insertion_countdown cu-internal matches 1.. run scoreboard players remove #item.simulate_container.insertion_countdown cu-internal 1
 
 execute if data storage cu:internal item.simulate_container.current{operation:"set"} run function cu:item/simulate_container/_func/operation/set
@@ -19,7 +16,6 @@ execute if data storage cu:internal item.simulate_container.current{operation:"r
 execute if data storage cu:internal item.simulate_container.current{operation:"result_slot"} run function cu:item/simulate_container/_func/operation/result_slot
 execute if data storage cu:internal item.simulate_container.current{operation:"transform"} unless data storage cu:internal item.simulate_container.current.value{operation:"transform"} run function cu:item/simulate_container/_func/operation/transform
 
-data remove storage cu:io item.simulate_container.Input[0]
 scoreboard players set #item.simulate_container.stop_recur cu-internal 1
 execute if data storage cu:io item.simulate_container.Input[0] run scoreboard players set #item.simulate_container.stop_recur cu-internal 0
 execute if score #item.simulate_container.insertion_countdown cu-internal matches 0 run scoreboard players set #item.simulate_container.stop_recur cu-internal 0
