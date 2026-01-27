@@ -1,0 +1,2 @@
+summon minecraft:item_display ~ ~ ~ {Tags:["cu-dummy.item.replace.item_content"],view_range:0}
+return run data modify entity @e[type=minecraft:item_display,distance=0..,limit=1,tag=cu-dummy.item.replace.item_content] item set from storage cu:io item.replace.Input

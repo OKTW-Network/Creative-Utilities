@@ -1,2 +1,0 @@
-function cu:item/replace_entity/_reset_function
-return fail
