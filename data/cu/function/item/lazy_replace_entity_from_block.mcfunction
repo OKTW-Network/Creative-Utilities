@@ -1,0 +1,1 @@
+$return run item replace entity $(targets) $(slot) from block $(source_pos) $(source_slot)
