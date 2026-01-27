@@ -3,7 +3,7 @@ scoreboard players set #data.string.broadcast_raw.FUNCTION_STAGE cu-io 0
 #  none : chunk not loaded or error
 #  0..1 : successful
 scoreboard players reset #data.string.broadcast_raw.Result cu-io
-execute in cu:simulation unless loaded 0 0 0 run return run function cu:data/string/broadcast_raw/_return_fail
+execute unless function cu:dimension/simulation/primary/check_loaded run return run function cu:data/string/broadcast_raw/_return_fail
 
 scoreboard players set #data.string.broadcast_raw.FUNCTION_STAGE cu-io 1
 data modify storage cu:io data.string.resolve_raw.Input set from storage cu:io data.string.broadcast_raw.Input.speaker_name
