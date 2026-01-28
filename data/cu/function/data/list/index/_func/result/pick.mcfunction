@@ -1,2 +1,0 @@
-execute if score #data.list.index.head_countdown cu-internal matches 0 run return run data modify storage cu:io data.list.index.Result append from storage cu:io data.list.index.Input[0]
-execute if score #data.list.index.tail_countdown cu-internal = #data.list.index.max_index cu-internal run return run data modify storage cu:io data.list.index.Result append from storage cu:io data.list.index.Input[-1]

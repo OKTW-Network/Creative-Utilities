@@ -3,7 +3,12 @@ scoreboard players reset #data.list.index.Option.start cu-io
 scoreboard players reset #data.list.index.Option.end cu-io
 scoreboard players reset #data.list.index.Option.arrange cu-io
 scoreboard players reset #data.list.index.Option.circular cu-io
+scoreboard players reset #data.list.index.Option.result_method cu-io
 data remove storage cu:internal data.list.index
 scoreboard players reset #data.list.index.max_index cu-internal
 scoreboard players reset #data.list.index.head_countdown cu-internal
-scoreboard players reset #data.list.index.tail_countdown cu-internal
+scoreboard players reset #data.list.index.tail_target cu-internal
+scoreboard players reset #data.list.index.reverse_direction cu-internal
+scoreboard players reset #data.list.index.reverse_combination cu-internal
+scoreboard players reset #data.list.index.pick cu-internal
+scoreboard players reset #data.list.index.keep_recur cu-internal
