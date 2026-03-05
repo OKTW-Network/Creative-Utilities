@@ -16,7 +16,7 @@ function cu:dimension/simulation/primary/block_testing/reset_testing_area
 kill @e[tag=cu-Marker.simulation.block_testing]
 summon minecraft:marker 9 1 9 {Tags:["cu-Marker.simulation.block_testing"]}
 kill @e[tag=cu-Marker.simulation.block_testing.center]
-summon minecraft:marker 12 4 12 {Tags:["cu-Marker.simulation.block_testing.center"]}
+summon minecraft:marker 12.5 4.5 12.5 {Tags:["cu-Marker.simulation.block_testing.center"]}
 
 # y: 8 ~ 15
 fill 0 8 0 15 8 15 minecraft:bedrock replace
