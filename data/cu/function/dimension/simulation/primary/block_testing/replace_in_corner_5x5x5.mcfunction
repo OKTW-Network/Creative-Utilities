@@ -1,0 +1,1 @@
+return run clone ~ ~ ~ ~4 ~4 ~4 to cu:simulation 10 2 10 replace
