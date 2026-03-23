@@ -1,6 +1,7 @@
 # Reminder
 #  The result cannot be reset if the function failed to instantiate.
 #  The entity selector cannot select unloaded entities.
+#  Entities without a hitbox cannot be selected.
 scoreboard players reset #entity.target.filter.lax_volume.Result cu-io
 function cu:entity/target/filter/_normalize_option
 

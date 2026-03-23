@@ -1,13 +1,15 @@
 scoreboard players set #data.compound.filter_match.FUNCTION_STAGE cu-io 0
 # Result
-#  absent : invalid inputs or error
-#  []     : items that successfully passed
+#  absent : Invalid input or error.
+#  []     : Item(s) that pass the condition.
 data remove storage cu:io data.compound.filter_match.Result
 execute unless data storage cu:io data.compound.filter_match.Input.data_list[{}] run return run function cu:data/compound/filter_match/_return_fail
 execute unless data storage cu:io data.compound.filter_match.Input.reference{} run return run function cu:data/compound/filter_match/_return_fail
 # Option.exclude
-#  0 : do not apply this option
-#  1 : excludes successfully passed instead of including
+#  0 : Do not apply this option.
+#       [(O),(X),(O),(X)] => [(O),(O)]
+#  1 : Reverse the filter, exclude passed; include non-passed.
+#       [(O),(X),(O),(X)] => [(X),(X)]
 execute unless score #data.compound.filter_match.Option.exclude cu-io matches 0..1 run scoreboard players set #data.compound.filter_match.Option.exclude cu-io 0
 
 scoreboard players set #data.compound.filter_match.FUNCTION_STAGE cu-io 1

@@ -1,7 +1,7 @@
 scoreboard players set #data.string.broadcast_raw.FUNCTION_STAGE cu-io 0
 # Result
-#  none : chunk not loaded or error
-#  0..1 : successful
+#  none : Specific position in cu:simulation not loaded, or error.
+#  0..1 : The successful.
 scoreboard players reset #data.string.broadcast_raw.Result cu-io
 execute unless function cu:dimension/simulation/primary/check_loaded run return run function cu:data/string/broadcast_raw/_return_fail
 

@@ -1,7 +1,4 @@
 scoreboard players set #data.rotation_to_vector.FUNCTION_STAGE cu-io 0
-# Result
-#  absent : invalid input or error
-#  []     : result
 data remove storage cu:io data.rotation_to_vector.Result
 execute unless data storage cu:io data.rotation_to_vector.Input[] run return run function cu:data/rotation_to_vector/_return_fail
 

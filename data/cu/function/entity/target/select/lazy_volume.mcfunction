@@ -1,6 +1,7 @@
 # Reminder
 #  The result cannot be reset if the function failed to instantiate.
 #  The entity selector cannot select unloaded entities.
+#  Entities without a hitbox cannot be selected.
 scoreboard players reset #entity.target.select.lazy_volume.Result cu-io
 
 $execute positioned ~$(x_1) ~$(y_1) ~$(z_1) run tag @e[dx=$(size_x),dy=$(size_y),dz=$(size_z)] add cu-internal.entity.target.select.lazy_volume_1
