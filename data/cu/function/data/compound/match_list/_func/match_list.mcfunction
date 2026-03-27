@@ -2,7 +2,7 @@ data modify storage cu:io data.compound.match.Input.data set from storage cu:io 
 data modify storage cu:io data.compound.match.Input.reference set from storage cu:io data.compound.match_list.Input.reference_list[0]
 function cu:data/compound/match/main
 scoreboard players operation #data.compound.match_list.successful cu-internal = #data.compound.match.Result cu-io
-execute if score #data.compound.match_list.Option.reverse cu-io matches 1 run function cu:data/compound/match_list/_func/reverse_successful
+execute if score #data.compound.match_list.Option.reverse cu-io matches 1 run function cu:data/compound/match_list/_func/invert_successful
 scoreboard players operation #data.compound.match_list.Result cu-io = #data.compound.match_list.successful cu-internal
 scoreboard players operation #data.compound.match_list.success_count cu-internal += #data.compound.match_list.successful cu-internal
 data remove storage cu:io data.compound.match_list.Input.reference_list[0]
