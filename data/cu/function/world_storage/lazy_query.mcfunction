@@ -1,0 +1,1 @@
+$return run execute if data storage cu:storage world[{id:$(id)}]
