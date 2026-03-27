@@ -9,8 +9,8 @@ function cu:entity/target/filter/_normalize_option
 
 scoreboard players set #entity.target.filter.uuid_list.FUNCTION_STAGE cu-io 1
 function cu:entity/target/filter/uuid_list/_func/select_uuid_list
-execute if score #entity.target.filter.Option.reverse cu-io matches 0 store result score #entity.target.filter.uuid_list.Result cu-io run tag @e[tag=!cu-internal.entity.target.filter.uuid_list.1] remove cu-io.entity.target
-execute if score #entity.target.filter.Option.reverse cu-io matches 1 store result score #entity.target.filter.uuid_list.Result cu-io run tag @e[tag=cu-internal.entity.target.filter.uuid_list.1] remove cu-io.entity.target
+execute if score #entity.target.filter.Option.invert cu-io matches 0 store result score #entity.target.filter.uuid_list.Result cu-io run tag @e[tag=!cu-internal.entity.target.filter.uuid_list.1] remove cu-io.entity.target
+execute if score #entity.target.filter.Option.invert cu-io matches 1 store result score #entity.target.filter.uuid_list.Result cu-io run tag @e[tag=cu-internal.entity.target.filter.uuid_list.1] remove cu-io.entity.target
 tag @e remove cu-internal.entity.target.filter.uuid_list.1
 
 scoreboard players set #entity.target.filter.uuid_list.FUNCTION_STAGE cu-io -1

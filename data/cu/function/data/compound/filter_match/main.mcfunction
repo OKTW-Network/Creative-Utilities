@@ -5,12 +5,13 @@ scoreboard players set #data.compound.filter_match.FUNCTION_STAGE cu-io 0
 data remove storage cu:io data.compound.filter_match.Result
 execute unless data storage cu:io data.compound.filter_match.Input.data_list[{}] run return run function cu:data/compound/filter_match/_return_fail
 execute unless data storage cu:io data.compound.filter_match.Input.reference{} run return run function cu:data/compound/filter_match/_return_fail
-# Option.exclude
+# Option.invert / Option.exclude (abandoned)
 #  0 : Do not apply this option.
 #       [(O),(X),(O),(X)] => [(O),(O)]
-#  1 : Reverse the filter, exclude passed; include non-passed.
+#  1 : Invert the filter, exclude passed; include non-passed.
 #       [(O),(X),(O),(X)] => [(X),(X)]
-execute unless score #data.compound.filter_match.Option.exclude cu-io matches 0..1 run scoreboard players set #data.compound.filter_match.Option.exclude cu-io 0
+execute if score #data.compound.filter_match.Option.exclude cu-io matches -2147483648..2147483647 run scoreboard players operation #data.compound.filter_match.Option.invert cu-io = #data.compound.filter_match.Option.exclude cu-io
+execute unless score #data.compound.filter_match.Option.invert cu-io matches 0..1 run scoreboard players set #data.compound.filter_match.Option.invert cu-io 0
 
 scoreboard players set #data.compound.filter_match.FUNCTION_STAGE cu-io 1
 scoreboard players set #data.compound.filter_match.success_count cu-internal 0

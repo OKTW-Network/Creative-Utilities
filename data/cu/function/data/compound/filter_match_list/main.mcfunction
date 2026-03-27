@@ -9,12 +9,13 @@ execute unless data storage cu:io data.compound.filter_match_list.Input.referenc
 #  0   : All the references must match.
 #  1.. : Specify the least number of matches.
 execute unless score #data.compound.filter_match_list.Option.match_count cu-io matches 0..1 run scoreboard players set #data.compound.filter_match_list.Option.match_count cu-io 0
-# Option.exclude
+# Option.invert / Option.exclude (abandoned)
 #  0 : Do not apply this option.
 #       [(O),(X),(O),(X)] => [(O),(O)]
-#  1 : Reverse the filter, exclude passed; include non-passed.
+#  1 : Invert the filter, exclude passed; include non-passed.
 #       [(O),(X),(O),(X)] => [(X),(X)]
-execute unless score #data.compound.filter_match_list.Option.exclude cu-io matches 0..1 run scoreboard players set #data.compound.filter_match_list.Option.exclude cu-io 0
+execute if score #data.compound.filter_match_list.Option.exclude cu-io matches -2147483648..2147483647 run scoreboard players operation #data.compound.filter_match_list.Option.invert cu-io = #data.compound.filter_match_list.Option.exclude cu-io
+execute unless score #data.compound.filter_match_list.Option.invert cu-io matches 0..1 run scoreboard players set #data.compound.filter_match_list.Option.invert cu-io 0
 
 scoreboard players set #data.compound.filter_match_list.FUNCTION_STAGE cu-io 1
 scoreboard players set #data.compound.filter_match_list.success_count cu-internal 0

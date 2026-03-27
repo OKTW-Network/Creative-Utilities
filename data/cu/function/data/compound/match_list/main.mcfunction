@@ -9,10 +9,11 @@ execute unless data storage cu:io data.compound.match_list.Input.reference_list[
 #  0   : All the references must match.
 #  1.. : Specify the least number of matches.
 execute unless score #data.compound.match_list.Option.count cu-io matches 0.. run scoreboard players set #data.compound.match_list.Option.count cu-io 0
-# Option.reverse
+# Option.invert / Option.reverse (abandoned)
 #  0 : Do not apply this option.
-#  1 : Reverse the condition.
-execute unless score #data.compound.match_list.Option.reverse cu-io matches 0..1 run scoreboard players set #data.compound.match_list.Option.reverse cu-io 0
+#  1 : Invert the result by inverting all the conditions.
+execute if score #data.compound.match_list.Option.reverse cu-io matches -2147483648..2147483647 run scoreboard players operation #data.compound.match_list.Option.invert cu-io = #data.compound.match_list.Option.reverse cu-io
+execute unless score #data.compound.match_list.Option.invert cu-io matches 0..1 run scoreboard players set #data.compound.match_list.Option.invert cu-io 0
 
 scoreboard players set #data.compound.match_list.FUNCTION_STAGE cu-io 1
 scoreboard players set #data.compound.match_list.success_count cu-internal 0
