@@ -4,4 +4,5 @@
 data remove storage cu:io data.digit.lazy_scale.Result
 data modify storage cu:internal dummy set value 0
 $data modify storage cu:internal dummy set value $(value)
-$return run  execute store result storage cu:io data.digit.lazy_scale.Result double $(scale) run data get storage cu:internal dummy
+$execute store result storage cu:io data.digit.lazy_scale.Result double $(scale) run data get storage cu:internal dummy
+return run data get storage cu:io data.digit.lazy_scale.Result
