@@ -6,4 +6,4 @@ execute if data storage cu:io data.digit.addition.Input[0] run function cu:data/
 
 data remove storage cu:io data.digit.addition.Input
 
-return run execute unless score #data.digit.addition.Result cu-io matches 0 run scoreboard players get #data.digit.addition.Result cu-io
+return run execute if score #data.digit.addition.Result cu-io matches -2147483648..2147483647 run scoreboard players get #data.digit.addition.Result cu-io
