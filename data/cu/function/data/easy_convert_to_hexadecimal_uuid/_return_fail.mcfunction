@@ -1,0 +1,2 @@
+function cu:data/easy_convert_to_hexadecimal_uuid/_reset_function
+return fail
