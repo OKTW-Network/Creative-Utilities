@@ -1,3 +1,4 @@
+#Abandoned. `lazy_scale` works much better than this.
 scoreboard players reset #data.digit.percent.Result cu-io
 execute unless score #data.digit.percent.Input.base cu-io matches -2147483648..2147483647 run scoreboard players set #data.digit.percent.Input.base cu-io 0
 execute unless score #data.digit.percent.Input.percentage cu-io matches -2147483648..2147483647 run scoreboard players set #data.digit.percent.Input.percentage cu-io 100
