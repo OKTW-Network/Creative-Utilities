@@ -1,1 +1,0 @@
-execute in cu:simulation positioned 0 0 0 unless function cu:dimension/simulation/primary/setup/_func run schedule function cu:dimension/simulation/primary/setup/main 1t replace

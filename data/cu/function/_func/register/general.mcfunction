@@ -1,5 +1,6 @@
 scoreboard objectives add temp dummy
 scoreboard objectives add cu-io dummy
+scoreboard objectives add cu-alert dummy
 scoreboard objectives add cu-internal dummy
 scoreboard objectives add cu-meta.current_entity_version_x dummy
 scoreboard objectives add cu-meta.current_entity_version_y dummy
