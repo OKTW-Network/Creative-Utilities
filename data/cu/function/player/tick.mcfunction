@@ -5,5 +5,6 @@ function cu:player/trigger/input_forward
 function cu:player/trigger/input_backward
 function cu:player/trigger/input_left
 function cu:player/trigger/input_right
+function cu:player/trigger/input_jump
 function cu:player/trigger/input_sneak
 function cu:player/trigger/input_sprint
