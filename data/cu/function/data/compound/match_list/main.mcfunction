@@ -6,8 +6,8 @@ scoreboard players reset #data.compound.match_list.Result cu-io
 execute unless data storage cu:io data.compound.match_list.Input.data{} run return run function cu:data/compound/match_list/_return_fail
 execute unless data storage cu:io data.compound.match_list.Input.reference_list[{}] run return run function cu:data/compound/match_list/_return_fail
 # Option.count
-#  0   : All the references must match.
-#  1.. : Specify the least number of matches.
+#  0   : All the conditions must succeed.
+#  1.. : Specify the least number of successes.
 execute unless score #data.compound.match_list.Option.count cu-io matches 0.. run scoreboard players set #data.compound.match_list.Option.count cu-io 0
 # Option.invert / Option.reverse (abandoned)
 #  0 : Do not apply this option.
