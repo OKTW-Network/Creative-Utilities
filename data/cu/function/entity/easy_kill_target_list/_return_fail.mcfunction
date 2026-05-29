@@ -1,0 +1,2 @@
+function cu:entity/easy_kill_target_list/_reset_function
+return fail
