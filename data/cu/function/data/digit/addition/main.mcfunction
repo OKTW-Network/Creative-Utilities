@@ -1,9 +1,12 @@
+scoreboard players set #data.digit.addition.FUNCTION_STAGE cu-io 0
 scoreboard players reset #data.digit.addition.Result cu-io
+execute unless data storage cu:io data.digit.addition.Input[0] run return run function cu:data/digit/addition/_return_fail
 
-execute store result score #data.digit.addition.Result cu-io run data get storage cu:io data.digit.addition.Input[0]
-data remove storage cu:io data.digit.addition.Input[0]
-execute if data storage cu:io data.digit.addition.Input[0] run function cu:data/digit/addition/_func
+scoreboard players set #data.digit.addition.FUNCTION_STAGE cu-io 1
+scoreboard players set #data.digit.addition.Result cu-io 0
+function cu:data/digit/addition/_func
 
-data remove storage cu:io data.digit.addition.Input
+scoreboard players set #data.digit.addition.FUNCTION_STAGE cu-io -1
+function cu:data/digit/addition/_reset_function
 
-return run execute if score #data.digit.addition.Result cu-io matches -2147483648..2147483647 run scoreboard players get #data.digit.addition.Result cu-io
+return run scoreboard players get #data.digit.addition.Result cu-io
