@@ -8,12 +8,10 @@ data modify storage cu:io config.register.Gatherer set value []
 # data modify storage cu:internal dummy.world_catalog append value {id:'',name:'',description:'',group:[]}
 # data modify storage cu:io config.register.Gatherer append from storage cu:internal dummy
 function #cu:config/register
-execute unless data storage cu:io config.register.Gatherer[0] run return run scoreboard players set #config.register.Result cu-io 0
-function cu:config/register/_func/register
+execute unless data storage cu:io config.register.Gatherer[0] run return 0
+function cu:config/register/_func/register/main
 
 data remove storage cu:io config.register.Gatherer
 data remove storage cu:internal config.register
-scoreboard players reset #config.register.entry_resulting_flag cu-internal
-scoreboard players reset #config.register.process_catalog.stop_recur cu-internal
 
 return 1
