@@ -9,7 +9,7 @@ execute unless data storage cu:io item.give_list.Input[{}] run return run functi
 execute unless score #item.give_list.Option.omit_owner cu-io matches 0..1 run scoreboard players set #item.give_list.Option.omit_owner cu-io 0
 
 scoreboard players set #item.give_list.FUNCTION_STAGE cu-io 1
-execute store result score #item.give_list.Result cu-io run function cu:item/give_list/_func
+function cu:item/give_list/_func
 
 scoreboard players set #item.give_list.FUNCTION_STAGE cu-io -1
 function cu:item/give_list/_reset_function
