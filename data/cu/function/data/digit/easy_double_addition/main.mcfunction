@@ -1,5 +1,6 @@
 # Reminder
-#  Fails the function when the calculation exceeds the cap -20000000..19999999.
+#  The valid range is approximately [-20000000, 20000000).
+#  The function fails when the calculation exceeds the valid range.
 #  Returned value is not as precise as the result value.
 scoreboard players set #data.digit.easy_double_addition.FUNCTION_STAGE cu-io 0
 data remove storage cu:io data.digit.easy_double_addition.Result
