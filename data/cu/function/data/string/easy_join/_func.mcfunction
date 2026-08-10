@@ -4,6 +4,6 @@ execute if data storage cu:io data.string.easy_join.Result run data modify stora
 data modify storage cu:internal dummy.string3 set from storage cu:io data.string.easy_join.Input[0]
 data remove storage cu:io data.string.easy_join.Input[0]
 execute store success score #1 temp run function cu:data/string/lazy_join3 with storage cu:internal dummy
-execute unless score #1 temp matches 0 run data modify storage cu:io data.string.easy_join.Result set from storage cu:io data.string.lazy_join3.Result
+execute if score #1 temp matches 1 run data modify storage cu:io data.string.easy_join.Result set from storage cu:io data.string.lazy_join3.Result
 
 execute if data storage cu:io data.string.easy_join.Input[0] run function cu:data/string/easy_join/_func
