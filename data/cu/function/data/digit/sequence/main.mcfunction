@@ -13,6 +13,7 @@ execute unless score #data.digit.sequence.Input.base cu-io matches -2147483648..
 #  5 : Base multiplication
 execute unless score #data.digit.sequence.Option.operation cu-io matches 0..5 run scoreboard players set #data.digit.sequence.Option.operation cu-io 0
 execute if score #data.digit.sequence.Option.operation cu-io matches 0..3 unless score #data.digit.sequence.Input.value cu-io matches -2147483648..2147483647 run return run function cu:data/digit/sequence/_return_fail
+execute if score #data.digit.sequence.Option.operation cu-io matches 3 if score #data.digit.sequence.Input.value cu-io matches 0 run return run function cu:data/digit/sequence/_return_fail
 # Option.count
 #  0               : Do not apply this option.
 #  1..2147483647   : Specify the quantity excluding the base. Extend tail.
