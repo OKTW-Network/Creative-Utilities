@@ -1,7 +1,7 @@
 #Abandoned, replaced by the `item/summon`.
 scoreboard players set #item.summon_list.FUNCTION_STAGE cu-io 0
 scoreboard players reset #item.summon_list.Result cu-io
-execute unless loaded ~ ~ ~ run return run function cu:item/summon/_return_fail
+execute unless loaded ~ ~ ~ run return run function cu:item/summon_list/_return_fail
 execute unless data storage cu:io item.summon_list.Input run return run function cu:item/summon_list/_return_fail
 
 scoreboard players set #item.summon_list.FUNCTION_STAGE cu-io 1
