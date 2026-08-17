@@ -15,4 +15,4 @@ scoreboard players reset #data.digit.percent.Input.percentage cu-io
 scoreboard players reset #data.digit.percent.Option.round cu-io
 scoreboard players reset #data.digit.percent.round_check cu-internal
 
-return run execute if score #data.digit.percent.Result cu-io matches -2147483648..2147483647 run scoreboard players reset #data.digit.percent.Result cu-io
+return run execute if score #data.digit.percent.Result cu-io matches -2147483648..2147483647 run scoreboard players get #data.digit.percent.Result cu-io
