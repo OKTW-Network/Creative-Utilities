@@ -5,6 +5,7 @@ scoreboard players reset #entity.target.select.interaction_interaction.Result cu
 execute unless data storage cu:io entity.target.select.interaction_interaction.Input[3] run return run function cu:entity/target/select/interaction_interaction/_return_fail
 
 scoreboard players set #entity.target.select.interaction_interaction.FUNCTION_STAGE cu-io 1
+scoreboard players set #entity.target.select.interaction_interaction.Result cu-io 0
 execute as @e[type=minecraft:interaction] if data entity @s interaction.player run function cu:entity/target/select/interaction_interaction/_func
 
 scoreboard players set #entity.target.select.interaction_interaction.FUNCTION_STAGE cu-io -1
