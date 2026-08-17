@@ -7,5 +7,5 @@ execute if score #data.digit.easy_binary_search.left_index cu-internal = #data.d
 execute store result score #1 temp run data get storage cu:io data.digit.easy_binary_search.Input.source[0]
 execute if score #data.digit.easy_binary_search.Input.target cu-io < #1 temp run return run function cu:data/digit/easy_binary_search/_func/binary_search/result_exceed_head
 execute store result score #1 temp run data get storage cu:io data.digit.easy_binary_search.Input.source[-1]
-execute if score #data.digit.easy_binary_search.Input.target cu-io > #1 temp run return run function cu:data/digit/easy_binary_search/_func/binary_search/result_exceed_tail
+execute if score #1 temp < #data.digit.easy_binary_search.Input.target cu-io run return run function cu:data/digit/easy_binary_search/_func/binary_search/result_exceed_tail
 function cu:data/digit/easy_binary_search/_func/binary_search/recur
