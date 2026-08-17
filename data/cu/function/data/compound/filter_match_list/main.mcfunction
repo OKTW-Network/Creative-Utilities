@@ -8,7 +8,7 @@ execute unless data storage cu:io data.compound.filter_match_list.Input.referenc
 # Option.match_count
 #  0   : All the conditions must succeed.
 #  1.. : Specify the least number of successes.
-execute unless score #data.compound.filter_match_list.Option.match_count cu-io matches 0..1 run scoreboard players set #data.compound.filter_match_list.Option.match_count cu-io 0
+execute unless score #data.compound.filter_match_list.Option.match_count cu-io matches 0.. run scoreboard players set #data.compound.filter_match_list.Option.match_count cu-io 0
 # Option.invert / Option.exclude (abandoned)
 #  0 : Do not apply this option.
 #       [(O),(X),(O),(X)] => [(O),(O)]
