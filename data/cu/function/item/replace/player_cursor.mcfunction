@@ -1,5 +1,5 @@
 scoreboard players reset #item.replace.player_cursor.Result cu-io
-execute if entity @s[type=!minecraft:player] run function cu:item/replace/_return_fail
+execute if entity @s[type=!minecraft:player] run return run function cu:item/replace/_return_fail
 
 execute store result score #item.replace.chunk_load_condition cu-internal run function cu:item/replace/_func/chunk_load_condition
 execute if score #item.replace.chunk_load_condition cu-internal matches 0 run return run function cu:item/replace/_return_fail
