@@ -23,7 +23,7 @@ execute unless score #data.digit.sequence.Option.count cu-io matches -2147483648
 #  0 : Do not apply this option.
 #  1 : Excludes the base from the result. Fails the function if "Option.count" is set to 0.
 execute unless score #data.digit.sequence.Option.exclude_base cu-io matches 0..1 run scoreboard players set #data.digit.sequence.Option.exclude_base cu-io 0
-execute if score #data.digit.sequence.Option.exclude_base cu-io matches 1 if score #data.digit.sequence.Option.count cu-io matches 0 run function cu:data/digit/sequence/_return_fail
+execute if score #data.digit.sequence.Option.exclude_base cu-io matches 1 if score #data.digit.sequence.Option.count cu-io matches 0 run return run function cu:data/digit/sequence/_return_fail
 
 scoreboard players set #data.digit.sequence.FUNCTION_STAGE cu-io 1
 data modify storage cu:io data.digit.sequence.Result set value []
