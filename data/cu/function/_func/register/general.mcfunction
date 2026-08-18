@@ -1,5 +1,7 @@
 # data merge storage cu:io {}
 # data merge storage cu:internal {}
+execute unless data storage cu:storage player run data merge storage cu:storage {player:[]}
+execute unless data storage cu:storage world run data merge storage cu:storage {world:[]}
 
 scoreboard objectives add cu-io dummy
 scoreboard objectives add cu-alert dummy
