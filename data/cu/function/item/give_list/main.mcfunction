@@ -9,7 +9,7 @@ execute unless score #item.give_list.Option.omit_owner cu-io matches 0..1 run sc
 scoreboard players set #item.give_list.FUNCTION_STAGE cu-io 1
 data modify storage cu:io item.summon.Input set from storage cu:io item.give_list.Input
 execute if score #item.give_list.Option.omit_owner cu-io matches 0 run data modify storage cu:io item.summon.Option.owner set from entity @s UUID
-execute store result score #item.give_list.Result cu-io run function cu:item/summon/main
+execute store result score #item.give_list.Result cu-io at @s run function cu:item/summon/main
 
 scoreboard players set #item.give_list.FUNCTION_STAGE cu-io -1
 function cu:item/give_list/_reset_function
