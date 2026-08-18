@@ -8,7 +8,6 @@ scoreboard players reset #item.summon.Result cu-io
 execute unless loaded ~ ~ ~ run return run function cu:item/summon/_return_fail
 execute unless data storage cu:io item.summon.Input run return run function cu:item/summon/_return_fail
 execute unless data storage cu:io item.summon.Input[] run function cu:item/summon/_func/pack_input
-execute unless data storage cu:io item.summon.Input[] run function cu:item/summon/_func/pack_input
 # Option.owner
 #  Absent      : Do not apply this option.
 #  Player UUID : Specifies the only player to pick up the item.
