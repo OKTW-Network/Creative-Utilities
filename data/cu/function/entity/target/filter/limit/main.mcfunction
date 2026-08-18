@@ -2,7 +2,7 @@
 #  The entity selector cannot select unloaded entities.
 scoreboard players reset #entity.target.filter.limit.Result cu-io
 function cu:entity/target/filter/_normalize_option
-execute unless score #entity.target.filter.limit.Option.count cu-io matches 1.. run scoreboard players set #entity.target.filter.limit.Option.count cu-io 0
+execute unless score #entity.target.filter.limit.Option.count cu-io matches 1.. run scoreboard players set #entity.target.filter.limit.Option.count cu-io 1
 execute unless score #entity.target.filter.limit.Option.sort cu-io matches 0..3 run scoreboard players set #entity.target.filter.limit.Option.sort cu-io 0
 
 scoreboard players operation #entity.target.filter.limit.recur_countdown cu-internal = #entity.target.filter.limit.Option.count cu-io
