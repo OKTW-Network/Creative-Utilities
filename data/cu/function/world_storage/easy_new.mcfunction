@@ -3,8 +3,8 @@ scoreboard players reset #world_storage.new.Result cu-io
 execute unless function cu:world_storage/_func/validate_input run return run function cu:world_storage/_return_fail
 
 scoreboard players set #world_storage.new.FUNCTION_STAGE cu-io 1
-execute store result score #1 temp run function cu:world_storage/lazy_query with storage cu:io world_storage.Input
-execute if score #1 temp matches 1.. run return run function cu:world_storage/_return_fail
+execute store result score #1 cu-internal run function cu:world_storage/lazy_query with storage cu:io world_storage.Input
+execute if score #1 cu-internal matches 1.. run return run function cu:world_storage/_return_fail
 
 scoreboard players set #world_storage.new.FUNCTION_STAGE cu-io 2
 data modify storage cu:internal dummy set value {id:'',data:{}}

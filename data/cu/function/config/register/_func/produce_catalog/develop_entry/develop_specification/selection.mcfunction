@@ -1,19 +1,19 @@
-scoreboard players set #1 temp 0
-execute store result score #1 temp if data storage cu:internal config.register.produce_catalog.current_entry.specification.value[]
-execute unless score #1 temp matches 2.. run return fail
+scoreboard players set #1 cu-internal 0
+execute store result score #1 cu-internal if data storage cu:internal config.register.produce_catalog.current_entry.specification.value[]
+execute unless score #1 cu-internal matches 2.. run return fail
 data modify storage cu:internal config.register.produce_catalog.entry_in_development.specification merge value {type:'selection',value:[],select_min:1,select_max:1}
 data modify storage cu:internal config.register.produce_catalog.entry_in_development.specification.value set from storage cu:internal config.register.produce_catalog.current_entry.specification.value
-scoreboard players set #2 temp 1
-execute if data storage cu:internal config.register.produce_catalog.current_entry.specification.select_min store result score #2 temp run data get storage cu:internal config.register.produce_catalog.current_entry.specification.select_min
-scoreboard players set #3 temp 1
-execute if data storage cu:internal config.register.produce_catalog.current_entry.specification.select_max store result score #3 temp run data get storage cu:internal config.register.produce_catalog.current_entry.specification.select_max
-scoreboard players set #4 temp 1
-scoreboard players operation #3 temp > #4 temp
-scoreboard players operation #3 temp < #1 temp
-scoreboard players operation #2 temp > #4 temp
-scoreboard players operation #2 temp < #3 temp
-execute store result storage cu:internal config.register.produce_catalog.entry_in_development.specification.select_min int 1 run scoreboard players get #2 temp
-execute store result storage cu:internal config.register.produce_catalog.entry_in_development.specification.select_max int 1 run scoreboard players get #3 temp
+scoreboard players set #2 cu-internal 1
+execute if data storage cu:internal config.register.produce_catalog.current_entry.specification.select_min store result score #2 cu-internal run data get storage cu:internal config.register.produce_catalog.current_entry.specification.select_min
+scoreboard players set #3 cu-internal 1
+execute if data storage cu:internal config.register.produce_catalog.current_entry.specification.select_max store result score #3 cu-internal run data get storage cu:internal config.register.produce_catalog.current_entry.specification.select_max
+scoreboard players set #4 cu-internal 1
+scoreboard players operation #3 cu-internal > #4 cu-internal
+scoreboard players operation #3 cu-internal < #1 cu-internal
+scoreboard players operation #2 cu-internal > #4 cu-internal
+scoreboard players operation #2 cu-internal < #3 cu-internal
+execute store result storage cu:internal config.register.produce_catalog.entry_in_development.specification.select_min int 1 run scoreboard players get #2 cu-internal
+execute store result storage cu:internal config.register.produce_catalog.entry_in_development.specification.select_max int 1 run scoreboard players get #3 cu-internal
 
 data modify storage cu:io config.verify_request.Input.specification set from storage cu:internal config.register.produce_catalog.entry_in_development.specification
 data modify storage cu:io config.verify_request.Input.request set from storage cu:internal config.register.produce_catalog.current_entry.specification.default

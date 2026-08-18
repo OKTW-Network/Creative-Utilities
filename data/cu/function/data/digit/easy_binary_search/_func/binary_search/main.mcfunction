@@ -4,8 +4,8 @@ execute store result score #data.digit.easy_binary_search.right_index cu-interna
 scoreboard players remove #data.digit.easy_binary_search.right_index cu-internal 1
 data modify storage cu:io data.digit.easy_binary_search.Result set value {exceed:0}
 execute if score #data.digit.easy_binary_search.left_index cu-internal = #data.digit.easy_binary_search.right_index cu-internal if function cu:data/digit/easy_binary_search/_func/binary_search/try_result_left_exact run return 0
-execute store result score #1 temp run data get storage cu:io data.digit.easy_binary_search.Input.source[0]
-execute if score #data.digit.easy_binary_search.Input.target cu-io < #1 temp run return run function cu:data/digit/easy_binary_search/_func/binary_search/result_exceed_head
-execute store result score #1 temp run data get storage cu:io data.digit.easy_binary_search.Input.source[-1]
-execute if score #1 temp < #data.digit.easy_binary_search.Input.target cu-io run return run function cu:data/digit/easy_binary_search/_func/binary_search/result_exceed_tail
+execute store result score #1 cu-internal run data get storage cu:io data.digit.easy_binary_search.Input.source[0]
+execute if score #data.digit.easy_binary_search.Input.target cu-io < #1 cu-internal run return run function cu:data/digit/easy_binary_search/_func/binary_search/result_exceed_head
+execute store result score #1 cu-internal run data get storage cu:io data.digit.easy_binary_search.Input.source[-1]
+execute if score #1 cu-internal < #data.digit.easy_binary_search.Input.target cu-io run return run function cu:data/digit/easy_binary_search/_func/binary_search/result_exceed_tail
 function cu:data/digit/easy_binary_search/_func/binary_search/recur

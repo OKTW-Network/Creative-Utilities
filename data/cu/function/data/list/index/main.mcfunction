@@ -53,10 +53,10 @@ execute unless score #data.list.index.Option.result_method cu-io matches 0..2 ru
 
 scoreboard players set #data.list.index.FUNCTION_STAGE cu-io 1
 # normalizes start and end
-execute store result score #data.list.index.max_index cu-internal store result score #1 temp store result score #2 temp run data get storage cu:io data.list.index.Input
+execute store result score #data.list.index.max_index cu-internal store result score #1 cu-internal store result score #2 cu-internal run data get storage cu:io data.list.index.Input
 scoreboard players remove #data.list.index.max_index cu-internal 1
-execute if score #data.list.index.Option.start cu-io matches ..-1 store result score #data.list.index.Option.start cu-io run scoreboard players operation #1 temp += #data.list.index.Option.start cu-io
-execute if score #data.list.index.Option.end cu-io matches ..-1 store result score #data.list.index.Option.end cu-io run scoreboard players operation #2 temp += #data.list.index.Option.end cu-io
+execute if score #data.list.index.Option.start cu-io matches ..-1 store result score #data.list.index.Option.start cu-io run scoreboard players operation #1 cu-internal += #data.list.index.Option.start cu-io
+execute if score #data.list.index.Option.end cu-io matches ..-1 store result score #data.list.index.Option.end cu-io run scoreboard players operation #2 cu-internal += #data.list.index.Option.end cu-io
 scoreboard players operation #data.list.index.Option.start cu-io < #data.list.index.max_index cu-internal
 execute if score #data.list.index.Option.start cu-io matches ..-1 run scoreboard players set #data.list.index.Option.start cu-io 0
 scoreboard players operation #data.list.index.Option.end cu-io < #data.list.index.max_index cu-internal
@@ -70,10 +70,10 @@ scoreboard players operation #data.list.index.tail_target cu-internal = #data.li
 scoreboard players operation #data.list.index.tail_target cu-internal > #data.list.index.Option.end cu-io
 # normalizes circular
 execute if score #data.list.index.Option.start cu-io = #data.list.index.Option.end cu-io run scoreboard players set #data.list.index.Option.circular cu-io 0
-scoreboard players set #1 temp 0
-execute if score #data.list.index.Option.circular cu-io matches 2 if score #data.list.index.Option.end cu-io < #data.list.index.Option.start cu-io run scoreboard players set #1 temp 1
-execute if score #data.list.index.Option.circular cu-io matches 3 if score #data.list.index.Option.start cu-io < #data.list.index.Option.end cu-io run scoreboard players set #1 temp 1
-execute if score #data.list.index.Option.circular cu-io matches 2.. run scoreboard players operation #data.list.index.Option.circular cu-io = #1 temp
+scoreboard players set #1 cu-internal 0
+execute if score #data.list.index.Option.circular cu-io matches 2 if score #data.list.index.Option.end cu-io < #data.list.index.Option.start cu-io run scoreboard players set #1 cu-internal 1
+execute if score #data.list.index.Option.circular cu-io matches 3 if score #data.list.index.Option.start cu-io < #data.list.index.Option.end cu-io run scoreboard players set #1 cu-internal 1
+execute if score #data.list.index.Option.circular cu-io matches 2.. run scoreboard players operation #data.list.index.Option.circular cu-io = #1 cu-internal
 # correct the range
 execute if score #data.list.index.Option.circular cu-io matches 1 run scoreboard players add #data.list.index.head_countdown cu-internal 1
 execute if score #data.list.index.Option.circular cu-io matches 1 run scoreboard players remove #data.list.index.tail_target cu-internal 1

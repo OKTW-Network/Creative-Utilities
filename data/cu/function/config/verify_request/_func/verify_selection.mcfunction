@@ -1,8 +1,8 @@
-execute store result score #1 temp if data storage cu:io config.verify_request.Input.request[]
-execute store result score #2 temp run data get storage cu:io config.verify_request.Input.specification.select_min
-execute if score #1 temp < #2 temp run return run data modify storage cu:internal config.verify_request.fail_reason set value {"type":"translatable","translate":"cu_config_verify_request.fail_reason.selected_too_few",fallback:"Selected too few."}
-execute store result score #3 temp run data get storage cu:io config.verify_request.Input.specification.select_max
-execute if score #1 temp > #3 temp run return run data modify storage cu:internal config.verify_request.fail_reason set value {"type":"translatable","translate":"cu_config_verify_request.fail_reason.selected_too_many",fallback:"Selected too many."}
+execute store result score #1 cu-internal if data storage cu:io config.verify_request.Input.request[]
+execute store result score #2 cu-internal run data get storage cu:io config.verify_request.Input.specification.select_min
+execute if score #1 cu-internal < #2 cu-internal run return run data modify storage cu:internal config.verify_request.fail_reason set value {"type":"translatable","translate":"cu_config_verify_request.fail_reason.selected_too_few",fallback:"Selected too few."}
+execute store result score #3 cu-internal run data get storage cu:io config.verify_request.Input.specification.select_max
+execute if score #1 cu-internal > #3 cu-internal run return run data modify storage cu:internal config.verify_request.fail_reason set value {"type":"translatable","translate":"cu_config_verify_request.fail_reason.selected_too_many",fallback:"Selected too many."}
 
 data modify storage cu:io data.list.easy_deduplicate.Input set from storage cu:io config.verify_request.Input.request
 function cu:data/list/easy_deduplicate/main

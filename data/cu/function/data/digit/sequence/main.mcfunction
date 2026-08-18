@@ -30,8 +30,8 @@ data modify storage cu:io data.digit.sequence.Result set value []
 execute if score #data.digit.sequence.Option.exclude_base cu-io matches 0 run function cu:data/digit/sequence/_func/append_base
 scoreboard players operation #data.digit.sequence.last_value cu-internal = #data.digit.sequence.Input.base cu-io
 scoreboard players operation #data.digit.sequence.recur_countdown cu-internal = #data.digit.sequence.Option.count cu-io
-scoreboard players set #1 temp -1
-execute if score #data.digit.sequence.recur_countdown cu-internal matches ..-1 run scoreboard players operation #data.digit.sequence.recur_countdown cu-internal *= #1 temp
+scoreboard players set #1 cu-internal -1
+execute if score #data.digit.sequence.recur_countdown cu-internal matches ..-1 run scoreboard players operation #data.digit.sequence.recur_countdown cu-internal *= #1 cu-internal
 execute if score #data.digit.sequence.recur_countdown cu-internal matches 1.. run function cu:data/digit/sequence/_func/calculate
 
 scoreboard players set #data.digit.sequence.FUNCTION_STAGE cu-io -1

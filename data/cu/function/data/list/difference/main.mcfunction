@@ -15,10 +15,10 @@ execute unless data storage cu:io data.list.difference.Input.1[] run return run 
 execute unless data storage cu:io data.list.difference.Input.2[] run return run function cu:data/list/difference/_return_fail
 
 scoreboard players set #data.list.difference.FUNCTION_STAGE cu-io 1
-execute store result score #1 temp if data storage cu:io data.list.difference.Input.1[]
-execute store result score #2 temp if data storage cu:io data.list.difference.Input.2[]
-execute if score #1 temp < #2 temp run scoreboard players operation #1 temp >< #2 temp
-scoreboard players operation #data.list.difference.recur_countdown cu-internal = #1 temp
+execute store result score #1 cu-internal if data storage cu:io data.list.difference.Input.1[]
+execute store result score #2 cu-internal if data storage cu:io data.list.difference.Input.2[]
+execute if score #1 cu-internal < #2 cu-internal run scoreboard players operation #1 cu-internal >< #2 cu-internal
+scoreboard players operation #data.list.difference.recur_countdown cu-internal = #1 cu-internal
 scoreboard players set #data.list.difference.index cu-internal 0
 function cu:data/list/difference/_func/difference
 

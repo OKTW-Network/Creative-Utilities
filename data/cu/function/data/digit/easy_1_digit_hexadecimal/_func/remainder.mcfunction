@@ -1,3 +1,3 @@
-scoreboard players set #1 temp 16
-scoreboard players operation #data.digit.easy_1_digit_hexadecimal.Input cu-io %= #1 temp
+scoreboard players set #1 cu-internal 16
+scoreboard players operation #data.digit.easy_1_digit_hexadecimal.Input cu-io %= #1 cu-internal
 return 1
