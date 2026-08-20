@@ -4,7 +4,7 @@ A Minecraft data pack provides util functions.
 
 ## Install
 
-**IMPORTENT**  
+**IMPORTANT**  
 This data pack generates and uses a custom dimension for mechanics to function, but this also makes the uninstallation process cumbersome. Please refer to the uninstallation section before considering whether to continue the installation.
 
 Follow the steps to install:
