@@ -1,13 +1,16 @@
 # Reminder
-#  This function directly merges input into the item entity instead of validating it; this causes invalid inputs to log errors.
+#  This function directly merges input into the item entity and causes invalid inputs to log errors.
 scoreboard players set #item.summon.FUNCTION_STAGE cu-io 0
 # Result
 #  none : Execution position not loaded, or error.
 #  0..  : The success count.
 scoreboard players reset #item.summon.Result cu-io
 execute unless loaded ~ ~ ~ run return run function cu:item/summon/_return_fail
-execute unless data storage cu:io item.summon.Input run return run function cu:item/summon/_return_fail
-execute unless data storage cu:io item.summon.Input[] run function cu:item/summon/_func/pack_input
+execute unless function cu:item/summon/_func/try_pack_input run return run function cu:item/summon/_return_fail
+data modify storage cu:internal dummy set value []
+data modify storage cu:internal dummy append from storage cu:io item.summon.Input[{}]
+data modify storage cu:io item.summon.Input set from storage cu:internal dummy
+execute unless data storage cu:io item.summon.Input[] run return run function cu:item/summon/_return_fail
 # Option.owner
 #  Absent      : Do not apply this option.
 #  Player UUID : Specifies the only player to pick up the item.
