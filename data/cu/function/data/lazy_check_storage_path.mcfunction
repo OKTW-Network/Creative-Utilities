@@ -1,1 +1,3 @@
+# Reminder
+#  Although it is possible, this macro is not designed for customization of the `/execute` command.
 $return run execute if data storage $(namespace) $(path)
