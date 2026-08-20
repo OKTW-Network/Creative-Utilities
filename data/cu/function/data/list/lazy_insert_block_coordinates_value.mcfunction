@@ -1,1 +1,1 @@
-$return run data modify block $(x) $(y) $(z) $(path) insert $(index) value $(data)
+$return run data modify block $(x) $(y) $(z) $(path) insert $(index) value $(value)

@@ -1,1 +1,1 @@
-$return run data modify storage $(namespace) $(path) insert $(index) value $(data)
+$return run data modify storage $(resource_location) $(path) insert $(index) value $(value)

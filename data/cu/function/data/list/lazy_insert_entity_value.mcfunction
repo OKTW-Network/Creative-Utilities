@@ -1,1 +1,1 @@
-$return run execute as $(target) run data modify entity @s $(path) insert $(index) value $(data)
+$return run data modify entity $(entity) $(path) insert $(index) value $(value)

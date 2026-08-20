@@ -1,1 +1,1 @@
-$return run execute as $(target) run data modify entity @s $(path) prepend value $(data)
+$return run data modify entity $(entity) $(path) prepend value $(value)

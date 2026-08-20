@@ -1,1 +1,1 @@
-$return run data modify block $(coordinates) $(path) append value $(data)
+$return run data modify block $(coordinates) $(path) append value $(value)

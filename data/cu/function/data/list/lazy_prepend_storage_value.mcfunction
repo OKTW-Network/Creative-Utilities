@@ -1,1 +1,1 @@
-$return run data modify storage $(namespace) $(path) prepend value $(data)
+$return run data modify storage $(resource_location) $(path) prepend value $(value)

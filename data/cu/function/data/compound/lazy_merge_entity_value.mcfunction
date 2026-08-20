@@ -1,1 +1,1 @@
-$return run execute as $(target) run data modify entity @s $(path) merge value $(tags)
+$return run data modify entity $(entity) $(path) merge value $(value)
