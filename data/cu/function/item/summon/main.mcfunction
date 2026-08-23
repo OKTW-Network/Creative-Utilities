@@ -1,5 +1,5 @@
-# Reminder
-#  This function directly merges input into the item entity and causes invalid inputs to log errors.
+# Known issue
+#  The "Serialization errors" will be logged due to invalid inputs.
 scoreboard players set #item.summon.FUNCTION_STAGE cu-io 0
 # Result
 #  none : Execution position not loaded, or error.
