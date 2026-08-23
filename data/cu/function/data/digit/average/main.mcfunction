@@ -14,4 +14,4 @@ scoreboard players reset #data.digit.average.count cu-internal
 scoreboard players reset #data.digit.average.remainder_accumulator cu-internal
 scoreboard players reset #data.digit.average.compensation cu-internal
 
-return run execute if score #data.digit.average.Result cu-io matches -2147483648..2147483647 run scoreboard players get #data.digit.average.Result cu-io
+return run scoreboard players get #data.digit.average.Result cu-io
