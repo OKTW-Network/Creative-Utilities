@@ -1,6 +1,6 @@
 # Reminder
 #  Macros can cause the SNBT escape sequence to apply twice or conflict with something.
-#   (See function cu:data/string/lazy_to_string for more information.)
+#   (See function cu:data/string/lazy_convert_to_string for more information.)
 scoreboard players set #data.string.easy_join.FUNCTION_STAGE cu-io 0
 # Result
 #  absent : Invalid input or error.

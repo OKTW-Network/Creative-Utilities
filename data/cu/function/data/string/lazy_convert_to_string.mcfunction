@@ -14,5 +14,5 @@
 #   {input:"\\'"}, ... set value '\\'' => "'"
 #   {input:'\\\''}, ... set value '\\\'' => "'"
 #   {input:"\\u0027"}, ... set value '\\u0027' => "'"
-data remove storage cu:io data.string.lazy_to_string.Result
-$return run data modify storage cu:io data.string.lazy_to_string.Result set value '$(input)'
+data remove storage cu:io data.string.lazy_convert_to_string.Result
+$return run data modify storage cu:io data.string.lazy_convert_to_string.Result set value '$(input)'
