@@ -14,7 +14,7 @@ Follow the steps to install:
 3. Re-enter the singleplayer world or restart the server.
 4. Perform the setup to complete the installation.
 
-## Set up
+## Setup
 
 After v4.2.0 (including), the data pack no longer tries to set up on load; instead, one of the methods must be performed:
 
@@ -27,9 +27,9 @@ After v4.2.0 (including), the data pack no longer tries to set up on load; inste
   - Arranging this data pack before the "vanilla" is not tested.
   - Will also run the `/reload` command to ensure the initialization process is being triggered.
 
-## Tear down
+## Teardown
 
-The tear down command `/function cu:teardown` can clear up and stop part of the functionality:
+The teardown command `/function cu:teardown` can clear up and stop part of the functionality:
 
 - Resets the setup condition.
 - Remove most of the scoreboard objectives.
@@ -43,7 +43,7 @@ However, blocks, entities, entity tags, loaded chunks, and custom dimensions can
 
 ## Uninstall
 
-Running the tear down before removing the data pack is recommended.
+Running the teardown before removing the data pack is recommended.
 
 **Required** extra steps to remove the world generation of custom dimensions:
 
