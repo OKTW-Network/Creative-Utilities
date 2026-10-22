@@ -1,6 +1,6 @@
-execute if score #data.list.find.Option.method cu-io matches 0..1 if function cu:data/list/find/_func/different run function cu:data/list/find/_func/successed
-execute if score #data.list.find.Option.method cu-io matches 2..3 if function cu:data/list/find/_func/match_compound run function cu:data/list/find/_func/successed
-execute if score #data.list.find.Option.method cu-io matches 4..5 if function cu:data/list/find/_func/match_compound_list run function cu:data/list/find/_func/successed
+execute if score #data.list.find.Option.method cu-io matches 0..1 if function cu:data/list/find/_func/different run function cu:data/list/find/_func/succeed
+execute if score #data.list.find.Option.method cu-io matches 2..3 if function cu:data/list/find/_func/match_compound run function cu:data/list/find/_func/succeed
+execute if score #data.list.find.Option.method cu-io matches 4..5 if function cu:data/list/find/_func/match_compound_list run function cu:data/list/find/_func/succeed
 data remove storage cu:io data.list.find.Input.data[0]
 scoreboard players add #data.list.find.counter cu-internal 1
 scoreboard players set #data.list.find.stop_recur cu-internal 1
