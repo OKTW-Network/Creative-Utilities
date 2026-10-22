@@ -27,7 +27,7 @@ execute unless score #data.list.find.Option.count cu-io matches 0.. run scoreboa
 #  0 : Do not apply this option.
 #  1 : When the inverted match compound method (3 or 5) is used, treat the voided condition as success.
 execute unless score #data.list.find.Option.inverted_match_compound_catches_voided cu-io matches 0..1 run scoreboard players set #data.list.find.Option.inverted_match_compound_catches_voided cu-io 0
-# Option.compound_list_match_count
+# Option.match_compound_list_count
 #  0   : All the conditions must succeed.
 #  1.. : Specify the least number of successes.
 execute unless score #data.list.find.Option.match_compound_list_count cu-io matches 0.. run scoreboard players set #data.list.find.Option.match_compound_list_count cu-io 0
