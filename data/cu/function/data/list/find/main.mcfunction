@@ -40,4 +40,4 @@ function cu:data/list/find/_func/find
 scoreboard players set #data.list.find.FUNCTION_STAGE cu-io -1
 function cu:data/list/find/_reset_function
 
-return run execute if data storage cu:io data.list.find.Result[]
+return run data get storage cu:io data.list.find.Result

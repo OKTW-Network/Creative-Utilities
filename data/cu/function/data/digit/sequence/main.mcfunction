@@ -37,4 +37,4 @@ execute if score #data.digit.sequence.recur_countdown cu-internal matches 1.. ru
 scoreboard players set #data.digit.sequence.FUNCTION_STAGE cu-io -1
 function cu:data/digit/sequence/_reset_function
 
-return run execute if data storage cu:io data.digit.sequence.Result[]
+return run data get storage cu:io data.digit.sequence.Result

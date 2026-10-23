@@ -8,8 +8,8 @@ scoreboard players reset #entity.easy_kill_target.Result cu-io
 execute unless function cu:entity/easy_kill_target/_func/try_pack_input run return run function cu:entity/easy_kill_target/_return_fail
 data modify storage cu:internal dummy set value []
 data modify storage cu:internal dummy append string storage cu:io entity.easy_kill_target.Input[]
+execute unless data storage cu:internal dummy[0] run return run function cu:entity/easy_kill_target/_return_fail
 data modify storage cu:io entity.easy_kill_target.Input set from storage cu:internal dummy
-execute unless data storage cu:io entity.easy_kill_target.Input[] run return run function cu:entity/easy_kill_target/_return_fail
 execute unless score #entity.easy_kill_target.Option.void cu-io matches 0..1 run scoreboard players set #entity.easy_kill_target.Option.void cu-io 0
 
 scoreboard players set #entity.easy_kill_target.FUNCTION_STAGE cu-io 1

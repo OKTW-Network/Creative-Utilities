@@ -1,5 +1,6 @@
+execute unless data storage cu:internal config.register.produce_catalog.current_entry.specification.value[0] run return fail
 scoreboard players set #1 cu-internal 0
-execute store result score #1 cu-internal if data storage cu:internal config.register.produce_catalog.current_entry.specification.value[]
+execute store result score #1 cu-internal run data get storage cu:internal config.register.produce_catalog.current_entry.specification.value
 execute unless score #1 cu-internal matches 2.. run return fail
 data modify storage cu:internal config.register.produce_catalog.entry_in_development.specification merge value {type:'selection',value:[],select_min:1,select_max:1}
 data modify storage cu:internal config.register.produce_catalog.entry_in_development.specification.value set from storage cu:internal config.register.produce_catalog.current_entry.specification.value

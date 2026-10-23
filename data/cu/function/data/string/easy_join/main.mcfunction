@@ -6,7 +6,7 @@ scoreboard players set #data.string.easy_join.FUNCTION_STAGE cu-io 0
 #  absent : Invalid input or error.
 #  ""     : The result.
 data remove storage cu:io data.string.easy_join.Result
-execute unless data storage cu:io data.string.easy_join.Input[] run return run function cu:data/string/easy_join/_return_fail
+execute unless data storage cu:io data.string.easy_join.Input[0] run return run function cu:data/string/easy_join/_return_fail
 # Option.separator
 #  absent or empty : Do not apply this option.
 #  "..."           : Specify the separator.

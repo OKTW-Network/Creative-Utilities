@@ -1,3 +1,5 @@
+# Reminder
+#  Identical inputs are still compared one by one; running `cu:data/different/main` before may be reasonable.
 scoreboard players set #data.list.difference.FUNCTION_STAGE cu-io 0
 # Result
 #  absent      : Invalid input or error.
@@ -11,12 +13,13 @@ scoreboard players set #data.list.difference.FUNCTION_STAGE cu-io 0
 #                 {value:[<value>,<value>]} : When {diff} is 1, the values from "Input.1" and "Input.2".
 #                 {value:<value>}           : When {diff} is 0, 2, or 3, the value of "Input.1" or "Input.2".
 data remove storage cu:io data.list.difference.Result
-execute unless data storage cu:io data.list.difference.Input.1[] run return run function cu:data/list/difference/_return_fail
-execute unless data storage cu:io data.list.difference.Input.2[] run return run function cu:data/list/difference/_return_fail
+execute unless data storage cu:io data.list.difference.Input.1[0] run data modify storage cu:io data.list.difference.Input.1 set value []
+execute unless data storage cu:io data.list.difference.Input.2[0] run data modify storage cu:io data.list.difference.Input.2 set value []
+execute if data storage cu:io data.list.difference.Input{1:[]} if data storage cu:io data.list.difference.Input{2:[]} run function cu:data/list/difference/_return_fail
 
 scoreboard players set #data.list.difference.FUNCTION_STAGE cu-io 1
-execute store result score #1 cu-internal if data storage cu:io data.list.difference.Input.1[]
-execute store result score #2 cu-internal if data storage cu:io data.list.difference.Input.2[]
+execute store result score #1 cu-internal run data get storage cu:io data.list.difference.Input.1
+execute store result score #2 cu-internal run data get storage cu:io data.list.difference.Input.2
 execute if score #1 cu-internal < #2 cu-internal run scoreboard players operation #1 cu-internal >< #2 cu-internal
 scoreboard players operation #data.list.difference.recur_countdown cu-internal = #1 cu-internal
 scoreboard players set #data.list.difference.index cu-internal 0

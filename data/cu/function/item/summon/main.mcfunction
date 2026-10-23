@@ -9,8 +9,8 @@ execute unless loaded ~ ~ ~ run return run function cu:item/summon/_return_fail
 execute unless function cu:item/summon/_func/try_pack_input run return run function cu:item/summon/_return_fail
 data modify storage cu:internal dummy set value []
 data modify storage cu:internal dummy append from storage cu:io item.summon.Input[{}]
+execute unless data storage cu:internal dummy[0] run return run function cu:item/summon/_return_fail
 data modify storage cu:io item.summon.Input set from storage cu:internal dummy
-execute unless data storage cu:io item.summon.Input[] run return run function cu:item/summon/_return_fail
 # Option.owner
 #  Absent      : Do not apply this option.
 #  Player UUID : Specifies the only player to pick up the item.
