@@ -4,7 +4,7 @@ scoreboard players set #item.give.FUNCTION_STAGE cu-io 0
 #  0..1 : The successful.
 scoreboard players reset #item.give.Result cu-io
 execute if entity @s[type=!minecraft:player] run return run function cu:item/give/_return_fail
-execute unless loaded ~ ~ ~ run return run function cu:item/give/_return_fail
+execute at @s unless loaded ~ ~ ~ run return run function cu:item/give/_return_fail
 execute unless data storage cu:io item.give.Input run return run function cu:item/give/_return_fail
 # Option.omit_owner
 #  0 : Do not apply this option.
