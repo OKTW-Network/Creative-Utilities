@@ -1,6 +1,6 @@
 scoreboard players set #data.digit.average.FUNCTION_STAGE cu-io 0
 scoreboard players reset #data.digit.average.Result cu-io
-execute unless data storage cu:io data.digit.average.Input[0] run function cu:data/digit/average/_return_fail
+execute unless data storage cu:io data.digit.average.Input[0] run return run function cu:data/digit/average/_return_fail
 # Option.method
 #  0 : Sum then divide.
 #  1 : Divide then sum. Prevent overflow, but increase the load.
