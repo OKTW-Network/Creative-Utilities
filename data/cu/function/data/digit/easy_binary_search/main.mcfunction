@@ -7,12 +7,12 @@ scoreboard players set #data.digit.easy_binary_search.FUNCTION_STAGE cu-io 0
 # Result
 #  absent : Invalid input, no matches, or error.
 #  {...}  : The result.
-#            {exceed:0..2}         : The exceed condition.
-#                                     0 : Did not exceed. Considered successful.
-#                                     1 : Exceeds the head. Considered a failure.
-#                                     2 : Exceeds the tail. Considered a failure.
-#            {index:0..2147483638} : The index of the result.
-#            {value:<value>}       : The value of the result.
+#            {exceed:0..2}   : The exceed condition.
+#                               0 : Did not exceed. Considered successful.
+#                               1 : Exceeds the head. Considered a failure.
+#                               2 : Exceeds the tail. Considered a failure.
+#            {index:0..}     : The index of the result.
+#            {value:<value>} : The value of the result.
 data remove storage cu:io data.digit.easy_binary_search.Result
 execute unless data storage cu:io data.digit.easy_binary_search.Input.source[0] run return run function cu:data/digit/easy_binary_search/_return_fail
 execute unless score #data.digit.easy_binary_search.Input.target cu-io matches -2147483648..2147483647 run return run function cu:data/digit/easy_binary_search/_return_fail

@@ -6,18 +6,18 @@ data remove storage cu:io data.list.index.Result
 execute unless data storage cu:io data.list.index.Input[0] run return run function cu:data/list/index/_return_fail
 # Option.start
 #  (Suppress "Option.circular" if the index is the same as "Option.end".)
-#  0..2147483638   : Specifies *index* as the start (include).
+#  0..  : Specifies *index* as the start (include).
 #                     0 => [(first),...,...]
 #                     1 => [...,(second),...]
-#  -2147483639..-1 : Specifies *number* from the last as the start (include).
+#  ..-1 : Specifies *number* from the last as the start (include).
 #                     -1 => [...,...,(last)]
 #                     -2 => [...,(second to last),...,]
-execute unless score #data.list.index.Option.start cu-io matches -2147483639..2147483638 run scoreboard players set #data.list.index.Option.start cu-io 0
+execute unless score #data.list.index.Option.start cu-io matches -2147483648..2147483647 run scoreboard players set #data.list.index.Option.start cu-io 0
 # Option.end
 #  (Suppress "Option.circular" if the index is the same as "Option.start".)
-#  0..2147483638   : Specifies *index* as the end (include).
-#  -2147483639..-1 : Specifies *number* from the last as the end (include).
-execute unless score #data.list.index.Option.end cu-io matches -2147483639..2147483638 run scoreboard players operation #data.list.index.Option.end cu-io = #data.list.index.Option.start cu-io
+#  0..  : Specifies *index* as the end (include).
+#  ..-1 : Specifies *number* from the last as the end (include).
+execute unless score #data.list.index.Option.end cu-io matches -2147483648..2147483647 run scoreboard players operation #data.list.index.Option.end cu-io = #data.list.index.Option.start cu-io
 # Option.arrange
 #  0 : Do not apply this option.
 #  1 : Arranges the result from start to end.

@@ -1,7 +1,7 @@
 scoreboard players set #data.list.easy_index.FUNCTION_STAGE cu-io 0
 data remove storage cu:io data.list.easy_index.Result
 execute unless data storage cu:io data.list.easy_index.Input[0] run return run function cu:data/list/easy_index/_return_fail
-execute unless score #data.list.easy_index.Option.index cu-io matches -2147483639..2147483638 run scoreboard players set #data.list.easy_index.Option.index cu-io 0
+execute unless score #data.list.easy_index.Option.index cu-io matches -2147483648..2147483647 run scoreboard players set #data.list.easy_index.Option.index cu-io 0
 
 scoreboard players set #data.list.easy_index.FUNCTION_STAGE cu-io 1
 data modify storage cu:internal dummy set value {namespace:"cu:io",path:"data.list.easy_index.Input"}

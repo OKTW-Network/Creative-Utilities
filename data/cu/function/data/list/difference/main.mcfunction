@@ -4,7 +4,7 @@ scoreboard players set #data.list.difference.FUNCTION_STAGE cu-io 0
 # Result
 #  absent      : Invalid input or error.
 #  [{...},...] : The result.
-#                 {index:0..2147483638}     : The index of this item in the list.
+#                 {index:0..}               : The index of this item in the list.
 #                 {diff:0..3}               : The difference in this item.
 #                                              0 : Inputs identical.
 #                                              1 : Inputs are different.
