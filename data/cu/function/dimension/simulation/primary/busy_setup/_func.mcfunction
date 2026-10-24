@@ -1,22 +1,11 @@
 forceload add 0 0
-execute unless function cu:dimension/simulation/primary/check_loaded run return fail
+execute unless function cu:dimension/simulation/primary/check_forceloaded run return fail
 
 # y: 0 ~ 7
 fill 0 0 0 15 0 15 minecraft:bedrock replace
-
-setblock 0 1 0 minecraft:shulker_box keep
-kill @e[tag=cu-Marker.simulation.container_block]
-summon minecraft:marker 0 1 0 {Tags:["cu-Marker.simulation.container_block"]}
-
-setblock 0 1 1 minecraft:oak_sign keep
-kill @e[tag=cu-Marker.simulation.sign_block]
-summon minecraft:marker 0 1 1 {Tags:["cu-Marker.simulation.sign_block"]}
-
-function cu:dimension/simulation/primary/block_testing/reset_testing_area
-kill @e[tag=cu-Marker.simulation.block_testing]
-summon minecraft:marker 9 1 9 {Tags:["cu-Marker.simulation.block_testing"]}
-kill @e[tag=cu-Marker.simulation.block_testing.center]
-summon minecraft:marker 12.5 4.5 12.5 {Tags:["cu-Marker.simulation.block_testing.center"]}
+function cu:dimension/simulation/primary/container_block/reset
+function cu:dimension/simulation/primary/sign_block/reset
+function cu:dimension/simulation/primary/block_testing/reset
 
 # y: 8 ~ 15
 fill 0 8 0 15 8 15 minecraft:bedrock replace
