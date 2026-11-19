@@ -1,0 +1,2 @@
+execute if data storage cu:internal config.register.produce_catalog.current_entry.specification{type:'number_range'} run return run function cu:config/register/_func/produce_catalog/develop_entry/develop_specification/number_range
+execute if data storage cu:internal config.register.produce_catalog.current_entry.specification{type:'selection'} run return run function cu:config/register/_func/produce_catalog/develop_entry/develop_specification/selection
