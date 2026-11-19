@@ -1,5 +1,7 @@
 data remove storage cu:internal config.register.produce_namespace.Result
 
+data remove storage cu:internal config.register.produce_namespace.product_in_development
+
 execute unless function cu:config/register/_func/produce_namespace/validate_namespace_id/main run return fail
 data modify storage cu:internal config.register.produce_namespace.product_in_development.namespace set string storage cu:internal config.register.produce_namespace.Input.namespace
 data modify storage cu:internal config.register.produce_namespace.product_in_development.name set from storage cu:internal config.register.produce_namespace.Input.name
